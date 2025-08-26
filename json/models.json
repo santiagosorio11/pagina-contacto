@@ -1,0 +1,1955 @@
+{
+  "models": [
+    {
+      "id": "alejandra",
+      "name": "ALEJANDRA",
+      "category": "women",
+      "thumbnailUrl": "/assets/thumbnail%20women/ALEJANDRA.webp",
+      "details": {
+        "ESTATURA": "1.77 mts",
+        "BUSTO": 78.0,
+        "CINTURA": 63.0,
+        "CADERA": 93.0,
+        "BLUSA": "S",
+        "PANTALON": 6.0,
+        "ZAPATOS": 40.0,
+        "CABELLO": "Castaño",
+        "OJOS": "Negros",
+        "BRASSIER": "32",
+        "PANTY": "S"
+      },
+      "portfolioImages": [
+        "/assets/thumbnail%20women/ALEJANDRA.webp",
+        "/models/mujeres/alejandra%20rivas/ALEJANDRA%20RIVAS%201.webp",
+        "/models/mujeres/alejandra%20rivas/ALEJANDRA%20RIVAS%2010.webp",
+        "/models/mujeres/alejandra%20rivas/ALEJANDRA%20RIVAS%2011.webp",
+        "/models/mujeres/alejandra%20rivas/ALEJANDRA%20RIVAS%2012.webp",
+        "/models/mujeres/alejandra%20rivas/ALEJANDRA%20RIVAS%2013.webp",
+        "/models/mujeres/alejandra%20rivas/ALEJANDRA%20RIVAS%2014.webp",
+        "/models/mujeres/alejandra%20rivas/ALEJANDRA%20RIVAS%2015.webp",
+        "/models/mujeres/alejandra%20rivas/ALEJANDRA%20RIVAS%2016.webp",
+        "/models/mujeres/alejandra%20rivas/ALEJANDRA%20RIVAS%2017.webp",
+        "/models/mujeres/alejandra%20rivas/ALEJANDRA%20RIVAS%2018.webp",
+        "/models/mujeres/alejandra%20rivas/ALEJANDRA%20RIVAS%2019.webp",
+        "/models/mujeres/alejandra%20rivas/ALEJANDRA%20RIVAS%202.webp",
+        "/models/mujeres/alejandra%20rivas/ALEJANDRA%20RIVAS%2020.webp",
+        "/models/mujeres/alejandra%20rivas/ALEJANDRA%20RIVAS%2021.webp",
+        "/models/mujeres/alejandra%20rivas/ALEJANDRA%20RIVAS%2022.webp",
+        "/models/mujeres/alejandra%20rivas/ALEJANDRA%20RIVAS%2023.webp",
+        "/models/mujeres/alejandra%20rivas/ALEJANDRA%20RIVAS%2024.webp",
+        "/models/mujeres/alejandra%20rivas/ALEJANDRA%20RIVAS%2025.webp",
+        "/models/mujeres/alejandra%20rivas/ALEJANDRA%20RIVAS%203.webp",
+        "/models/mujeres/alejandra%20rivas/ALEJANDRA%20RIVAS%204.webp",
+        "/models/mujeres/alejandra%20rivas/ALEJANDRA%20RIVAS%205.webp",
+        "/models/mujeres/alejandra%20rivas/ALEJANDRA%20RIVAS%206.webp",
+        "/models/mujeres/alejandra%20rivas/ALEJANDRA%20RIVAS%207.webp",
+        "/models/mujeres/alejandra%20rivas/ALEJANDRA%20RIVAS%208.webp",
+        "/models/mujeres/alejandra%20rivas/ALEJANDRA%20RIVAS%209.webp"
+      ]
+    },
+    {
+      "id": "ana",
+      "name": "ANA",
+      "category": "women",
+      "thumbnailUrl": "/assets/thumbnail%20women/ANA.webp",
+      "details": {
+        "ESTATURA": "1.73 mts",
+        "BUSTO": 85.0,
+        "CINTURA": 64.0,
+        "CADERA": 88.0,
+        "BLUSA": "S",
+        "PANTALON": 6.0,
+        "ZAPATOS": 39.0,
+        "CABELLO": "Rubio",
+        "OJOS": "Verdes",
+        "BRASSIER": "32 B",
+        "PANTY": "S"
+      },
+      "portfolioImages": [
+        "/assets/thumbnail%20women/ANA.webp",
+        "/models/mujeres/ana%20schlesinger/ANA%20SCHLESINGER%201.webp",
+        "/models/mujeres/ana%20schlesinger/ANA%20SCHLESINGER%2010.webp",
+        "/models/mujeres/ana%20schlesinger/ANA%20SCHLESINGER%2011.webp",
+        "/models/mujeres/ana%20schlesinger/ANA%20SCHLESINGER%2012.webp",
+        "/models/mujeres/ana%20schlesinger/ANA%20SCHLESINGER%2013.webp",
+        "/models/mujeres/ana%20schlesinger/ANA%20SCHLESINGER%2014.webp",
+        "/models/mujeres/ana%20schlesinger/ANA%20SCHLESINGER%2015.webp",
+        "/models/mujeres/ana%20schlesinger/ANA%20SCHLESINGER%2016.webp",
+        "/models/mujeres/ana%20schlesinger/ANA%20SCHLESINGER%2017.webp",
+        "/models/mujeres/ana%20schlesinger/ANA%20SCHLESINGER%2018.webp",
+        "/models/mujeres/ana%20schlesinger/ANA%20SCHLESINGER%2019.webp",
+        "/models/mujeres/ana%20schlesinger/ANA%20SCHLESINGER%202.webp",
+        "/models/mujeres/ana%20schlesinger/ANA%20SCHLESINGER%2020.webp",
+        "/models/mujeres/ana%20schlesinger/ANA%20SCHLESINGER%2021.webp",
+        "/models/mujeres/ana%20schlesinger/ANA%20SCHLESINGER%2022.webp",
+        "/models/mujeres/ana%20schlesinger/ANA%20SCHLESINGER%2023.webp",
+        "/models/mujeres/ana%20schlesinger/ANA%20SCHLESINGER%2024.webp",
+        "/models/mujeres/ana%20schlesinger/ANA%20SCHLESINGER%2025.webp",
+        "/models/mujeres/ana%20schlesinger/ANA%20SCHLESINGER%203.webp",
+        "/models/mujeres/ana%20schlesinger/ANA%20SCHLESINGER%204.webp",
+        "/models/mujeres/ana%20schlesinger/ANA%20SCHLESINGER%205.webp",
+        "/models/mujeres/ana%20schlesinger/ANA%20SCHLESINGER%206.webp",
+        "/models/mujeres/ana%20schlesinger/ANA%20SCHLESINGER%207.webp",
+        "/models/mujeres/ana%20schlesinger/ANA%20SCHLESINGER%208.webp",
+        "/models/mujeres/ana%20schlesinger/ANA%20SCHLESINGER%209.webp"
+      ]
+    },
+    {
+      "id": "anastasiia",
+      "name": "ANASTASIIA",
+      "category": "women",
+      "thumbnailUrl": "/assets/thumbnail%20women/ANASTASIIA.webp",
+      "details": {
+        "ESTATURA": "1.78 mts",
+        "BUSTO": 83.0,
+        "CINTURA": 63.0,
+        "CADERA": 90.0,
+        "BLUSA": "S",
+        "PANTALON": 6.0,
+        "ZAPATOS": 39.0,
+        "CABELLO": "Castaño",
+        "OJOS": "Azules",
+        "BRASSIER": "34B",
+        "PANTY": "S"
+      },
+      "portfolioImages": [
+        "/assets/thumbnail%20women/ANASTASIIA.webp",
+        "/models/mujeres/anastasiia/ANASTASIIA%20PUZYRNAYA%201.webp",
+        "/models/mujeres/anastasiia/ANASTASIIA%20PUZYRNAYA%2010.webp",
+        "/models/mujeres/anastasiia/ANASTASIIA%20PUZYRNAYA%2011.webp",
+        "/models/mujeres/anastasiia/ANASTASIIA%20PUZYRNAYA%2012.webp",
+        "/models/mujeres/anastasiia/ANASTASIIA%20PUZYRNAYA%2013.webp",
+        "/models/mujeres/anastasiia/ANASTASIIA%20PUZYRNAYA%2014.webp",
+        "/models/mujeres/anastasiia/ANASTASIIA%20PUZYRNAYA%2015.webp",
+        "/models/mujeres/anastasiia/ANASTASIIA%20PUZYRNAYA%2016.webp",
+        "/models/mujeres/anastasiia/ANASTASIIA%20PUZYRNAYA%2017.webp",
+        "/models/mujeres/anastasiia/ANASTASIIA%20PUZYRNAYA%2018.webp",
+        "/models/mujeres/anastasiia/ANASTASIIA%20PUZYRNAYA%2019.webp",
+        "/models/mujeres/anastasiia/ANASTASIIA%20PUZYRNAYA%202.webp",
+        "/models/mujeres/anastasiia/ANASTASIIA%20PUZYRNAYA%2020.webp",
+        "/models/mujeres/anastasiia/ANASTASIIA%20PUZYRNAYA%2021.webp",
+        "/models/mujeres/anastasiia/ANASTASIIA%20PUZYRNAYA%2022.webp",
+        "/models/mujeres/anastasiia/ANASTASIIA%20PUZYRNAYA%2023.webp",
+        "/models/mujeres/anastasiia/ANASTASIIA%20PUZYRNAYA%2024.webp",
+        "/models/mujeres/anastasiia/ANASTASIIA%20PUZYRNAYA%2025.webp",
+        "/models/mujeres/anastasiia/ANASTASIIA%20PUZYRNAYA%203.webp",
+        "/models/mujeres/anastasiia/ANASTASIIA%20PUZYRNAYA%204.webp",
+        "/models/mujeres/anastasiia/ANASTASIIA%20PUZYRNAYA%205.webp",
+        "/models/mujeres/anastasiia/ANASTASIIA%20PUZYRNAYA%206.webp",
+        "/models/mujeres/anastasiia/ANASTASIIA%20PUZYRNAYA%207.webp",
+        "/models/mujeres/anastasiia/ANASTASIIA%20PUZYRNAYA%208.webp",
+        "/models/mujeres/anastasiia/ANASTASIIA%20PUZYRNAYA%209.webp"
+      ]
+    },
+    {
+      "id": "andrea",
+      "name": "ANDREA",
+      "category": "women",
+      "thumbnailUrl": "/assets/thumbnail%20women/ANDREA.webp",
+      "details": {},
+      "portfolioImages": [
+        "/assets/thumbnail%20women/ANDREA.webp",
+        "/models/mujeres/andrea%20Escobar/ANDREA%20ESCOBAR%201.webp",
+        "/models/mujeres/andrea%20Escobar/ANDREA%20ESCOBAR%2010.webp",
+        "/models/mujeres/andrea%20Escobar/ANDREA%20ESCOBAR%2011.webp",
+        "/models/mujeres/andrea%20Escobar/ANDREA%20ESCOBAR%2012.webp",
+        "/models/mujeres/andrea%20Escobar/ANDREA%20ESCOBAR%2013.webp",
+        "/models/mujeres/andrea%20Escobar/ANDREA%20ESCOBAR%2014.webp",
+        "/models/mujeres/andrea%20Escobar/ANDREA%20ESCOBAR%2015.webp",
+        "/models/mujeres/andrea%20Escobar/ANDREA%20ESCOBAR%2016.webp",
+        "/models/mujeres/andrea%20Escobar/ANDREA%20ESCOBAR%2017.webp",
+        "/models/mujeres/andrea%20Escobar/ANDREA%20ESCOBAR%2018.webp",
+        "/models/mujeres/andrea%20Escobar/ANDREA%20ESCOBAR%2019.webp",
+        "/models/mujeres/andrea%20Escobar/ANDREA%20ESCOBAR%202.webp",
+        "/models/mujeres/andrea%20Escobar/ANDREA%20ESCOBAR%2020.webp",
+        "/models/mujeres/andrea%20Escobar/ANDREA%20ESCOBAR%203.webp",
+        "/models/mujeres/andrea%20Escobar/ANDREA%20ESCOBAR%205.webp",
+        "/models/mujeres/andrea%20Escobar/ANDREA%20ESCOBAR%206.webp",
+        "/models/mujeres/andrea%20Escobar/ANDREA%20ESCOBAR%207.webp",
+        "/models/mujeres/andrea%20Escobar/ANDREA%20ESCOBAR%208.webp",
+        "/models/mujeres/andrea%20Escobar/ANDREA%20ESCOBAR%209.webp"
+      ]
+    },
+    {
+      "id": "bel",
+      "name": "BEL",
+      "category": "women",
+      "thumbnailUrl": "/assets/thumbnail%20women/BEL.webp",
+      "details": {
+        "ESTATURA": "1.76 mts",
+        "BUSTO": 83.0,
+        "CINTURA": 62.0,
+        "CADERA": 90.0,
+        "BLUSA": "S",
+        "PANTALON": 6.0,
+        "ZAPATOS": 38.0,
+        "CABELLO": "Rubia",
+        "OJOS": "Verdes",
+        "BRASSIER": "32B",
+        "PANTY": "S"
+      },
+      "portfolioImages": [
+        "/assets/thumbnail%20women/BEL.webp",
+        "/models/mujeres/bell/BEL%20GUTIERREZ%201.webp",
+        "/models/mujeres/bell/BEL%20GUTIERREZ%2010.webp",
+        "/models/mujeres/bell/BEL%20GUTIERREZ%2011.webp",
+        "/models/mujeres/bell/BEL%20GUTIERREZ%2012%20(1).webp",
+        "/models/mujeres/bell/BEL%20GUTIERREZ%2012.webp",
+        "/models/mujeres/bell/BEL%20GUTIERREZ%2013.webp",
+        "/models/mujeres/bell/BEL%20GUTIERREZ%2014.webp",
+        "/models/mujeres/bell/BEL%20GUTIERREZ%2015.webp",
+        "/models/mujeres/bell/BEL%20GUTIERREZ%2016.webp",
+        "/models/mujeres/bell/BEL%20GUTIERREZ%2017.webp",
+        "/models/mujeres/bell/BEL%20GUTIERREZ%2018.webp",
+        "/models/mujeres/bell/BEL%20GUTIERREZ%2019.webp",
+        "/models/mujeres/bell/BEL%20GUTIERREZ%202.webp",
+        "/models/mujeres/bell/BEL%20GUTIERREZ%2020.webp",
+        "/models/mujeres/bell/BEL%20GUTIERREZ%2021.webp",
+        "/models/mujeres/bell/BEL%20GUTIERREZ%2022.webp",
+        "/models/mujeres/bell/BEL%20GUTIERREZ%2023.webp",
+        "/models/mujeres/bell/BEL%20GUTIERREZ%2024.webp",
+        "/models/mujeres/bell/BEL%20GUTIERREZ%2025.webp",
+        "/models/mujeres/bell/BEL%20GUTIERREZ%203.webp",
+        "/models/mujeres/bell/BEL%20GUTIERREZ%204.webp",
+        "/models/mujeres/bell/BEL%20GUTIERREZ%205.webp",
+        "/models/mujeres/bell/BEL%20GUTIERREZ%206.webp",
+        "/models/mujeres/bell/BEL%20GUTIERREZ%207.webp",
+        "/models/mujeres/bell/BEL%20GUTIERREZ%208.webp",
+        "/models/mujeres/bell/BEL%20GUTIERREZ%209.webp",
+        "/models/mujeres/bell/_66A5366%20copia.webp"
+      ]
+    },
+    {
+      "id": "camila",
+      "name": "CAMILA",
+      "category": "women",
+      "thumbnailUrl": "/assets/thumbnail%20women/CAMILA.webp",
+      "details": {
+        "ESTATURA": "1.80 mts",
+        "BUSTO": 88.0,
+        "CINTURA": 64.0,
+        "CADERA": 98.0,
+        "BLUSA": "S",
+        "PANTALON": 8.0,
+        "ZAPATOS": 39.0,
+        "CABELLO": "Castaño",
+        "OJOS": "Café",
+        "BRASSIER": "34",
+        "PANTY": "M"
+      },
+      "portfolioImages": [
+        "/assets/thumbnail%20women/CAMILA.webp",
+        "/models/mujeres/camila%20tinoco/CAMILA%20TINOCO%201.webp",
+        "/models/mujeres/camila%20tinoco/CAMILA%20TINOCO%2010.webp",
+        "/models/mujeres/camila%20tinoco/CAMILA%20TINOCO%2011.webp",
+        "/models/mujeres/camila%20tinoco/CAMILA%20TINOCO%2012.webp",
+        "/models/mujeres/camila%20tinoco/CAMILA%20TINOCO%2013.webp",
+        "/models/mujeres/camila%20tinoco/CAMILA%20TINOCO%2014.webp",
+        "/models/mujeres/camila%20tinoco/CAMILA%20TINOCO%2015.webp",
+        "/models/mujeres/camila%20tinoco/CAMILA%20TINOCO%2016.webp",
+        "/models/mujeres/camila%20tinoco/CAMILA%20TINOCO%2017.webp",
+        "/models/mujeres/camila%20tinoco/CAMILA%20TINOCO%2018.webp",
+        "/models/mujeres/camila%20tinoco/CAMILA%20TINOCO%2019.webp",
+        "/models/mujeres/camila%20tinoco/CAMILA%20TINOCO%202.webp",
+        "/models/mujeres/camila%20tinoco/CAMILA%20TINOCO%2020.webp",
+        "/models/mujeres/camila%20tinoco/CAMILA%20TINOCO%2021.webp",
+        "/models/mujeres/camila%20tinoco/CAMILA%20TINOCO%2022.webp",
+        "/models/mujeres/camila%20tinoco/CAMILA%20TINOCO%2023.webp",
+        "/models/mujeres/camila%20tinoco/CAMILA%20TINOCO%2024.webp",
+        "/models/mujeres/camila%20tinoco/CAMILA%20TINOCO%2025.webp",
+        "/models/mujeres/camila%20tinoco/CAMILA%20TINOCO%203.webp",
+        "/models/mujeres/camila%20tinoco/CAMILA%20TINOCO%204.webp",
+        "/models/mujeres/camila%20tinoco/CAMILA%20TINOCO%205.webp",
+        "/models/mujeres/camila%20tinoco/CAMILA%20TINOCO%206.webp",
+        "/models/mujeres/camila%20tinoco/CAMILA%20TINOCO%207.webp",
+        "/models/mujeres/camila%20tinoco/CAMILA%20TINOCO%208.webp",
+        "/models/mujeres/camila%20tinoco/CAMILA%20TINOCO%209.webp"
+      ]
+    },
+    {
+      "id": "claudette,\"\"\"1\",90,64,96,s,7,38,castaño,café,34b,m,",
+      "name": "CLAUDETTE,\"\"\"1\",90,64,96,S,7,38,Castaño,Café,34B,M,",
+      "category": "women",
+      "thumbnailUrl": "/assets/thumbnail%20women/CLAUDETTE,\"\"\"1\",90,64,96,S,7,38,CASTAÑO,CAFÉ,34B,M,.webp",
+      "details": {},
+      "portfolioImages": [
+        "/assets/thumbnail%20women/CLAUDETTE,\"\"\"1\",90,64,96,S,7,38,CASTAÑO,CAFÉ,34B,M,.webp"
+      ]
+    },
+    {
+      "id": "danielae",
+      "name": "DANIELA E",
+      "category": "women",
+      "thumbnailUrl": "/assets/thumbnail%20women/DANIELA E.webp",
+      "details": {},
+      "portfolioImages": [
+        "/assets/thumbnail%20women/DANIELA E.webp"
+      ]
+    },
+    {
+      "id": "danielav",
+      "name": "DANIELA V",
+      "category": "women",
+      "thumbnailUrl": "/assets/thumbnail%20women/DANIELA V.webp",
+      "details": {
+        "ESTATURA": "1.75 mts",
+        "BUSTO": 85.0,
+        "CINTURA": 62.0,
+        "CADERA": 93.0,
+        "BLUSA": "S",
+        "PANTALON": 6.0,
+        "ZAPATOS": 39.0,
+        "CABELLO": "Castaño",
+        "OJOS": "Café",
+        "BRASSIER": "34",
+        "PANTY": "S"
+      },
+      "portfolioImages": [
+        "/assets/thumbnail%20women/DANIELA V.webp"
+      ]
+    },
+    {
+      "id": "estefania",
+      "name": "ESTEFANIA",
+      "category": "women",
+      "thumbnailUrl": "/assets/thumbnail%20women/ESTEFANIA.webp",
+      "details": {},
+      "portfolioImages": [
+        "/assets/thumbnail%20women/ESTEFANIA.webp",
+        "/models/mujeres/estefania%20duque/ESTEFANIA%20DUQUE%201.webp",
+        "/models/mujeres/estefania%20duque/ESTEFANIA%20DUQUE%2010.webp",
+        "/models/mujeres/estefania%20duque/ESTEFANIA%20DUQUE%2011.webp",
+        "/models/mujeres/estefania%20duque/ESTEFANIA%20DUQUE%2012.webp",
+        "/models/mujeres/estefania%20duque/ESTEFANIA%20DUQUE%202.webp",
+        "/models/mujeres/estefania%20duque/ESTEFANIA%20DUQUE%203.webp",
+        "/models/mujeres/estefania%20duque/ESTEFANIA%20DUQUE%204.webp",
+        "/models/mujeres/estefania%20duque/ESTEFANIA%20DUQUE%205.webp",
+        "/models/mujeres/estefania%20duque/ESTEFANIA%20DUQUE%206.webp",
+        "/models/mujeres/estefania%20duque/ESTEFANIA%20DUQUE%207.webp",
+        "/models/mujeres/estefania%20duque/ESTEFANIA%20DUQUE%208.webp",
+        "/models/mujeres/estefania%20duque/ESTEFANIA%20DUQUE%209.webp"
+      ]
+    },
+    {
+      "id": "fany",
+      "name": "FANY",
+      "category": "women",
+      "thumbnailUrl": "/assets/thumbnail%20women/FANY.webp",
+      "details": {
+        "ESTATURA": "1.77 mts",
+        "BUSTO": 80.0,
+        "CINTURA": 65.0,
+        "CADERA": 94.0,
+        "BLUSA": "S",
+        "PANTALON": 6.0,
+        "ZAPATOS": 40.0,
+        "CABELLO": "Castaño",
+        "OJOS": "Café",
+        "BRASSIER": "32",
+        "PANTY": "S"
+      },
+      "portfolioImages": [
+        "/assets/thumbnail%20women/FANY.webp"
+      ]
+    },
+    {
+      "id": "floriane",
+      "name": "FLORIANE",
+      "category": "women",
+      "thumbnailUrl": "/assets/thumbnail%20women/FLORIANE.webp",
+      "details": {
+        "ESTATURA": "1.76 mts",
+        "BUSTO": 87.0,
+        "CINTURA": 64.0,
+        "CADERA": 98.0,
+        "BLUSA": "M",
+        "PANTALON": 8.0,
+        "ZAPATOS": 39.0,
+        "CABELLO": "Castaño",
+        "OJOS": "Azules",
+        "BRASSIER": "34",
+        "PANTY": "M"
+      },
+      "portfolioImages": [
+        "/assets/thumbnail%20women/FLORIANE.webp"
+      ]
+    },
+    {
+      "id": "gaelle",
+      "name": "GAELLE",
+      "category": "women",
+      "thumbnailUrl": "/assets/thumbnail%20women/GAELLE.webp",
+      "details": {},
+      "portfolioImages": [
+        "/assets/thumbnail%20women/GAELLE.webp"
+      ]
+    },
+    {
+      "id": "geraldine",
+      "name": "GERALDINE",
+      "category": "women",
+      "thumbnailUrl": "/assets/thumbnail%20women/GERALDINE.webp",
+      "details": {},
+      "portfolioImages": [
+        "/assets/thumbnail%20women/GERALDINE.webp"
+      ]
+    },
+    {
+      "id": "giulia",
+      "name": "GIULIA",
+      "category": "women",
+      "thumbnailUrl": "/assets/thumbnail%20women/GIULIA.webp",
+      "details": {
+        "ESTATURA": "1.73 mts",
+        "BUSTO": 84.0,
+        "CINTURA": 64.0,
+        "CADERA": 92.0,
+        "BLUSA": "S",
+        "PANTALON": 6.0,
+        "ZAPATOS": 38.0,
+        "CABELLO": "Rubia",
+        "OJOS": "Café",
+        "BRASSIER": "32B",
+        "PANTY": "S"
+      },
+      "portfolioImages": [
+        "/assets/thumbnail%20women/GIULIA.webp"
+      ]
+    },
+    {
+      "id": "greta",
+      "name": "GRETA",
+      "category": "women",
+      "thumbnailUrl": "/assets/thumbnail%20women/GRETA.webp",
+      "details": {
+        "ESTATURA": "1.80 mts",
+        "BUSTO": 85.0,
+        "CINTURA": 60.0,
+        "CADERA": 90.0,
+        "BLUSA": "S",
+        "PANTALON": 6.0,
+        "ZAPATOS": 38.0,
+        "CABELLO": "Rubio",
+        "OJOS": "Verdes",
+        "BRASSIER": "32",
+        "PANTY": "S"
+      },
+      "portfolioImages": [
+        "/assets/thumbnail%20women/GRETA.webp"
+      ]
+    },
+    {
+      "id": "ivanna",
+      "name": "IVANNA",
+      "category": "women",
+      "thumbnailUrl": "/assets/thumbnail%20women/IVANNA.webp",
+      "details": {
+        "ESTATURA": "1.77 mts",
+        "BUSTO": 82.0,
+        "CINTURA": 62.0,
+        "CADERA": 90.0,
+        "BLUSA": "S",
+        "PANTALON": 6.0,
+        "ZAPATOS": 41.0,
+        "CABELLO": "Castaño",
+        "OJOS": "Café",
+        "BRASSIER": "30",
+        "PANTY": "S"
+      },
+      "portfolioImages": [
+        "/assets/thumbnail%20women/IVANNA.webp"
+      ]
+    },
+    {
+      "id": "jonna",
+      "name": "JONNA",
+      "category": "women",
+      "thumbnailUrl": "/assets/thumbnail%20women/JONNA.webp",
+      "details": {
+        "ESTATURA": "1.74 mts",
+        "BUSTO": 87.0,
+        "CINTURA": 67.0,
+        "CADERA": 92.0,
+        "BLUSA": "S",
+        "PANTALON": 6.0,
+        "ZAPATOS": 38.0,
+        "CABELLO": "Rubio",
+        "OJOS": "Verdes",
+        "BRASSIER": "34B",
+        "PANTY": "S"
+      },
+      "portfolioImages": [
+        "/assets/thumbnail%20women/JONNA.webp"
+      ]
+    },
+    {
+      "id": "jousyn",
+      "name": "JOUSYN",
+      "category": "women",
+      "thumbnailUrl": "/assets/thumbnail%20women/JOUSYN.webp",
+      "details": {},
+      "portfolioImages": [
+        "/assets/thumbnail%20women/JOUSYN.webp"
+      ]
+    },
+    {
+      "id": "juliana",
+      "name": "JULIANA",
+      "category": "women",
+      "thumbnailUrl": "/assets/thumbnail%20women/JULIANA.webp",
+      "details": {
+        "ESTATURA": "1.75 mts",
+        "BUSTO": 87.0,
+        "CINTURA": 65.0,
+        "CADERA": 97.0,
+        "BLUSA": "S",
+        "PANTALON": 8.0,
+        "ZAPATOS": 39.0,
+        "CABELLO": "Castaño",
+        "OJOS": "Azules",
+        "BRASSIER": "34C",
+        "PANTY": "M"
+      },
+      "portfolioImages": [
+        "/assets/thumbnail%20women/JULIANA.webp"
+      ]
+    },
+    {
+      "id": "july",
+      "name": "JULY",
+      "category": "women",
+      "thumbnailUrl": "/assets/thumbnail%20women/JULY.webp",
+      "details": {
+        "ESTATURA": "1.72 mts",
+        "BUSTO": 89.0,
+        "CINTURA": 64.0,
+        "CADERA": 94.0,
+        "BLUSA": "S",
+        "PANTALON": 6.0,
+        "ZAPATOS": 40.0,
+        "CABELLO": "Castaño",
+        "OJOS": "Café",
+        "BRASSIER": "32",
+        "PANTY": "S"
+      },
+      "portfolioImages": [
+        "/assets/thumbnail%20women/JULY.webp"
+      ]
+    },
+    {
+      "id": "jazmin",
+      "name": "JAZMIN",
+      "category": "women",
+      "thumbnailUrl": "/assets/thumbnail%20women/JAZMIN.webp",
+      "details": {
+        "ESTATURA": "1.72 mts",
+        "BUSTO": 90.0,
+        "CINTURA": 64.0,
+        "CADERA": 97.0,
+        "BLUSA": "S",
+        "PANTALON": 7.0,
+        "ZAPATOS": 38.0,
+        "CABELLO": "Castaño",
+        "OJOS": "Café",
+        "BRASSIER": "32B",
+        "PANTY": "S"
+      },
+      "portfolioImages": [
+        "/assets/thumbnail%20women/JAZMIN.webp"
+      ]
+    },
+    {
+      "id": "lau",
+      "name": "LAU",
+      "category": "women",
+      "thumbnailUrl": "/assets/thumbnail%20women/LAU.webp",
+      "details": {},
+      "portfolioImages": [
+        "/assets/thumbnail%20women/LAU.webp",
+        "/models/mujeres/claudette%20abu/CLAUDETTE%20ABUCHAIBE%201.webp",
+        "/models/mujeres/claudette%20abu/CLAUDETTE%20ABUCHAIBE%2010.webp",
+        "/models/mujeres/claudette%20abu/CLAUDETTE%20ABUCHAIBE%2011.webp",
+        "/models/mujeres/claudette%20abu/CLAUDETTE%20ABUCHAIBE%2012.webp",
+        "/models/mujeres/claudette%20abu/CLAUDETTE%20ABUCHAIBE%2013.webp",
+        "/models/mujeres/claudette%20abu/CLAUDETTE%20ABUCHAIBE%202.webp",
+        "/models/mujeres/claudette%20abu/CLAUDETTE%20ABUCHAIBE%203.webp",
+        "/models/mujeres/claudette%20abu/CLAUDETTE%20ABUCHAIBE%204.webp",
+        "/models/mujeres/claudette%20abu/CLAUDETTE%20ABUCHAIBE%205.webp",
+        "/models/mujeres/claudette%20abu/CLAUDETTE%20ABUCHAIBE%206.webp",
+        "/models/mujeres/claudette%20abu/CLAUDETTE%20ABUCHAIBE%207.webp",
+        "/models/mujeres/claudette%20abu/CLAUDETTE%20ABUCHAIBE%208.webp",
+        "/models/mujeres/claudette%20abu/CLAUDETTE%20ABUCHAIBE%209.webp"
+      ]
+    },
+    {
+      "id": "lauraa",
+      "name": "LAURA A",
+      "category": "women",
+      "thumbnailUrl": "/assets/thumbnail%20women/LAURA A.webp",
+      "details": {
+        "ESTATURA": "1.70 mts",
+        "BLUSA": "S",
+        "PANTALON": 6.0,
+        "CABELLO": "Castaño",
+        "OJOS": "Verdes"
+      },
+      "portfolioImages": [
+        "/assets/thumbnail%20women/LAURA%20A.webp"
+      ]
+    },
+    {
+      "id": "laural",
+      "name": "LAURA L",
+      "category": "women",
+      "thumbnailUrl": "/assets/thumbnail%20women/LAURA L.webp",
+      "details": {
+        "ESTATURA": "1.74 mts",
+        "BUSTO": 87.0,
+        "CINTURA": 67.0,
+        "CADERA": 99.0,
+        "BLUSA": "S",
+        "PANTALON": 8.0,
+        "ZAPATOS": 37.0,
+        "CABELLO": "Castaño",
+        "OJOS": "Café",
+        "BRASSIER": "34B",
+        "PANTY": "M"
+      },
+      "portfolioImages": [
+        "/assets/thumbnail%20women/LAURA%20L.webp"
+      ]
+    },
+    {
+      "id": "laura",
+      "name": "LAURA",
+      "category": "women",
+      "thumbnailUrl": "/assets/thumbnail%20women/LAURA.webp",
+      "details": {},
+      "portfolioImages": [
+        "/assets/thumbnail%20women/LAURA.webp"
+      ]
+    },
+    {
+      "id": "leiny",
+      "name": "LEINY",
+      "category": "women",
+      "thumbnailUrl": "/assets/thumbnail%20women/LEINY.webp",
+      "details": {
+        "ESTATURA": "1.77 mts",
+        "BUSTO": 80.0,
+        "CINTURA": 62.0,
+        "CADERA": 88.0,
+        "BLUSA": "S",
+        "PANTALON": 6.0,
+        "ZAPATOS": 39.0,
+        "CABELLO": "Castaño",
+        "OJOS": "Negros",
+        "BRASSIER": "32",
+        "PANTY": "S"
+      },
+      "portfolioImages": [
+        "/assets/thumbnail%20women/LEINY.webp"
+      ]
+    },
+    {
+      "id": "mariacaro",
+      "name": "MARIA CARO",
+      "category": "women",
+      "thumbnailUrl": "/assets/thumbnail%20women/MARIA CARO.webp",
+      "details": {
+        "ESTATURA": "1.80 mts",
+        "BUSTO": 89.0,
+        "CINTURA": 65.0,
+        "CADERA": 93.0,
+        "BLUSA": "S",
+        "PANTALON": 7.0,
+        "ZAPATOS": 40.0,
+        "CABELLO": "Castaño",
+        "OJOS": "Negros",
+        "BRASSIER": "32B",
+        "PANTY": "S"
+      },
+      "portfolioImages": [
+        "/assets/thumbnail%20women/MARIA CARO.webp"
+      ]
+    },
+    {
+      "id": "mariajuli",
+      "name": "MARIA JULI",
+      "category": "women",
+      "thumbnailUrl": "/assets/thumbnail%20women/MARIA JULI.webp",
+      "details": {
+        "ESTATURA": "1.74 mts",
+        "BUSTO": 81.0,
+        "CINTURA": 61.0,
+        "CADERA": 92.0,
+        "BLUSA": "S",
+        "PANTALON": 6.0,
+        "ZAPATOS": 38.0,
+        "CABELLO": "Rubio",
+        "OJOS": "Verdes",
+        "BRASSIER": "32B",
+        "PANTY": "S"
+      },
+      "portfolioImages": [
+        "/assets/thumbnail%20women/MARIA JULI.webp"
+      ]
+    },
+    {
+      "id": "marianelly",
+      "name": "MARIA NELLY",
+      "category": "women",
+      "thumbnailUrl": "/assets/thumbnail%20women/MARIA NELLY.webp",
+      "details": {
+        "ESTATURA": "1.75 mts",
+        "BUSTO": 82.0,
+        "CINTURA": 64.0,
+        "CADERA": 90.0,
+        "BLUSA": "S",
+        "PANTALON": 6.0,
+        "ZAPATOS": 38.0,
+        "CABELLO": "Rubio",
+        "OJOS": "Café",
+        "BRASSIER": "34",
+        "PANTY": "S"
+      },
+      "portfolioImages": [
+        "/assets/thumbnail%20women/MARIA%20NELLY.webp"
+      ]
+    },
+    {
+      "id": "mariapau",
+      "name": "MARIA PAU",
+      "category": "women",
+      "thumbnailUrl": "/assets/thumbnail%20women/MARIA PAU.webp",
+      "details": {
+        "ESTATURA": "1.80 mts",
+        "BUSTO": 84.0,
+        "CINTURA": 64.0,
+        "CADERA": 97.0,
+        "BLUSA": "M",
+        "PANTALON": 7.0,
+        "ZAPATOS": 39.0,
+        "CABELLO": "Castaño",
+        "OJOS": "Verdes",
+        "BRASSIER": "32C",
+        "PANTY": "M"
+      },
+      "portfolioImages": [
+        "/assets/thumbnail%20women/MARIA%20PAU.webp"
+      ]
+    },
+    {
+      "id": "maria,\"\"\"1\",80,64,90,s,6,38,castaño,verdes,32a,s,",
+      "name": "MARIA,\"\"\"1\",80,64,90,S,6,38,Castaño,Verdes,32A,S,",
+      "category": "women",
+      "thumbnailUrl": "/assets/thumbnail%20women/MARIA,\"\"\"1\",80,64,90,S,6,38,CASTAÑO,VERDES,32A,S,.webp",
+      "details": {},
+      "portfolioImages": [
+        "/assets/thumbnail%20women/MARIA,\"\"\"1\",80,64,90,S,6,38,CASTAÑO,VERDES,32A,S,.webp"
+      ]
+    },
+    {
+      "id": "mariana",
+      "name": "MARIANA",
+      "category": "women",
+      "thumbnailUrl": "/assets/thumbnail%20women/MARIANA.webp",
+      "details": {
+        "ESTATURA": "1.66 mts",
+        "BUSTO": 82.0,
+        "CINTURA": 63.0,
+        "CADERA": 90.0,
+        "BLUSA": "S",
+        "PANTALON": 6.0,
+        "ZAPATOS": 39.0,
+        "CABELLO": "Rubio",
+        "OJOS": "Verdes",
+        "BRASSIER": "32",
+        "PANTY": "S"
+      },
+      "portfolioImages": [
+        "/assets/thumbnail%20women/MARIANA.webp"
+      ]
+    },
+    {
+      "id": "mercel",
+      "name": "MERCEL",
+      "category": "women",
+      "thumbnailUrl": "/assets/thumbnail%20women/MERCEL.webp",
+      "details": {
+        "ESTATURA": "1.80 mts",
+        "BUSTO": 88.0,
+        "CINTURA": 60.0,
+        "CADERA": 90.0,
+        "BLUSA": "S",
+        "PANTALON": 6.0,
+        "ZAPATOS": 40.0,
+        "CABELLO": "Castaño",
+        "OJOS": "Negros",
+        "BRASSIER": "32B",
+        "PANTY": "S"
+      },
+      "portfolioImages": [
+        "/assets/thumbnail%20women/MERCEL.webp"
+      ]
+    },
+    {
+      "id": "monica",
+      "name": "MONICA",
+      "category": "women",
+      "thumbnailUrl": "/assets/thumbnail%20women/MONICA.webp",
+      "details": {
+        "ESTATURA": "1.80 mts",
+        "BUSTO": 84.0,
+        "CINTURA": 65.0,
+        "CADERA": 93.0,
+        "BLUSA": "S",
+        "PANTALON": 6.0,
+        "ZAPATOS": 40.0,
+        "CABELLO": "Rubio",
+        "OJOS": "Miel",
+        "BRASSIER": "32B",
+        "PANTY": "S"
+      },
+      "portfolioImages": [
+        "/assets/thumbnail%20women/MONICA.webp"
+      ]
+    },
+    {
+      "id": "olya",
+      "name": "OLYA",
+      "category": "women",
+      "thumbnailUrl": "/assets/thumbnail%20women/OLYA.webp",
+      "details": {
+        "ESTATURA": "1.80 mts",
+        "BUSTO": 89.0,
+        "CINTURA": 59.0,
+        "CADERA": 90.0,
+        "BLUSA": "S",
+        "PANTALON": 6.0,
+        "ZAPATOS": 38.0,
+        "CABELLO": "Rubio",
+        "OJOS": "Verdes",
+        "BRASSIER": "32B",
+        "PANTY": "S"
+      },
+      "portfolioImages": [
+        "/assets/thumbnail%20women/OLYA.webp"
+      ]
+    },
+    {
+      "id": "paola",
+      "name": "PAOLA",
+      "category": "women",
+      "thumbnailUrl": "/assets/thumbnail%20women/PAOLA.webp",
+      "details": {
+        "ESTATURA": "1.74 mts",
+        "BUSTO": 87.0,
+        "CINTURA": 63.0,
+        "CADERA": 97.0,
+        "BLUSA": "S",
+        "PANTALON": 8.0,
+        "ZAPATOS": 38.0,
+        "CABELLO": "Castaño",
+        "OJOS": "Verdes",
+        "BRASSIER": "34",
+        "PANTY": "M"
+      },
+      "portfolioImages": [
+        "/assets/thumbnail%20women/PAOLA.webp"
+      ]
+    },
+    {
+      "id": "ruta",
+      "name": "RUTA",
+      "category": "women",
+      "thumbnailUrl": "/assets/thumbnail%20women/RUTA.webp",
+      "details": {
+        "ESTATURA": "1.76 mts",
+        "BUSTO": 88.0,
+        "CINTURA": 65.0,
+        "CADERA": 93.0,
+        "BLUSA": "S",
+        "PANTALON": 7.0,
+        "ZAPATOS": 40.0,
+        "CABELLO": "Castaño",
+        "OJOS": "Verdes",
+        "BRASSIER": "32A",
+        "PANTY": "S"
+      },
+      "portfolioImages": [
+        "/assets/thumbnail%20women/RUTA.webp"
+      ]
+    },
+    {
+      "id": "salome",
+      "name": "SALOME",
+      "category": "women",
+      "thumbnailUrl": "/assets/thumbnail%20women/SALOME.webp",
+      "details": {
+        "ESTATURA": "1.70 mts",
+        "BUSTO": 86.0,
+        "CINTURA": 62.0,
+        "CADERA": 95.0,
+        "BLUSA": "S",
+        "PANTALON": 6.0,
+        "ZAPATOS": 37.0,
+        "CABELLO": "Castaño",
+        "OJOS": "Verdes",
+        "BRASSIER": "34B",
+        "PANTY": "M"
+      },
+      "portfolioImages": [
+        "/assets/thumbnail%20women/SALOME.webp"
+      ]
+    },
+    {
+      "id": "sofia",
+      "name": "SOFIA",
+      "category": "women",
+      "thumbnailUrl": "/assets/thumbnail%20women/SOFIA.webp",
+      "details": {
+        "ESTATURA": "1.80 mts",
+        "BUSTO": 82.0,
+        "CINTURA": 64.0,
+        "CADERA": 92.0,
+        "BLUSA": "M",
+        "PANTALON": 7.0,
+        "ZAPATOS": 39.0,
+        "CABELLO": "Castaño",
+        "OJOS": "Café",
+        "BRASSIER": "32A",
+        "PANTY": "S"
+      },
+      "portfolioImages": [
+        "/assets/thumbnail%20women/SOFIA.webp"
+      ]
+    },
+    {
+      "id": "sophia",
+      "name": "SOPHIA",
+      "category": "women",
+      "thumbnailUrl": "/assets/thumbnail%20women/SOPHIA.webp",
+      "details": {
+        "ESTATURA": "1.74 mts",
+        "BUSTO": 79.0,
+        "CINTURA": 68.0,
+        "CADERA": 89.0,
+        "BLUSA": "S",
+        "PANTALON": 6.0,
+        "ZAPATOS": 38.0,
+        "CABELLO": "Castaño",
+        "OJOS": "Café",
+        "BRASSIER": "32B",
+        "PANTY": "S"
+      },
+      "portfolioImages": [
+        "/assets/thumbnail%20women/SOPHIA%20.webp"
+      ]
+    },
+    {
+      "id": "valee",
+      "name": "VALE E",
+      "category": "women",
+      "thumbnailUrl": "/assets/thumbnail%20women/VALE E.webp",
+      "details": {
+        "ESTATURA": "1.80 mts",
+        "BUSTO": 88.0,
+        "CINTURA": 62.0,
+        "CADERA": 94.0,
+        "BLUSA": "S",
+        "PANTALON": 6.0,
+        "ZAPATOS": 39.0,
+        "CABELLO": "Castaño",
+        "OJOS": "Café",
+        "BRASSIER": "34",
+        "PANTY": "S"
+      },
+      "portfolioImages": [
+        "/assets/thumbnail%20women/VALE%20E.webp"
+      ]
+    },
+    {
+      "id": "valen",
+      "name": "VALEN",
+      "category": "women",
+      "thumbnailUrl": "/assets/thumbnail%20women/VALEN.webp",
+      "details": {
+        "ESTATURA": "1.74 mts",
+        "BUSTO": 90.0,
+        "CINTURA": 64.0,
+        "CADERA": 95.0,
+        "BLUSA": "S",
+        "PANTALON": 6.0,
+        "ZAPATOS": 39.0,
+        "CABELLO": "Castaño",
+        "OJOS": "Café",
+        "BRASSIER": "34",
+        "PANTY": "S"
+      },
+      "portfolioImages": [
+        "/assets/thumbnail%20women/VALEN.webp"
+      ]
+    },
+    {
+      "id": "valentina",
+      "name": "VALENTINA",
+      "category": "women",
+      "thumbnailUrl": "/assets/thumbnail%20women/VALENTINA.webp",
+      "details": {
+        "ESTATURA": "1.76 mts",
+        "BUSTO": 85.0,
+        "CINTURA": 63.0,
+        "CADERA": 93.0,
+        "BLUSA": "S",
+        "PANTALON": 6.0,
+        "ZAPATOS": 38.0,
+        "CABELLO": "Castaño",
+        "OJOS": "Café",
+        "BRASSIER": "32",
+        "PANTY": "S"
+      },
+      "portfolioImages": [
+        "/assets/thumbnail%20women/VALENTINA.webp"
+      ]
+    },
+    {
+      "id": "valeriaa",
+      "name": "VALERIA A",
+      "category": "women",
+      "thumbnailUrl": "/assets/thumbnail%20women/VALERIA A.webp",
+      "details": {
+        "ESTATURA": "1.73 mts",
+        "BUSTO": 85.0,
+        "CINTURA": 63.0,
+        "CADERA": 92.0,
+        "BLUSA": "S",
+        "PANTALON": 6.0,
+        "ZAPATOS": 39.0,
+        "CABELLO": "Castaño",
+        "OJOS": "Café",
+        "BRASSIER": "32A",
+        "PANTY": "S"
+      },
+      "portfolioImages": [
+        "/assets/thumbnail%20women/VALERIA%20A.webp"
+      ]
+    },
+    {
+      "id": "valeriam",
+      "name": "VALERIA M",
+      "category": "women",
+      "thumbnailUrl": "/assets/thumbnail%20women/VALERIA M.webp",
+      "details": {
+        "ESTATURA": "1.72 mts",
+        "BUSTO": 88.0,
+        "CINTURA": 60.0,
+        "CADERA": 88.0,
+        "BLUSA": "S",
+        "PANTALON": 6.0,
+        "ZAPATOS": 38.0,
+        "CABELLO": "Castaño",
+        "OJOS": "Café",
+        "BRASSIER": "34B",
+        "PANTY": "S"
+      },
+      "portfolioImages": [
+        "/assets/thumbnail%20women/VALERIA%20M.webp"
+      ]
+    },
+    {
+      "id": "vanessa",
+      "name": "VANESSA",
+      "category": "women",
+      "thumbnailUrl": "/assets/thumbnail%20women/VANESSA.webp",
+      "details": {
+        "ESTATURA": "1.75 mts",
+        "BUSTO": 82.0,
+        "CINTURA": 64.0,
+        "CADERA": 90.0,
+        "BLUSA": "S",
+        "PANTALON": 6.0,
+        "ZAPATOS": 38.0,
+        "CABELLO": "Rojo",
+        "OJOS": "Café",
+        "BRASSIER": "32A",
+        "PANTY": "S"
+      },
+      "portfolioImages": [
+        "/assets/thumbnail%20women/VANESSA.webp"
+      ]
+    },
+    {
+      "id": "viviana",
+      "name": "VIVIANA",
+      "category": "women",
+      "thumbnailUrl": "/assets/thumbnail%20women/VIVIANA.webp",
+      "details": {
+        "ESTATURA": "1.75 mts",
+        "BUSTO": 90.0,
+        "CINTURA": 65.0,
+        "CADERA": 98.0,
+        "BLUSA": "S",
+        "PANTALON": 8.0,
+        "ZAPATOS": 39.0,
+        "CABELLO": "Rubio",
+        "OJOS": "Verdes",
+        "BRASSIER": "34",
+        "PANTY": "Miel"
+      },
+      "portfolioImages": [
+        "/assets/thumbnail%20women/VIVIANA.webp"
+      ]
+    },
+    {
+      "id": "adrian",
+      "name": "ADRIAN",
+      "category": "men",
+      "thumbnailUrl": "/assets/thumbnail%20men/ADRIAN.webp",
+      "details": {
+        "ESTATURA": "1.87 mts",
+        "CAMISA": "M",
+        "PANTALON": 31,
+        "ZAPATOS": 43,
+        "CABELLO": "Castaño",
+        "OJOS": "Café"
+      },
+      "portfolioImages": [
+        "/assets/thumbnail%20men/ADRIAN.webp"
+      ]
+    },
+    {
+      "id": "alan",
+      "name": "ALAN",
+      "category": "men",
+      "thumbnailUrl": "/assets/thumbnail%20men/ALAN.webp",
+      "details": {
+        "ESTATURA": "1.88 mts",
+        "CAMISA": "M",
+        "PANTALON": 31,
+        "ZAPATOS": 42,
+        "CABELLO": "Castaño",
+        "OJOS": "Miel"
+      },
+      "portfolioImages": [
+        "/assets/thumbnail%20men/ALAN.webp"
+      ]
+    },
+    {
+      "id": "alejo",
+      "name": "ALEJO",
+      "category": "men",
+      "thumbnailUrl": "/assets/thumbnail%20men/ALEJO.webp",
+      "details": {
+        "ESTATURA": "1.84 mts",
+        "CAMISA": "M",
+        "PANTALON": 30,
+        "ZAPATOS": 43,
+        "CABELLO": "Castaño",
+        "OJOS": "Azules"
+      },
+      "portfolioImages": [
+        "/assets/thumbnail%20men/ALEJO.webp"
+      ]
+    },
+    {
+      "id": "alfredo",
+      "name": "ALFREDO",
+      "category": "men",
+      "thumbnailUrl": "/assets/thumbnail%20men/ALFREDO.webp",
+      "details": {
+        "ESTATURA": "1.84 mts",
+        "CAMISA": "M",
+        "PANTALON": 31,
+        "ZAPATOS": 43,
+        "CABELLO": "Castaño",
+        "OJOS": "Café"
+      },
+      "portfolioImages": [
+        "/assets/thumbnail%20men/ALFREDO.webp"
+      ]
+    },
+    {
+      "id": "benig",
+      "name": "BENIG",
+      "category": "men",
+      "thumbnailUrl": "/assets/thumbnail%20men/BENIG.webp",
+      "details": {
+        "ESTATURA": "1.87 mts",
+        "CAMISA": "M",
+        "PANTALON": 32,
+        "ZAPATOS": 42,
+        "CABELLO": "Rubio",
+        "OJOS": "Verdes"
+      },
+      "portfolioImages": [
+        "/assets/thumbnail%20men/BENIG.webp"
+      ]
+    },
+    {
+      "id": "brian",
+      "name": "BRIAN",
+      "category": "men",
+      "thumbnailUrl": "/assets/thumbnail%20men/BRIAN.webp",
+      "details": {
+        "ESTATURA": "1.84 mts",
+        "CAMISA": "M",
+        "PANTALON": 31,
+        "ZAPATOS": 43,
+        "CABELLO": "Castaño",
+        "OJOS": "Azules"
+      },
+      "portfolioImages": [
+        "/assets/thumbnail%20men/BRIAN.webp"
+      ]
+    },
+    {
+      "id": "camilo",
+      "name": "CAMILO",
+      "category": "men",
+      "thumbnailUrl": "/assets/thumbnail%20men/CAMILO.webp",
+      "details": {
+        "ESTATURA": "1.80 mts",
+        "CAMISA": "S",
+        "PANTALON": 30,
+        "ZAPATOS": 40,
+        "CABELLO": "Castaño",
+        "OJOS": "Café"
+      },
+      "portfolioImages": [
+        "/assets/thumbnail%20men/CAMILO.webp"
+      ]
+    },
+    {
+      "id": "cris",
+      "name": "CRIS",
+      "category": "men",
+      "thumbnailUrl": "/assets/thumbnail%20men/CRIS.webp",
+      "details": {
+        "ESTATURA": "1.87 mts",
+        "CAMISA": "M",
+        "PANTALON": 32,
+        "ZAPATOS": 42,
+        "CABELLO": "Rubio",
+        "OJOS": "Verdes"
+      },
+      "portfolioImages": [
+        "/assets/thumbnail%20men/CRIS.webp"
+      ]
+    },
+    {
+      "id": "cristian",
+      "name": "CRISTIAN",
+      "category": "men",
+      "thumbnailUrl": "/assets/thumbnail%20men/CRISTIAN.webp",
+      "details": {
+        "ESTATURA": "1.90 mts",
+        "CAMISA": "M",
+        "PANTALON": 32,
+        "ZAPATOS": 43,
+        "CABELLO": "Rubio",
+        "OJOS": "Verdes"
+      },
+      "portfolioImages": [
+        "/assets/thumbnail%20men/CRISTIAN.webp"
+      ]
+    },
+    {
+      "id": "damian",
+      "name": "DAMIAN",
+      "category": "men",
+      "thumbnailUrl": "/assets/thumbnail%20men/DAMIAN.webp",
+      "details": {
+        "ESTATURA": "1.87 mts",
+        "CAMISA": "M",
+        "PANTALON": 32,
+        "ZAPATOS": 44,
+        "CABELLO": "Canoso",
+        "OJOS": "Miel"
+      },
+      "portfolioImages": [
+        "/assets/thumbnail%20men/DAMIAN%20.webp"
+      ]
+    },
+    {
+      "id": "dani",
+      "name": "DANI",
+      "category": "men",
+      "thumbnailUrl": "/assets/thumbnail%20men/DANI.webp",
+      "details": {
+        "ESTATURA": "1.85 mts",
+        "CAMISA": "M",
+        "PANTALON": 31,
+        "ZAPATOS": 42,
+        "CABELLO": "Rubio",
+        "OJOS": "Verdes"
+      },
+      "portfolioImages": [
+        "/assets/thumbnail%20men/DANI.webp"
+      ]
+    },
+    {
+      "id": "daniel",
+      "name": "DANIEL",
+      "category": "men",
+      "thumbnailUrl": "/assets/thumbnail%20men/DANIEL.webp",
+      "details": {
+        "ESTATURA": "1.86 mts",
+        "CAMISA": "M",
+        "PANTALON": 32,
+        "ZAPATOS": 42,
+        "CABELLO": "Castaño",
+        "OJOS": "Café"
+      },
+      "portfolioImages": [
+        "/assets/thumbnail%20men/DANIEL%20.webp"
+      ]
+    },
+    {
+      "id": "davida",
+      "name": "DAVID A",
+      "category": "men",
+      "thumbnailUrl": "/assets/thumbnail%20men/DAVID A.webp",
+      "details": {
+        "ESTATURA": "1.84 mts",
+        "CAMISA": "M",
+        "PANTALON": 31,
+        "ZAPATOS": 41,
+        "CABELLO": "Castaño",
+        "OJOS": "Verdes"
+      },
+      "portfolioImages": [
+        "/assets/thumbnail%20men/DAVID%20A.webp"
+      ]
+    },
+    {
+      "id": "davidc",
+      "name": "DAVID C",
+      "category": "men",
+      "thumbnailUrl": "/assets/thumbnail%20men/DAVID C.webp",
+      "details": {
+        "ESTATURA": "1.85 mts",
+        "CAMISA": "M",
+        "PANTALON": 31,
+        "ZAPATOS": 43,
+        "CABELLO": "Castaño",
+        "OJOS": "Azules"
+      },
+      "portfolioImages": [
+        "/assets/thumbnail%20men/DAVID%20C.webp"
+      ]
+    },
+    {
+      "id": "david",
+      "name": "DAVID",
+      "category": "men",
+      "thumbnailUrl": "/assets/thumbnail%20men/DAVID.webp",
+      "details": {
+        "ESTATURA": "1.89 mts",
+        "CAMISA": "M",
+        "PANTALON": 32,
+        "ZAPATOS": 43,
+        "CABELLO": "Castaño",
+        "OJOS": "Verdes"
+      },
+      "portfolioImages": [
+        "/assets/thumbnail%20men/DAVID.webp"
+      ]
+    },
+    {
+      "id": "diego",
+      "name": "DIEGO",
+      "category": "men",
+      "thumbnailUrl": "/assets/thumbnail%20men/DIEGO.webp",
+      "details": {
+        "ESTATURA": "1.88 mts",
+        "CAMISA": "M",
+        "PANTALON": 32,
+        "ZAPATOS": 41,
+        "CABELLO": "Castaño",
+        "OJOS": "Miel"
+      },
+      "portfolioImages": [
+        "/assets/thumbnail%20men/DIEGO.webp"
+      ]
+    },
+    {
+      "id": "eduard",
+      "name": "EDUARD",
+      "category": "men",
+      "thumbnailUrl": "/assets/thumbnail%20men/EDUARD.webp",
+      "details": {
+        "ESTATURA": "1.90 mts",
+        "CAMISA": "M",
+        "PANTALON": 31,
+        "ZAPATOS": 41,
+        "CABELLO": "Castaño",
+        "OJOS": "Verdes"
+      },
+      "portfolioImages": [
+        "/assets/thumbnail%20men/EDUARD.webp"
+      ]
+    },
+    {
+      "id": "eduardo",
+      "name": "EDUARDO",
+      "category": "men",
+      "thumbnailUrl": "/assets/thumbnail%20men/EDUARDO.webp",
+      "details": {
+        "ESTATURA": "1.88 mts",
+        "CAMISA": "M",
+        "PANTALON": 32,
+        "ZAPATOS": 44,
+        "CABELLO": "Castaño",
+        "OJOS": "Azules"
+      },
+      "portfolioImages": [
+        "/assets/thumbnail%20men/EDUARDO.webp"
+      ]
+    },
+    {
+      "id": "erik",
+      "name": "ERIK",
+      "category": "men",
+      "thumbnailUrl": "/assets/thumbnail%20men/ERIK.webp",
+      "details": {
+        "ESTATURA": "1.84 mts",
+        "CAMISA": "M",
+        "PANTALON": 30,
+        "ZAPATOS": 40,
+        "CABELLO": "Castaño",
+        "OJOS": "Verdes"
+      },
+      "portfolioImages": [
+        "/assets/thumbnail%20men/ERIK.webp"
+      ]
+    },
+    {
+      "id": "gabriel",
+      "name": "GABRIEL",
+      "category": "men",
+      "thumbnailUrl": "/assets/thumbnail%20men/GABRIEL.webp",
+      "details": {
+        "ESTATURA": "1.85 mts",
+        "CAMISA": "M",
+        "PANTALON": 31,
+        "ZAPATOS": 43,
+        "CABELLO": "Castaño",
+        "OJOS": "Miel"
+      },
+      "portfolioImages": [
+        "/assets/thumbnail%20men/GABRIEL.webp"
+      ]
+    },
+    {
+      "id": "gio",
+      "name": "GIO",
+      "category": "men",
+      "thumbnailUrl": "/assets/thumbnail%20men/GIO.webp",
+      "details": {
+        "ESTATURA": "1.84 mts",
+        "CAMISA": "M",
+        "PANTALON": 31,
+        "ZAPATOS": 42,
+        "CABELLO": "Castaño",
+        "OJOS": "Verdes"
+      },
+      "portfolioImages": [
+        "/assets/thumbnail%20men/GIO.webp"
+      ]
+    },
+    {
+      "id": "ian",
+      "name": "IAN",
+      "category": "men",
+      "thumbnailUrl": "/assets/thumbnail%20men/IAN.webp",
+      "details": {
+        "ESTATURA": "1.84 mts",
+        "CAMISA": "M",
+        "PANTALON": 32,
+        "ZAPATOS": 42,
+        "CABELLO": "Castaño",
+        "OJOS": "Miel"
+      },
+      "portfolioImages": [
+        "/assets/thumbnail%20men/IAN.webp"
+      ]
+    },
+    {
+      "id": "ivo",
+      "name": "IVO",
+      "category": "men",
+      "thumbnailUrl": "/assets/thumbnail%20men/IVO.webp",
+      "details": {
+        "ESTATURA": "1.84 mts",
+        "CAMISA": "M",
+        "PANTALON": 30,
+        "ZAPATOS": 42,
+        "CABELLO": "Rubio",
+        "OJOS": "Verdes"
+      },
+      "portfolioImages": [
+        "/assets/thumbnail%20men/IVO.webp"
+      ]
+    },
+    {
+      "id": "javid",
+      "name": "JAVID",
+      "category": "men",
+      "thumbnailUrl": "/assets/thumbnail%20men/JAVID.webp",
+      "details": {
+        "ESTATURA": "1.83 mts",
+        "CAMISA": "M",
+        "PANTALON": 31,
+        "ZAPATOS": 43,
+        "CABELLO": "Castaño",
+        "OJOS": "Miel"
+      },
+      "portfolioImages": [
+        "/assets/thumbnail%20men/JAVID.webp"
+      ]
+    },
+    {
+      "id": "jesus",
+      "name": "JESUS",
+      "category": "men",
+      "thumbnailUrl": "/assets/thumbnail%20men/JESUS.webp",
+      "details": {
+        "ESTATURA": "1.84 mts",
+        "CAMISA": "M",
+        "PANTALON": 31,
+        "ZAPATOS": 43,
+        "CABELLO": "Castaño",
+        "OJOS": "Azules"
+      },
+      "portfolioImages": [
+        "/assets/thumbnail%20men/JESUS.webp"
+      ]
+    },
+    {
+      "id": "jhoxan",
+      "name": "JHOXAN",
+      "category": "men",
+      "thumbnailUrl": "/assets/thumbnail%20men/JHOXAN.webp",
+      "details": {
+        "ESTATURA": "1.84 mts",
+        "CAMISA": "M",
+        "PANTALON": 30,
+        "ZAPATOS": 43,
+        "CABELLO": "Castaño",
+        "OJOS": "Verdes"
+      },
+      "portfolioImages": [
+        "/assets/thumbnail%20men/JHOXAN.webp"
+      ]
+    },
+    {
+      "id": "johan",
+      "name": "JOHAN",
+      "category": "men",
+      "thumbnailUrl": "/assets/thumbnail%20men/JOHAN.webp",
+      "details": {
+        "ESTATURA": "1.85 mts",
+        "CAMISA": "M",
+        "PANTALON": 31,
+        "ZAPATOS": 43,
+        "CABELLO": "Castaño",
+        "OJOS": "Verdes"
+      },
+      "portfolioImages": [
+        "/assets/thumbnail%20men/JOHAN.webp"
+      ]
+    },
+    {
+      "id": "joseluis",
+      "name": "JOSE LUIS",
+      "category": "men",
+      "thumbnailUrl": "/assets/thumbnail%20men/JOSE LUIS.webp",
+      "details": {
+        "ESTATURA": "1.84 mts",
+        "CAMISA": "M",
+        "PANTALON": 31,
+        "ZAPATOS": 43,
+        "CABELLO": "Castaño",
+        "OJOS": "Verdes"
+      },
+      "portfolioImages": [
+        "/assets/thumbnail%20men/JOSE LUIS.webp"
+      ]
+    },
+    {
+      "id": "juanjose",
+      "name": "JUAN JOSE",
+      "category": "men",
+      "thumbnailUrl": "/assets/thumbnail%20men/JUAN JOSE.webp",
+      "details": {
+        "ESTATURA": "1.86 mts",
+        "CAMISA": "M",
+        "PANTALON": 31,
+        "ZAPATOS": 42,
+        "CABELLO": "Castaño",
+        "OJOS": "Café"
+      },
+      "portfolioImages": [
+        "/assets/thumbnail%20men/JUAN%20JOSE.webp"
+      ]
+    },
+    {
+      "id": "juanfe",
+      "name": "JUANFE",
+      "category": "men",
+      "thumbnailUrl": "/assets/thumbnail%20men/JUANFE.webp",
+      "details": {
+        "ESTATURA": "1.84 mts",
+        "CAMISA": "M",
+        "PANTALON": 32,
+        "ZAPATOS": 41,
+        "CABELLO": "Castaño",
+        "OJOS": "Café"
+      },
+      "portfolioImages": [
+        "/assets/thumbnail%20men/JUANFE.webp"
+      ]
+    },
+    {
+      "id": "lorenzo",
+      "name": "LORENZO",
+      "category": "men",
+      "thumbnailUrl": "/assets/thumbnail%20men/LORENZO.webp",
+      "details": {
+        "ESTATURA": "1.88 mts",
+        "CAMISA": "M",
+        "PANTALON": 31,
+        "ZAPATOS": 42,
+        "CABELLO": "Castaño",
+        "OJOS": "Miel"
+      },
+      "portfolioImages": [
+        "/assets/thumbnail%20men/LORENZO.webp"
+      ]
+    },
+    {
+      "id": "marco",
+      "name": "MARCO",
+      "category": "men",
+      "thumbnailUrl": "/assets/thumbnail%20men/MARCO.webp",
+      "details": {
+        "ESTATURA": "1.86 mts",
+        "CAMISA": "M",
+        "PANTALON": 31,
+        "ZAPATOS": 43,
+        "CABELLO": "Rubio",
+        "OJOS": "Verdes"
+      },
+      "portfolioImages": [
+        "/assets/thumbnail%20men/MARCO.webp"
+      ]
+    },
+    {
+      "id": "marcos",
+      "name": "MARCOS",
+      "category": "men",
+      "thumbnailUrl": "/assets/thumbnail%20men/MARCOS.webp",
+      "details": {
+        "ESTATURA": "1.89 mts",
+        "CAMISA": "L",
+        "PANTALON": 32,
+        "ZAPATOS": 43,
+        "CABELLO": "Rubio",
+        "OJOS": "Verdes"
+      },
+      "portfolioImages": [
+        "/assets/thumbnail%20men/MARCOS.webp"
+      ]
+    },
+    {
+      "id": "mariano",
+      "name": "MARIANO",
+      "category": "men",
+      "thumbnailUrl": "/assets/thumbnail%20men/MARIANO.webp",
+      "details": {
+        "ESTATURA": "1.86 mts",
+        "CAMISA": "M",
+        "PANTALON": 32,
+        "ZAPATOS": 43,
+        "CABELLO": "Castaño",
+        "OJOS": "Café"
+      },
+      "portfolioImages": [
+        "/assets/thumbnail%20men/MARIANO.webp"
+      ]
+    },
+    {
+      "id": "mateo",
+      "name": "MATEO",
+      "category": "men",
+      "thumbnailUrl": "/assets/thumbnail%20men/MATEO.webp",
+      "details": {
+        "ESTATURA": "1.82 mts",
+        "CAMISA": "S",
+        "PANTALON": 30,
+        "ZAPATOS": 42,
+        "CABELLO": "Castaño",
+        "OJOS": "Verdes"
+      },
+      "portfolioImages": [
+        "/assets/thumbnail%20men/MATEO.webp"
+      ]
+    },
+    {
+      "id": "matias",
+      "name": "MATIAS",
+      "category": "men",
+      "thumbnailUrl": "/assets/thumbnail%20men/MATIAS.webp",
+      "details": {
+        "ESTATURA": "1.86 mts",
+        "CAMISA": "M",
+        "PANTALON": 32,
+        "ZAPATOS": 44,
+        "CABELLO": "Castaño",
+        "OJOS": "Verdes"
+      },
+      "portfolioImages": [
+        "/assets/thumbnail%20men/MATIAS.webp"
+      ]
+    },
+    {
+      "id": "melvin",
+      "name": "MELVIN",
+      "category": "men",
+      "thumbnailUrl": "/assets/thumbnail%20men/MELVIN.webp",
+      "details": {
+        "ESTATURA": "1.84 mts",
+        "CAMISA": "M",
+        "PANTALON": 31,
+        "ZAPATOS": 41,
+        "CABELLO": "Rojo",
+        "OJOS": "Café"
+      },
+      "portfolioImages": [
+        "/assets/thumbnail%20men/MELVIN.webp"
+      ]
+    },
+    {
+      "id": "paulo",
+      "name": "PAULO",
+      "category": "men",
+      "thumbnailUrl": "/assets/thumbnail%20men/PAULO.webp",
+      "details": {
+        "ESTATURA": "1.88 mts",
+        "CAMISA": "M",
+        "PANTALON": 32,
+        "ZAPATOS": 43,
+        "CABELLO": "Rubio",
+        "OJOS": "Azules"
+      },
+      "portfolioImages": [
+        "/assets/thumbnail%20men/PAULO%20.webp"
+      ]
+    },
+    {
+      "id": "raul",
+      "name": "RAUL",
+      "category": "men",
+      "thumbnailUrl": "/assets/thumbnail%20men/RAUL.webp",
+      "details": {
+        "ESTATURA": "1.86 mts",
+        "CAMISA": "M",
+        "PANTALON": 31,
+        "ZAPATOS": 41,
+        "CABELLO": "Castaño",
+        "OJOS": "Negros"
+      },
+      "portfolioImages": [
+        "/assets/thumbnail%20men/RAUL.webp"
+      ]
+    },
+    {
+      "id": "romain",
+      "name": "ROMAIN",
+      "category": "men",
+      "thumbnailUrl": "/assets/thumbnail%20men/ROMAIN.webp",
+      "details": {
+        "ESTATURA": "1.84 mts",
+        "CAMISA": "M",
+        "PANTALON": 32,
+        "ZAPATOS": 43,
+        "CABELLO": "Castaño",
+        "OJOS": "Miel"
+      },
+      "portfolioImages": [
+        "/assets/thumbnail%20men/ROMAIN.webp"
+      ]
+    },
+    {
+      "id": "santi",
+      "name": "SANTI",
+      "category": "men",
+      "thumbnailUrl": "/assets/thumbnail%20men/SANTI.webp",
+      "details": {
+        "ESTATURA": "1.85 mts",
+        "CAMISA": "M",
+        "PANTALON": 31,
+        "ZAPATOS": 41,
+        "CABELLO": "Castaño",
+        "OJOS": "Verdes"
+      },
+      "portfolioImages": [
+        "/assets/thumbnail%20men/SANTI.webp"
+      ]
+    },
+    {
+      "id": "santiagon",
+      "name": "SANTIAGO N",
+      "category": "men",
+      "thumbnailUrl": "/assets/thumbnail%20men/SANTIAGO N.webp",
+      "details": {
+        "ESTATURA": "1.83 mts",
+        "CAMISA": "M",
+        "PANTALON": 31,
+        "ZAPATOS": 43,
+        "CABELLO": "Castaño",
+        "OJOS": "Café"
+      },
+      "portfolioImages": [
+        "/assets/thumbnail%20men/SANTIAGO%20N.webp"
+      ]
+    },
+    {
+      "id": "sebastian",
+      "name": "SEBASTIAN",
+      "category": "men",
+      "thumbnailUrl": "/assets/thumbnail%20men/SEBASTIAN.webp",
+      "details": {
+        "ESTATURA": "1.85 mts",
+        "CAMISA": "M",
+        "PANTALON": 31,
+        "ZAPATOS": 43,
+        "CABELLO": "Rubio",
+        "OJOS": "Azules"
+      },
+      "portfolioImages": [
+        "/assets/thumbnail%20men/SEBASTIAN.webp"
+      ]
+    },
+    {
+      "id": "sergey",
+      "name": "SERGEY",
+      "category": "men",
+      "thumbnailUrl": "/assets/thumbnail%20men/SERGEY.webp",
+      "details": {
+        "ESTATURA": "1.80 mts",
+        "CAMISA": "M",
+        "PANTALON": 31,
+        "ZAPATOS": 44,
+        "CABELLO": "Rubio",
+        "OJOS": "Verdes"
+      },
+      "portfolioImages": [
+        "/assets/thumbnail%20men/SERGEY.webp"
+      ]
+    },
+    {
+      "id": "sergio",
+      "name": "SERGIO",
+      "category": "men",
+      "thumbnailUrl": "/assets/thumbnail%20men/SERGIO.webp",
+      "details": {
+        "ESTATURA": "1.75 mts",
+        "CAMISA": "M",
+        "PANTALON": 30,
+        "ZAPATOS": 39,
+        "CABELLO": "Rubio",
+        "OJOS": "Verdes"
+      },
+      "portfolioImages": [
+        "/assets/thumbnail%20men/SERGIO.webp"
+      ]
+    },
+    {
+      "id": "stanley",
+      "name": "STANLEY",
+      "category": "men",
+      "thumbnailUrl": "/assets/thumbnail%20men/STANLEY.webp",
+      "details": {
+        "ESTATURA": "1.85 mts",
+        "CAMISA": "M",
+        "PANTALON": 31,
+        "ZAPATOS": 43,
+        "CABELLO": "Castaño",
+        "OJOS": "Negros"
+      },
+      "portfolioImages": [
+        "/assets/thumbnail%20men/STANLEY.webp"
+      ]
+    },
+    {
+      "id": "steven",
+      "name": "STEVEN",
+      "category": "men",
+      "thumbnailUrl": "/assets/thumbnail%20men/STEVEN.webp",
+      "details": {
+        "ESTATURA": "1.92 mts",
+        "CAMISA": "M",
+        "PANTALON": 32,
+        "ZAPATOS": 42,
+        "CABELLO": "Castaño",
+        "OJOS": "Negros"
+      },
+      "portfolioImages": [
+        "/assets/thumbnail%20men/STEVEN.webp"
+      ]
+    },
+    {
+      "id": "tanner",
+      "name": "TANNER",
+      "category": "men",
+      "thumbnailUrl": "/assets/thumbnail%20men/TANNER.webp",
+      "details": {
+        "ESTATURA": "1.90 mts",
+        "CAMISA": "M",
+        "PANTALON": 31,
+        "ZAPATOS": 43,
+        "CABELLO": "Castaño",
+        "OJOS": "Café"
+      },
+      "portfolioImages": [
+        "/assets/thumbnail%20men/TANNER.webp"
+      ]
+    },
+    {
+      "id": "victor",
+      "name": "VICTOR",
+      "category": "men",
+      "thumbnailUrl": "/assets/thumbnail%20men/VICTOR.webp",
+      "details": {
+        "ESTATURA": "1.85 mts",
+        "CAMISA": "L",
+        "PANTALON": 32,
+        "ZAPATOS": 44,
+        "CABELLO": "Castaño",
+        "OJOS": "Miel"
+      },
+      "portfolioImages": [
+        "/assets/thumbnail%20men/VICTOR.webp"
+      ]
+    },
+    {
+      "id": "william",
+      "name": "WILLIAM",
+      "category": "men",
+      "thumbnailUrl": "/assets/thumbnail%20men/WILLIAM.webp",
+      "details": {
+        "ESTATURA": "1.83 mts",
+        "CAMISA": "M",
+        "PANTALON": 31,
+        "ZAPATOS": 40,
+        "CABELLO": "Castaño",
+        "OJOS": "Café"
+      },
+      "portfolioImages": [
+        "/assets/thumbnail%20men/WILLIAM.webp"
+      ]
+    }
+  ]
+}

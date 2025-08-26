@@ -1,0 +1,32 @@
+[
+  {
+    "id": "event1",
+    "title_en": "Fashion Week Showcase",
+    "title_es": "Desfile Semana de la Moda",
+    "date_en": "October 26, 2024",
+    "date_es": "26 de octubre de 2024",
+    "description_en": "Our models graced the runways of the annual Fashion Week, showcasing the latest collections from renowned designers.",
+    "description_es": "Nuestras modelos desfilaron en las pasarelas de la Semana de la Moda anual, presentando las últimas colecciones de diseñadores de renombre.",
+    "image": "https://images.pexels.com/photos/1036623/pexels-photo-1036623.jpeg?auto=compress&cs=tinysrgb&w=800"
+  },
+  {
+    "id": "event2",
+    "title_en": "New Faces Casting Call",
+    "title_es": "Casting de Nuevos Talentos",
+    "date_en": "September 15, 2024",
+    "date_es": "15 de septiembre de 2024",
+    "description_en": "We hosted a successful casting call to discover fresh talent for upcoming campaigns and projects.",
+    "description_es": "Realizamos un exitoso casting para descubrir nuevos talentos para próximas campañas y proyectos.",
+    "image": "https://images.pexels.com/photos/1036627/pexels-photo-1036627.jpeg?auto=compress&cs=tinysrgb&w=800"
+  },
+  {
+    "id": "event3",
+    "title_en": "Charity Fashion Gala",
+    "title_es": "Gala Benéfica de Moda",
+    "date_en": "November 10, 2024",
+    "date_es": "10 de noviembre de 2024",
+    "description_en": "Participated in a glamorous charity fashion gala, raising funds for a noble cause.",
+    "description_es": "Participamos en una glamurosa gala benéfica de moda, recaudando fondos para una causa noble.",
+    "image": "https://images.pexels.com/photos/1036630/pexels-photo-1036630.jpeg?auto=compress&cs=tinysrgb&w=800"
+  }
+]

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto Basico - Portfolio</title>
+    <meta name="description" content="Portafolio de nuestros modelos en Contacto Básico. Descubre las fotos, medidas y detalles de nuestros talentos.">
+    <meta name="keywords" content="portafolio, modelos, fotos de modelos, medidas de modelos, contacto basico">
+    <meta property="og:title" content="Contacto Basico - Portfolio">
+    <meta property="og:description" content="Portafolio de nuestros modelos en Contacto Básico. Descubre las fotos, medidas y detalles de nuestros talentos.">
+    <meta property="og:image" content="https://www.contactobasico.com/assets/logo.png">
+    <meta property="og:url" content="https://www.contactobasico.com/pages/portfolio.html">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Contacto Basico - Portfolio">
+    <meta name="twitter:description" content="Portafolio de nuestros modelos en Contacto Básico. Descubre las fotos, medidas y detalles de nuestros talentos.">
+    <meta name="twitter:image" content="https://www.contactobasico.com/assets/logo.png">
+    <link rel="icon" href="../assets/logo.png" type="image/png">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/portfolio.css">
+</head>
+<body class="subpage" style="visibility: hidden;">
+    <header class="main-header">
+        <a href="/" class="logo-link">
+            <img src="../assets/logo.png" alt="Básico Model Management Logo" class="logo" loading="lazy">
+        </a>
+        <button class="menu-toggle" aria-label="Toggle navigation menu">
+            <span class="hamburger"></span>
+        </button>
+        <div class="nav-container">
+            <nav class="main-nav">
+                <a href="../pages/women.html" data-translate="nav_women">Women</a>
+                <a href="../pages/men.html" data-translate="nav_men">Men</a>
+                <a href="../pages/about-us.html" data-translate="nav_about_us">About Us</a>
+                <a href="../pages/events.html" data-translate="nav_events">Events</a>
+                <a href="../pages/become-a-model.html" data-translate="nav_become_a_model">Become a Model</a>
+                <a href="../pages/contact-us.html" data-translate="nav_contact_us">Contact Us</a>
+            </nav>
+            <div class="language-toggle">
+                <button id="current-lang" class="active">
+                    <span id="current-lang-text">EN</span>
+                </button>
+                <div class="language-dropdown" id="language-dropdown">
+                    <button id="lang-en" data-lang="en">
+                        <span>English</span>
+                    </button>
+                    <button id="lang-es" data-lang="es">
+                        <span>Español</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main id="portfolio-main" class="portfolio-main">
+        <div class="back-button-container"; style="margin-bottom: 40px; margin-top: -15px;">
+            <button id="backButton" class="back-button" onclick="history.back()">REGRESAR</button>
+        </div>
+        <img src="../assets/Long-logo.png" alt="Contacto Basico Logo" class="site-title-logo" style="position: relative; top: -30px;" loading="lazy">
+        <h1 class="modelNameBook"></h1>
+        <div class="carousel-container">
+            <div class="carousel-images"></div>
+            <button class="carousel-button prev">&#10094;</button>
+            <button class="carousel-button next">&#10095;</button>
+        </div>
+        <div class="model-details-container">
+            <h2 data-translate="portfolio_details">Details</h2>
+            <ul class="modelBookMeasurements"></ul>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-bottom">
+            <p>&copy; 2025 Contacto Basico. <span data-translate="copyright">All rights reserved.</span></p>
+        </div>
+    </footer>
+    
+    <script src="../js/translations.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/menu.js"></script>
+</body>
+</html>

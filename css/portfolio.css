@@ -1,0 +1,308 @@
+.portfolio-main {
+  padding-top: 2.5rem !important;
+}
+
+.portfolio-main .modelNameBook {
+  font-family: 'Open Sans', sans-serif !important;
+  text-align: center;
+  font-size: 1.875rem;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  font-weight: 700;
+}
+
+.back-button-container {
+  text-align: center;
+  padding: 1.5rem 0 0.5rem 0;
+  position: relative;
+  top: 0;
+}
+
+.back-button {
+  background: none;
+  color: #333;
+  border: none;
+  padding: 0.25rem 0;
+  cursor: pointer;
+  font-size: 0.75rem;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.back-button:hover {
+  color: #6b7280;
+  transform: translateY(-2px);
+}
+
+.back-button::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #000;
+  transition: width .3s ease;
+}
+
+.back-button:hover::after {
+  width: 100%;
+}
+
+.carousel-container {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  margin: 0.5rem auto;
+  aspect-ratio: 2/3;
+  overflow: visible;
+  max-height: 550px;
+}
+
+.carousel-images {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotateX(0deg);
+  width: auto;
+  height: 500px;
+  max-width: none;
+  max-height: none;
+  object-fit: contain;
+  opacity: 0;
+  transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  z-index: 0;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.carousel-image-pair {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotateX(0deg);
+  opacity: 0;
+  transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  z-index: 0;
+}
+
+.carousel-image-pair img {
+  height: 500px;
+  max-width: none;
+  max-height: none;
+  object-fit: contain;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.carousel-image.active,
+.carousel-image-pair.active {
+  opacity: 1;
+  transform: translate(-50%, -50%) rotateX(0deg) translateZ(0);
+  z-index: 2;
+}
+
+.carousel-image.prev-active,
+.carousel-image-pair.prev-active {
+  opacity: 0;
+  transform: translate(-150%, -50%) rotateX(-90deg) translateZ(-100px);
+  z-index: 1;
+}
+
+.carousel-image.next-active,
+.carousel-image-pair.next-active {
+  opacity: 0;
+  transform: translate(50%, -50%) rotateX(90deg) translateZ(-100px);
+  z-index: 1;
+}
+
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: rgb(148, 148, 148);
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 10;
+  transition: all 0.3s ease;
+  width: 60px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(5px);
+  background: rgba(255, 255, 255, 0);
+  border-radius: 40%;
+  padding: 0;
+}
+
+.carousel-button:hover {
+  background: rgba(219, 219, 219, 0.8);
+  transform: translateY(-50%) scale(1.1);
+  border-radius: 60%;
+}
+
+.carousel-button.prev {
+  left: 20px;
+}
+
+.carousel-button.next {
+  right: 20px;
+}
+
+.model-details-container {
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+  background-color: #fefefe;
+}
+
+.model-details-container h2 {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: var(--color-text-light);
+}
+
+.modelBookMeasurements {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: .5rem;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  margin: 0 auto;
+  overflow-x: auto;
+  padding-bottom: .5rem;
+}
+
+@media (max-width: 768px) {
+  .modelBookMeasurements {
+    flex-wrap: wrap;
+    padding-bottom: 1rem;
+  }
+  
+  .portfolio-main .modelNameBook {
+    font-size: 1.5rem;
+  }
+  
+  .carousel-container {
+    max-width: 90%;
+  }
+  
+  .model-details-container {
+    padding: 1rem;
+  }
+  
+  .model-details-container h2 {
+    font-size: 1.125rem;
+  }
+}
+
+.modelBookMeasurements .measurement-item {
+  background-color: var(--color-background);
+  padding: .5rem 1rem;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, .05);
+  text-align: center;
+  white-space: nowrap;
+  transition: transform .2s ease;
+}
+
+.modelBookMeasurements .measurement-item:not(.non-convertible) {
+  cursor: pointer;
+}
+
+.modelBookMeasurements .measurement-item:not(.non-convertible):hover {
+  transform: scale(1.05);
+}
+
+.modelBookMeasurements .measurementName {
+  font-family: var(--font-primary);
+  font-size: .8rem;
+  color: var(--color-text-light);
+  margin-bottom: .15rem;
+}
+
+.modelBookMeasurements .measurements {
+  font-family: var(--font-secondary);
+  font-size: .85rem;
+  color: var(--color-text-light);
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+}
+
+.portfolio-grid img {
+  width: 100%;
+  height: 375px;
+  object-fit: cover;
+}
+
+.portfolio-name-wrapper {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.portfolio-name {
+  font-size: 2.25rem;
+  font-weight: normal;
+  text-transform: capitalize;
+  letter-spacing: .05em;
+  font-family: var(--font-primary);
+}
+
+.portfolio-sub-nav {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 3rem;
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+  padding: .75rem 0;
+}
+
+.portfolio-sub-nav a {
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: .05em;
+  color: var(--color-text-light);
+  transition: color .3s ease;
+}
+
+.portfolio-sub-nav a:hover {
+  color: var(--color-accent);
+}
+
+.portfolio-sub-nav a.active {
+  color: var(--color-accent);
+  font-weight: 700;
+}
+
+.portfolio-content-section {
+  display: none;
+}
+
+.portfolio-content-section.active {
+  display: block;
+}

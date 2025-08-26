@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Básico Model Management</title>
+    <meta name="description" content="Síguenos en nuestras redes sociales y descubre nuestro contenido exclusivo en Instagram.">
+
+    <!-- Favicon -->
+    <link rel="icon" href="../assets/favicon.jpg" type="image/png">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.contactobasico.com/pages/contact-us.html">
+    <meta property="og:title" content="Contacto - Básico Model Management">
+    <meta property="og:description" content="Síguenos en nuestras redes sociales y descubre nuestro contenido exclusivo en Instagram.">
+    <meta property="og:image" content="https://www.contactobasico.com/assets/logo.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.contactobasico.com/pages/contact-us.html">
+    <meta property="twitter:title" content="Contacto - Básico Model Management">
+    <meta property="twitter:description" content="Síguenos en nuestras redes sociales y descubre nuestro contenido exclusivo en Instagram.">
+    <meta property="twitter:image" content="https://www.contactobasico.com/assets/logo.png">
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/header.css">
+
+    <!-- JSON-LD Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ContactPage",
+      "name": "Página de Contacto de Básico Model Management",
+      "description": "Síguenos en nuestras redes sociales y descubre nuestro contenido exclusivo en Instagram.",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.contactobasico.com/pages/contact-us.html"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Básico Model Management",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.contactobasico.com/assets/logo.png"
+        }
+      }
+    }
+    </script>
+</head>
+<body class="subpage" style="visibility: hidden;">
+    <header class="main-header">
+        <a href="/" class="logo-link">
+            <img src="../assets/logo.png" alt="Básico Model Management Logo" class="logo" loading="lazy">
+        </a>
+        <button class="menu-toggle" aria-label="Toggle navigation menu">
+            <span class="hamburger"></span>
+        </button>
+        <div class="nav-container">
+            <nav class="main-nav">
+                <a href="../pages/women.html" data-translate="nav_women">Women</a>
+                <a href="../pages/men.html" data-translate="nav_men">Men</a>
+                <a href="../pages/about-us.html" data-translate="nav_about_us">About Us</a>
+                <a href="../pages/events.html" data-translate="nav_events">Events</a>
+                <a href="../pages/become-a-model.html" data-translate="nav_become_a_model">Become a Model</a>
+                <a href="../pages/contact-us.html" class="active" data-translate="nav_contact_us">Contact Us</a>
+            </nav>
+            <div class="language-toggle">
+                <button id="current-lang" class="active">
+                    <span id="current-lang-text">EN</span>
+                </button>
+                <div class="language-dropdown" id="language-dropdown">
+                    <button id="lang-en" data-lang="en">
+                        <span>English</span>
+                    </button>
+                    <button id="lang-es" data-lang="es">
+                        <span>Español</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="contact-main">
+        <section class="contact-intro" style="margin-top: 40px;">
+            <h1 class="site-title" data-translate="contact_us_title">Contact Us</h1>
+            <p data-translate="contact_us_p2">Síguenos en nuestras redes sociales y mantente al tanto de nuestras últimas novedades y contenido exclusivo.</p>
+        </section>
+
+        <div class="social-media-container">
+            <section class="social-media-section">
+                <h2 data-translate="contact_social_title">Síguenos en Nuestras Redes</h2>
+                <ul class="social-links">
+                    <li><a href="https://www.instagram.com/contactobasicomodelmgmt/" target="_blank" aria-label="Instagram"><img src="/assets/buttons/instagram.png" alt="Instagram"></a></li>
+                    <li><a href="https://facebook.com/contactobasico" target="_blank" aria-label="Facebook"><img src="/assets/buttons/facebook.png" alt="Facebook"></a></li>
+                    <li><a href="https://twitter.com/contactobasico" target="_blank" aria-label="Twitter"><img src="/assets/buttons/gorjeo.png" alt="Twitter"></a></li>
+                    <li><a href="https://tiktok.com/@contactobasico" target="_blank" aria-label="TikTok"><img src="/assets/buttons/tik-tok.png" alt="TikTok"></a></li>
+                </ul>
+                
+                <div class="instagram-feed">
+                    <h2 data-translate="contact_instagram_title">Nuestro Contenido en Instagram</h2>
+                    <p data-translate="contact_instagram_desc">Descubre nuestras últimas publicaciones y novedades</p>
+                    <iframe src="https://www.instagram.com/contactobasicomodelmgmt/embed" width="700" height="350" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-bottom">
+            <p>&copy; 2025 Contacto Basico. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../js/translations.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/menu.js"></script>
+  
+</body>
+</html>
