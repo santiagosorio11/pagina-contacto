@@ -331,7 +331,8 @@ p, a, li, label, input, textarea, button, .event-description, .about-us-content 
 .model-grid-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-  gap: 2rem;
+  gap: 1rem;
+  column-gap: 0.5rem;
   margin: 0 100px;
 }
 
@@ -628,11 +629,6 @@ p, a, li, label, input, textarea, button, .event-description, .about-us-content 
   margin-top: 20px;
 }
 
-.form-intro h2 {
-  font-size: 1.8rem;
-  color: var(--color-title);
-  margin-bottom: 1rem;
-}
 
 .form-intro p {
   line-height: 1.6;
@@ -648,7 +644,7 @@ p, a, li, label, input, textarea, button, .event-description, .about-us-content 
 }
 
 .form-group {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .form-group label {
@@ -679,8 +675,8 @@ p, a, li, label, input, textarea, button, .event-description, .about-us-content 
 }
 
 .form-section {
-  margin-bottom: 2rem;
-  padding-bottom: 1.5rem;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
   border-bottom: 1px solid #eee;
 }
 
@@ -814,67 +810,11 @@ p, a, li, label, input, textarea, button, .event-description, .about-us-content 
   padding: .25rem 1rem;
   border-top: 1px solid var(--color-border);
   font-size: .75rem;
-}
-
-.footer-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 2rem;
-  max-width: 1400px;
-  margin: 0 auto;
-}
-
-.footer-column h3 {
-  font-family: var(--font-primary);
-  text-transform: uppercase;
-  color: var(--color-title);
-  font-weight: 600;
-  font-size: .825rem;
-  font-size: 1rem;
-  font-weight: normal;
-  color: var(--color-text);
-  margin-bottom: .25rem;
-  text-transform: uppercase;
-  letter-spacing: .05em;
-  font-family: var(--font-secondary);
-}
-
-.footer-column ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.footer-column ul li {
-  margin-bottom: .5rem;
-}
-
-.footer-column ul a {
-  transition: color .3s ease;
-}
-
-.footer-column ul a:hover {
-  color: var(--color-accent);
-}
-
-.footer-column h3 {
-  font-weight: normal;
-  letter-spacing: .05em;
-}
-
-.footer-column a, .footer-column li, .footer-bottom p {
-  text-transform: none;
-}
-
-.footer-bottom {
-  margin-top: 1rem;
-  padding-top: 1rem;
-  border-top: 1px solid var(--color-border);
   text-align: center;
   max-width: 1400px;
-  margin-left: auto;
-  margin-right: auto;
 }
+
+
 
 /* --- ANIMATIONS --- */
 @keyframes fadeIn {

@@ -173,71 +173,156 @@ async function loadPortfolioPage() {
         if (carouselImagesContainer && model.portfolioImages && model.portfolioImages.length > 0) {
             carouselImagesContainer.innerHTML = ''; // Clear existing images
 
-            // Create image pairs (first image alone, others in pairs)
-            const imageElements = [];
-            
-            // First image (alone and centered)
-            const firstImg = document.createElement('img');
-            firstImg.src = model.portfolioImages[0];
-            firstImg.alt = `${model.name} 1`;
-            firstImg.classList.add('carousel-image');
-            firstImg.classList.add('active');
-            carouselImagesContainer.appendChild(firstImg);
-            imageElements.push(firstImg);
-
-            // Create pairs for remaining images
-            for (let i = 1; i < model.portfolioImages.length; i += 2) {
-                const pairContainer = document.createElement('div');
-                pairContainer.classList.add('carousel-image-pair');
-                
-                const img1 = document.createElement('img');
-                img1.src = model.portfolioImages[i];
-                img1.alt = `${model.name} ${i + 1}`;
-                
-                pairContainer.appendChild(img1);
-                
-                // Check if there's a second image for this pair
-                if (i + 1 < model.portfolioImages.length) {
-                    const img2 = document.createElement('img');
-                    img2.src = model.portfolioImages[i + 1];
-                    img2.alt = `${model.name} ${i + 2}`;
-                    pairContainer.appendChild(img2);
-                }
-                
-                carouselImagesContainer.appendChild(pairContainer);
-                imageElements.push(pairContainer);
-            }
-
-            const showImage = (index) => {
-                // Remove all active classes
-                imageElements.forEach(element => {
-                    element.classList.remove('active', 'prev-active', 'next-active');
-                });
-
-                // Add the appropriate classes for CSS transitions
-                imageElements.forEach((element, i) => {
-                    if (i === index) {
-                        element.classList.add('active');
-                    } else if (i === (index - 1 + imageElements.length) % imageElements.length) {
-                        element.classList.add('prev-active');
-                    } else if (i === (index + 1) % imageElements.length) {
-                        element.classList.add('next-active');
-                    }
+            // Function to check if an image is horizontal
+            const isImageHorizontal = (imgUrl) => {
+                return new Promise((resolve) => {
+                    const img = new Image();
+                    img.onload = function() {
+                        resolve(this.naturalWidth > this.naturalHeight);
+                    };
+                    img.onerror = function() {
+                        // If there's an error loading the image, assume it's not horizontal
+                        resolve(false);
+                    };
+                    img.src = imgUrl;
                 });
             };
 
-            prevButton.addEventListener('click', () => {
-                currentImageIndex = (currentImageIndex - 1 + imageElements.length) % imageElements.length;
-                showImage(currentImageIndex);
-            });
+            // Function to process images and create carousel
+            const processImagesAndCreateCarousel = async () => {
+                // Separate horizontal images from regular images
+                const regularImages = [];
+                const horizontalImages = [];
+                
+                // Check all images concurrently
+                const imageChecks = model.portfolioImages.map(async (imgUrl, index) => {
+                    const isHorizontal = await isImageHorizontal(imgUrl);
+                    return { url: imgUrl, index, isHorizontal };
+                });
+                
+                const imageResults = await Promise.all(imageChecks);
+                
+                // Separate images based on their orientation
+                imageResults.forEach(imgData => {
+                    if (imgData.isHorizontal) {
+                        horizontalImages.push(imgData);
+                    } else {
+                        regularImages.push(imgData);
+                    }
+                });
+                
+                // Create slide elements
+                const slideElements = [];
+                
+                // Process regular images: first image alone, others in pairs
+                for (let i = 0; i < regularImages.length; i++) {
+                    let slideContainer = document.createElement('div');
+                    slideContainer.classList.add('carousel-slide');
+                    
+                    if (i === 0) {
+                        // First image alone
+                        const img = document.createElement('img');
+                        img.src = regularImages[i].url;
+                        img.alt = `${model.name} ${regularImages[i].index + 1}`;
+                        slideContainer.appendChild(img);
+                    } else {
+                        // Create pairs for remaining images
+                        slideContainer.classList.add('pair');
+                        
+                        const img1 = document.createElement('img');
+                        img1.src = regularImages[i].url;
+                        img1.alt = `${model.name} ${regularImages[i].index + 1}`;
+                        slideContainer.appendChild(img1);
+                        
+                        // Check if there's a second image for this pair
+                        if (i + 1 < regularImages.length) {
+                            const img2 = document.createElement('img');
+                            img2.src = regularImages[i + 1].url;
+                            img2.alt = `${model.name} ${regularImages[i + 1].index + 1}`;
+                            slideContainer.appendChild(img2);
+                            i++; // Skip next image as it's already processed
+                        }
+                    }
+                    
+                    carouselImagesContainer.appendChild(slideContainer);
+                    slideElements.push(slideContainer);
+                }
+                
+                // Process horizontal images (alone at the end)
+                horizontalImages.forEach((imgData, hIndex) => {
+                    const slideContainer = document.createElement('div');
+                    slideContainer.classList.add('carousel-slide');
+                    
+                    const img = document.createElement('img');
+                    img.src = imgData.url;
+                    img.alt = `${model.name} ${imgData.index + 1}`;
+                    slideContainer.appendChild(img);
+                    
+                    carouselImagesContainer.appendChild(slideContainer);
+                    slideElements.push(slideContainer);
+                });
 
-            nextButton.addEventListener('click', () => {
-                currentImageIndex = (currentImageIndex + 1) % imageElements.length;
-                showImage(currentImageIndex);
-            });
+                const showSlide = (index) => {
+                    // Position all slides
+                    slideElements.forEach((slide, i) => {
+                        slide.classList.remove('active', 'prev', 'next');
+                        
+                        if (i === index) {
+                            slide.classList.add('active');
+                        } else if (i < index) {
+                            slide.classList.add('prev');
+                        } else {
+                            slide.classList.add('next');
+                        }
+                    });
+                    
+                    // Update button states
+                    if (index === 0) {
+                        prevButton.disabled = true;
+                        prevButton.style.opacity = '0.5';
+                        prevButton.style.cursor = 'not-allowed';
+                    } else {
+                        prevButton.disabled = false;
+                        prevButton.style.opacity = '1';
+                        prevButton.style.cursor = 'pointer';
+                    }
+                    
+                    if (index === slideElements.length - 1) {
+                        nextButton.disabled = true;
+                        nextButton.style.opacity = '0.5';
+                        nextButton.style.cursor = 'not-allowed';
+                    } else {
+                        nextButton.disabled = false;
+                        nextButton.style.opacity = '1';
+                        nextButton.style.cursor = 'pointer';
+                    }
+                };
 
-            // Initialize carousel display
-            showImage(currentImageIndex);
+                const goToNextSlide = () => {
+                    // Non-infinite carousel - stop at the end
+                    if (currentImageIndex < slideElements.length - 1) {
+                        currentImageIndex++;
+                        showSlide(currentImageIndex);
+                    }
+                };
+
+                const goToPrevSlide = () => {
+                    // Non-infinite carousel - stop at the beginning
+                    if (currentImageIndex > 0) {
+                        currentImageIndex--;
+                        showSlide(currentImageIndex);
+                    }
+                };
+
+                prevButton.addEventListener('click', goToPrevSlide);
+                nextButton.addEventListener('click', goToNextSlide);
+
+                // Initialize carousel display
+                showSlide(currentImageIndex);
+            };
+
+            // Start processing images
+            processImagesAndCreateCarousel();
 
         } else if (carouselImagesContainer) {
             carouselImagesContainer.innerHTML = '<p>No portfolio images available.</p>';

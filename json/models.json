@@ -89,7 +89,7 @@
         "/models/mujeres/ana%20schlesinger/ANA%20SCHLESINGER%204.webp",
         "/models/mujeres/ana%20schlesinger/ANA%20SCHLESINGER%205.webp",
         "/models/mujeres/ana%20schlesinger/ANA%20SCHLESINGER%206.webp",
-        "/models/mujeres/ana%20schlesinger/ANA%20SCHLESINGER%207.webp",
+      
         "/models/mujeres/ana%20schlesinger/ANA%20SCHLESINGER%208.webp",
         "/models/mujeres/ana%20schlesinger/ANA%20SCHLESINGER%209.webp"
       ]
@@ -239,15 +239,15 @@
       },
       "portfolioImages": [
         "/assets/thumbnail%20women/CAMILA.webp",
+        "/models/mujeres/camila%20tinoco/CAMILA%20TINOCO%2025.webp",
         "/models/mujeres/camila%20tinoco/CAMILA%20TINOCO%201.webp",
-        "/models/mujeres/camila%20tinoco/CAMILA%20TINOCO%2010.webp",
         "/models/mujeres/camila%20tinoco/CAMILA%20TINOCO%2011.webp",
         "/models/mujeres/camila%20tinoco/CAMILA%20TINOCO%2012.webp",
         "/models/mujeres/camila%20tinoco/CAMILA%20TINOCO%2013.webp",
         "/models/mujeres/camila%20tinoco/CAMILA%20TINOCO%2014.webp",
         "/models/mujeres/camila%20tinoco/CAMILA%20TINOCO%2015.webp",
         "/models/mujeres/camila%20tinoco/CAMILA%20TINOCO%2016.webp",
-        "/models/mujeres/camila%20tinoco/CAMILA%20TINOCO%2017.webp",
+        
         "/models/mujeres/camila%20tinoco/CAMILA%20TINOCO%2018.webp",
         "/models/mujeres/camila%20tinoco/CAMILA%20TINOCO%2019.webp",
         "/models/mujeres/camila%20tinoco/CAMILA%20TINOCO%202.webp",
@@ -256,7 +256,7 @@
         "/models/mujeres/camila%20tinoco/CAMILA%20TINOCO%2022.webp",
         "/models/mujeres/camila%20tinoco/CAMILA%20TINOCO%2023.webp",
         "/models/mujeres/camila%20tinoco/CAMILA%20TINOCO%2024.webp",
-        "/models/mujeres/camila%20tinoco/CAMILA%20TINOCO%2025.webp",
+        
         "/models/mujeres/camila%20tinoco/CAMILA%20TINOCO%203.webp",
         "/models/mujeres/camila%20tinoco/CAMILA%20TINOCO%204.webp",
         "/models/mujeres/camila%20tinoco/CAMILA%20TINOCO%205.webp",
@@ -267,30 +267,84 @@
       ]
     },
     {
-      "id": "claudette,\"\"\"1\",90,64,96,s,7,38,castaño,café,34b,m,",
-      "name": "CLAUDETTE,\"\"\"1\",90,64,96,S,7,38,Castaño,Café,34B,M,",
+      "id": "claudette",
+      "name": "CLAUDETTE",
       "category": "women",
-      "thumbnailUrl": "/assets/thumbnail%20women/CLAUDETTE,\"\"\"1\",90,64,96,S,7,38,CASTAÑO,CAFÉ,34B,M,.webp",
-      "details": {},
+      "thumbnailUrl": "/assets/thumbnail%20women/CLAUDETTE.webp",
+      "details": {
+        "ESTATURA": "1.78 mts",
+        "BUSTO": 90.0,
+        "CINTURA": 64.0,
+        "CADERA": 96.0,
+        "BLUSA": "S",
+        "PANTALON": 7.0,
+        "ZAPATOS": 38.0,
+        "CABELLO": "Castaño",
+        "OJOS": "Café",
+        "BRASSIER": "34B",
+        "PANTY": "M"
+      },
       "portfolioImages": [
-        "/assets/thumbnail%20women/CLAUDETTE,\"\"\"1\",90,64,96,S,7,38,CASTAÑO,CAFÉ,34B,M,.webp"
+        "/assets/thumbnail%20women/CLAUDETTE.webp",
+        "/models/mujeres/claudette%20abu/CLAUDETTE%20ABUCHAIBE%201.webp",
+        "/models/mujeres/claudette%20abu/CLAUDETTE%20ABUCHAIBE%202.webp",
+        "/models/mujeres/claudette%20abu/CLAUDETTE%20ABUCHAIBE%203.webp",
+        "/models/mujeres/claudette%20abu/CLAUDETTE%20ABUCHAIBE%204.webp",
+        "/models/mujeres/claudette%20abu/CLAUDETTE%20ABUCHAIBE%205.webp",
+        "/models/mujeres/claudette%20abu/CLAUDETTE%20ABUCHAIBE%206.webp",
+        "/models/mujeres/claudette%20abu/CLAUDETTE%20ABUCHAIBE%207.webp",
+        "/models/mujeres/claudette%20abu/CLAUDETTE%20ABUCHAIBE%208.webp",
+        "/models/mujeres/claudette%20abu/CLAUDETTE%20ABUCHAIBE%209.webp",
+        "/models/mujeres/claudette%20abu/CLAUDETTE%20ABUCHAIBE%2010.webp",
+        "/models/mujeres/claudette%20abu/CLAUDETTE%20ABUCHAIBE%2011.webp",
+        "/models/mujeres/claudette%20abu/CLAUDETTE%20ABUCHAIBE%2012.webp"
+        
       ]
     },
     {
       "id": "danielae",
       "name": "DANIELA E",
       "category": "women",
-      "thumbnailUrl": "/assets/thumbnail%20women/DANIELA E.webp",
-      "details": {},
+      "thumbnailUrl": "/assets/thumbnail%20women/DANIELA%20E.webp",
+      "details": {
+        "ESTATURA": "1.77 mts",
+        "BUSTO": 85.0,
+        "CINTURA": 64.0,
+        "CADERA": 93.0,
+        "BLUSA": "S",
+        "PANTALON": 6.0,
+        "ZAPATOS": 39.0,
+        "CABELLO": "Castaño",
+        "OJOS": "Café",
+        "BRASSIER": "34",
+        "PANTY": "S"
+      },
       "portfolioImages": [
-        "/assets/thumbnail%20women/DANIELA E.webp"
+        "/assets/thumbnail%20women/DANIELA.webp",
+        "/models/mujeres/daniela%20erazo/DANIELA%20ERAZO%201.webp",
+        "/models/mujeres/daniela%20erazo/DANIELA%20ERAZO%202.webp",
+        "/models/mujeres/daniela%20erazo/DANIELA%20ERAZO%203.webp",
+        "/models/mujeres/daniela%20erazo/DANIELA%20ERAZO%204.webp",
+        "/models/mujeres/daniela%20erazo/DANIELA%20ERAZO%205.webp",
+        "/models/mujeres/daniela%20erazo/DANIELA%20ERAZO%206.webp",
+        "/models/mujeres/daniela%20erazo/DANIELA%20ERAZO%207.webp",
+        "/models/mujeres/daniela%20erazo/DANIELA%20ERAZO%208.webp",
+        "/models/mujeres/daniela%20erazo/DANIELA%20ERAZO%209.webp",
+        "/models/mujeres/daniela%20erazo/DANIELA%20ERAZO%2010.webp",
+        "/models/mujeres/daniela%20erazo/DANIELA%20ERAZO%2011.webp",
+        "/models/mujeres/daniela%20erazo/DANIELA%20ERAZO%2012.webp",
+        "/models/mujeres/daniela%20erazo/DANIELA%20ERAZO%2013.webp",
+        "/models/mujeres/daniela%20erazo/DANIELA%20ERAZO%2014.webp",
+        "/models/mujeres/daniela%20erazo/DANIELA%20ERAZO%2015.webp",
+        "/models/mujeres/daniela%20erazo/DANIELA%20ERAZO%2016.webp",
+        "/models/mujeres/daniela%20erazo/DANIELA%20ERAZO%2017.webp"
       ]
     },
     {
       "id": "danielav",
       "name": "DANIELA V",
       "category": "women",
-      "thumbnailUrl": "/assets/thumbnail%20women/DANIELA V.webp",
+      "thumbnailUrl": "/assets/thumbnail%20women/DANIELAV.webp",
       "details": {
         "ESTATURA": "1.75 mts",
         "BUSTO": 85.0,
@@ -305,7 +359,24 @@
         "PANTY": "S"
       },
       "portfolioImages": [
-        "/assets/thumbnail%20women/DANIELA V.webp"
+        "/assets/thumbnail%20women/DANIELAV.webp",
+        "/models/mujeres/daniela%20vega/DANIELA%20VEGA%201.webp",
+        "/models/mujeres/daniela%20vega/DANIELA%20VEGA%202.webp",
+        "/models/mujeres/daniela%20vega/DANIELA%20VEGA%203.webp",
+        "/models/mujeres/daniela%20vega/DANIELA%20VEGA%204.webp",
+        "/models/mujeres/daniela%20vega/DANIELA%20VEGA%205.webp",
+        "/models/mujeres/daniela%20vega/DANIELA%20VEGA%206.webp",
+        "/models/mujeres/daniela%20vega/DANIELA%20VEGA%207.webp",
+        "/models/mujeres/daniela%20vega/DANIELA%20VEGA%208.webp",
+        "/models/mujeres/daniela%20vega/DANIELA%20VEGA%209.webp",
+        "/models/mujeres/daniela%20vega/DANIELA%20VEGA%2010.webp",
+        "/models/mujeres/daniela%20vega/DANIELA%20VEGA%2011.webp",
+        "/models/mujeres/daniela%20vega/DANIELA%20VEGA%2012.webp",
+        "/models/mujeres/daniela%20vega/DANIELA%20VEGA%2014.webp",
+        "/models/mujeres/daniela%20vega/DANIELA%20VEGA%2015.webp",
+        "/models/mujeres/daniela%20vega/DANIELA%20VEGA%2016.webp",
+        "/models/mujeres/daniela%20vega/DANIELA%20VEGA%2017.webp",
+        "/models/mujeres/daniela%20vega/DANIELA%20VEGA%2018.webp"
       ]
     },
     {
@@ -349,7 +420,41 @@
         "PANTY": "S"
       },
       "portfolioImages": [
-        "/assets/thumbnail%20women/FANY.webp"
+        "/assets/thumbnail%20women/FANY.webp",
+        "/models/mujeres/fany%20morelo/FANY%20MORELO%201.webp",
+        "/models/mujeres/fany%20morelo/FANY%20MORELO%202.webp",
+        "/models/mujeres/fany%20morelo/FANY%20MORELO%203.webp",
+        "/models/mujeres/fany%20morelo/FANY%20MORELO%204.webp",
+        "/models/mujeres/fany%20morelo/FANY%20MORELO%205.webp",
+        "/models/mujeres/fany%20morelo/FANY%20MORELO%206.webp",
+        "/models/mujeres/fany%20morelo/FANY%20MORELO%207.webp",
+        "/models/mujeres/fany%20morelo/FANY%20MORELO%208.webp",
+        "/models/mujeres/fany%20morelo/FANY%20MORELO%209.webp",
+        "/models/mujeres/fany%20morelo/FANY%20MORELO%2010.webp",
+        "/models/mujeres/fany%20morelo/FANY%20MORELO%2011.webp",
+        "/models/mujeres/fany%20morelo/FANY%20MORELO%2012.webp",
+        "/models/mujeres/fany%20morelo/FANY%20MORELO%2013.webp",
+        "/models/mujeres/fany%20morelo/FANY%20MORELO%2014.webp",
+        "/models/mujeres/fany%20morelo/FANY%20MORELO%2015.webp",
+        "/models/mujeres/fany%20morelo/FANY%20MORELO%2016.webp",
+        "/models/mujeres/fany%20morelo/FANY%20MORELO%2017.webp",
+        "/models/mujeres/fany%20morelo/FANY%20MORELO%2018.webp",
+        "/models/mujeres/fany%20morelo/FANY%20MORELO%2019.webp",
+        "/models/mujeres/fany%20morelo/FANY%20MORELO%2020.webp",
+        "/models/mujeres/fany%20morelo/FANY%20MORELO%2021.webp",
+        "/models/mujeres/fany%20morelo/FANY%20MORELO%2022.webp",
+        "/models/mujeres/fany%20morelo/FANY%20MORELO%2023.webp",
+        "/models/mujeres/fany%20morelo/FANY%20MORELO%2024.webp",
+        "/models/mujeres/fany%20morelo/FANY%20MORELO%2025.webp",
+        "/models/mujeres/fany%20morelo/FANY%20MORELO%2026.webp",
+        "/models/mujeres/fany%20morelo/FANY%20MORELO%2027.webp",
+        "/models/mujeres/fany%20morelo/FANY%20MORELO%2028.webp",
+        "/models/mujeres/fany%20morelo/FANY%20MORELO%2029.webp",
+        "/models/mujeres/fany%20morelo/FANY%20MORELO%2030.webp",
+        "/models/mujeres/fany%20morelo/FANY%20MORELO%2031.webp",
+        "/models/mujeres/fany%20morelo/FANY%20MORELO%2032.webp",
+        "/models/mujeres/fany%20morelo/FANY%20MORELO%2033.webp",
+        "/models/mujeres/fany%20morelo/FANY%20MORELO%2034.webp"
       ]
     },
     {
@@ -944,7 +1049,7 @@
         "PANTY": "S"
       },
       "portfolioImages": [
-        "/assets/thumbnail%20women/SOPHIA%20.webp"
+        "/assets/thumbnail%20women/SOPHIA.webp"
       ]
     },
     {
@@ -1014,10 +1119,10 @@
       ]
     },
     {
-      "id": "valeriaa",
+      "id": "valeria-a",
       "name": "VALERIA A",
       "category": "women",
-      "thumbnailUrl": "/assets/thumbnail%20women/VALERIA A.webp",
+      "thumbnailUrl": "/assets/thumbnail%20women/VALERIAA.webp",
       "details": {
         "ESTATURA": "1.73 mts",
         "BUSTO": 85.0,
@@ -1032,14 +1137,14 @@
         "PANTY": "S"
       },
       "portfolioImages": [
-        "/assets/thumbnail%20women/VALERIA%20A.webp"
+        "/assets/thumbnail%20women/VALERIAA.webp"
       ]
     },
     {
-      "id": "valeriam",
+      "id": "valeria-m",
       "name": "VALERIA M",
       "category": "women",
-      "thumbnailUrl": "/assets/thumbnail%20women/VALERIA M.webp",
+      "thumbnailUrl": "/assets/thumbnail%20women/VALERIAM.webp",
       "details": {
         "ESTATURA": "1.72 mts",
         "BUSTO": 88.0,
@@ -1054,7 +1159,7 @@
         "PANTY": "S"
       },
       "portfolioImages": [
-        "/assets/thumbnail%20women/VALERIA%20M.webp"
+        "/assets/thumbnail%20women/VALERIAM.webp"
       ]
     },
     {
