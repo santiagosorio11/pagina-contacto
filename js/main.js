@@ -287,23 +287,20 @@ async function loadPortfolioPage() {
                         prevButton.style.cursor = 'pointer';
                     }
                     
-                    if (index === slideElements.length - 1) {
-                        nextButton.disabled = true;
-                        nextButton.style.opacity = '0.5';
-                        nextButton.style.cursor = 'not-allowed';
-                    } else {
-                        nextButton.disabled = false;
-                        nextButton.style.opacity = '1';
-                        nextButton.style.cursor = 'pointer';
-                    }
+                    // Always keep next button enabled for infinite looping
+                    nextButton.disabled = false;
+                    nextButton.style.opacity = '1';
+                    nextButton.style.cursor = 'pointer';
                 };
 
                 const goToNextSlide = () => {
-                    // Non-infinite carousel - stop at the end
+                    // Jump to first image when clicking next on the last image
                     if (currentImageIndex < slideElements.length - 1) {
                         currentImageIndex++;
-                        showSlide(currentImageIndex);
+                    } else {
+                        currentImageIndex = 0; // Jump back to first image
                     }
+                    showSlide(currentImageIndex);
                 };
 
                 const goToPrevSlide = () => {
