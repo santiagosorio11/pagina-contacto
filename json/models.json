@@ -141,35 +141,7 @@
         "/models/mujeres/anastasiia/ANASTASIIA%20PUZYRNAYA%209.webp"
       ]
     },
-    {
-      "id": "andrea",
-      "name": "ANDREA",
-      "category": "women",
-      "thumbnailUrl": "/assets/thumbnail%20women/ANDREA.webp",
-      "details": {},
-      "portfolioImages": [
-        "/assets/thumbnail%20women/ANDREA.webp",
-        "/models/mujeres/andrea%20Escobar/ANDREA%20ESCOBAR%201.webp",
-        "/models/mujeres/andrea%20Escobar/ANDREA%20ESCOBAR%2010.webp",
-        "/models/mujeres/andrea%20Escobar/ANDREA%20ESCOBAR%2011.webp",
-        "/models/mujeres/andrea%20Escobar/ANDREA%20ESCOBAR%2012.webp",
-        "/models/mujeres/andrea%20Escobar/ANDREA%20ESCOBAR%2013.webp",
-        "/models/mujeres/andrea%20Escobar/ANDREA%20ESCOBAR%2014.webp",
-        "/models/mujeres/andrea%20Escobar/ANDREA%20ESCOBAR%2015.webp",
-        "/models/mujeres/andrea%20Escobar/ANDREA%20ESCOBAR%2016.webp",
-        "/models/mujeres/andrea%20Escobar/ANDREA%20ESCOBAR%2017.webp",
-        "/models/mujeres/andrea%20Escobar/ANDREA%20ESCOBAR%2018.webp",
-        "/models/mujeres/andrea%20Escobar/ANDREA%20ESCOBAR%2019.webp",
-        "/models/mujeres/andrea%20Escobar/ANDREA%20ESCOBAR%202.webp",
-        "/models/mujeres/andrea%20Escobar/ANDREA%20ESCOBAR%2020.webp",
-        "/models/mujeres/andrea%20Escobar/ANDREA%20ESCOBAR%203.webp",
-        "/models/mujeres/andrea%20Escobar/ANDREA%20ESCOBAR%205.webp",
-        "/models/mujeres/andrea%20Escobar/ANDREA%20ESCOBAR%206.webp",
-        "/models/mujeres/andrea%20Escobar/ANDREA%20ESCOBAR%207.webp",
-        "/models/mujeres/andrea%20Escobar/ANDREA%20ESCOBAR%208.webp",
-        "/models/mujeres/andrea%20Escobar/ANDREA%20ESCOBAR%209.webp"
-      ]
-    },
+  
     {
       "id": "bel",
       "name": "BEL",
