@@ -1,0 +1,33 @@
+.slick-prev, .slick-next {
+  position: absolute;
+  display: block;
+  height: 75px;
+  width: 50px;
+  line-height: 0;
+  font-size: 0;
+  cursor: pointer;
+  background: transparent;
+  color: transparent;
+  top: 50%;
+  margin-top: -37.5px;
+  padding: 0;
+  border: none;
+  outline: none; }
+
+.slick-prev::before, .slick-next::before {
+  content: '';
+  width: 32px;
+  height: 60px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  display: block;
+}
+
+.slick-prev::before {
+  background-image: url('../assets/buttons/prev.svg');
+}
+
+.slick-next::before {
+  background-image: url('../assets/buttons/next.svg');
+}

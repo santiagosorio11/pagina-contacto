@@ -30,6 +30,7 @@
         </button>
         <div class="nav-container">
             <nav class="main-nav">
+                <button id="backButton" class="back-button" onclick="history.back()" style="font-family: 'Proxima Nova', sans-serif; font-size: .75rem; font-weight: normal; letter-spacing: .05em; color: var(--color-text); background: none; border: none; cursor: pointer; padding: .5rem 0; transition: all .3s ease-in-out; position: relative; text-transform: capitalize;">REGRESAR</button>
                 <a href="../pages/women.html" data-translate="nav_women">Women</a>
                 <a href="../pages/men.html" data-translate="nav_men">Men</a>
                 <a href="../pages/about-us.html" data-translate="nav_about_us">About Us</a>
@@ -54,15 +55,12 @@
     </header>
 
     <main id="portfolio-main" class="portfolio-main">
-        <div class="back-button-container"; style="margin-bottom: 40px; margin-top: -15px;">
-            <button id="backButton" class="back-button" onclick="history.back()">REGRESAR</button>
-        </div>
         <img src="../assets/Long-logo.png" alt="Contacto Basico Logo" class="site-title-logo" style="position: relative; top: -30px;" loading="lazy">
         <h1 class="modelNameBook"></h1>
         <div class="carousel-container">
             <div class="carousel-images"></div>
-            <button class="carousel-button prev">&#10094;</button>
-            <button class="carousel-button next">&#10095;</button>
+            <button class="carousel-button prev"></button>
+            <button class="carousel-button next"></button>
         </div>
         <div class="model-details-container">
             <ul class="modelBookMeasurements"></ul>

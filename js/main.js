@@ -188,6 +188,11 @@ async function loadPortfolioPage() {
                 });
             };
 
+            // Function to check if device is mobile
+            const isMobile = () => {
+                return window.innerWidth <= 768;
+            };
+
             // Function to process images and create carousel
             const processImagesAndCreateCarousel = async () => {
                 // Separate horizontal images from regular images
@@ -214,53 +219,70 @@ async function loadPortfolioPage() {
                 // Create slide elements
                 const slideElements = [];
                 
-                // Process regular images: first image alone, others in pairs
-                for (let i = 0; i < regularImages.length; i++) {
-                    let slideContainer = document.createElement('div');
-                    slideContainer.classList.add('carousel-slide');
-                    
-                    if (i === 0) {
-                        // First image alone
+                if (isMobile()) {
+                    // On mobile, show one image per slide
+                    [...regularImages, ...horizontalImages].forEach((imgData, index) => {
+                        const slideContainer = document.createElement('div');
+                        slideContainer.classList.add('carousel-slide');
+                        
                         const img = document.createElement('img');
-                        img.src = regularImages[i].url;
-                        img.alt = `${model.name} ${regularImages[i].index + 1}`;
+                        img.src = imgData.url;
+                        img.alt = `${model.name} ${imgData.index + 1}`;
                         slideContainer.appendChild(img);
-                    } else {
-                        // Create pairs for remaining images
-                        slideContainer.classList.add('pair');
                         
-                        const img1 = document.createElement('img');
-                        img1.src = regularImages[i].url;
-                        img1.alt = `${model.name} ${regularImages[i].index + 1}`;
-                        slideContainer.appendChild(img1);
+                        carouselImagesContainer.appendChild(slideContainer);
+                        slideElements.push(slideContainer);
+                    });
+                } else {
+                    // On desktop, use the existing logic
+                    // Process regular images: first image alone, others in pairs
+                    for (let i = 0; i < regularImages.length; i++) {
+                        let slideContainer = document.createElement('div');
+                        slideContainer.classList.add('carousel-slide');
                         
-                        // Check if there's a second image for this pair
-                        if (i + 1 < regularImages.length) {
-                            const img2 = document.createElement('img');
-                            img2.src = regularImages[i + 1].url;
-                            img2.alt = `${model.name} ${regularImages[i + 1].index + 1}`;
-                            slideContainer.appendChild(img2);
-                            i++; // Skip next image as it's already processed
+                        if (i === 0) {
+                            // First image alone
+                            const img = document.createElement('img');
+                            img.src = regularImages[i].url;
+                            img.alt = `${model.name} ${regularImages[i].index + 1}`;
+                            slideContainer.appendChild(img);
+                        } else {
+                            // Create pairs for remaining images
+                            slideContainer.classList.add('pair');
+                            
+                            const img1 = document.createElement('img');
+                            img1.src = regularImages[i].url;
+                            img1.alt = `${model.name} ${regularImages[i].index + 1}`;
+                            slideContainer.appendChild(img1);
+                            
+                            // Check if there's a second image for this pair
+                            if (i + 1 < regularImages.length) {
+                                const img2 = document.createElement('img');
+                                img2.src = regularImages[i + 1].url;
+                                img2.alt = `${model.name} ${regularImages[i + 1].index + 1}`;
+                                slideContainer.appendChild(img2);
+                                i++; // Skip next image as it's already processed
+                            }
                         }
+                        
+                        carouselImagesContainer.appendChild(slideContainer);
+                        slideElements.push(slideContainer);
                     }
                     
-                    carouselImagesContainer.appendChild(slideContainer);
-                    slideElements.push(slideContainer);
+                    // Process horizontal images (alone at the end)
+                    horizontalImages.forEach((imgData, hIndex) => {
+                        const slideContainer = document.createElement('div');
+                        slideContainer.classList.add('carousel-slide');
+                        
+                        const img = document.createElement('img');
+                        img.src = imgData.url;
+                        img.alt = `${model.name} ${imgData.index + 1}`;
+                        slideContainer.appendChild(img);
+                        
+                        carouselImagesContainer.appendChild(slideContainer);
+                        slideElements.push(slideContainer);
+                    });
                 }
-                
-                // Process horizontal images (alone at the end)
-                horizontalImages.forEach((imgData, hIndex) => {
-                    const slideContainer = document.createElement('div');
-                    slideContainer.classList.add('carousel-slide');
-                    
-                    const img = document.createElement('img');
-                    img.src = imgData.url;
-                    img.alt = `${model.name} ${imgData.index + 1}`;
-                    slideContainer.appendChild(img);
-                    
-                    carouselImagesContainer.appendChild(slideContainer);
-                    slideElements.push(slideContainer);
-                });
 
                 const showSlide = (index) => {
                     // Position all slides
@@ -320,6 +342,19 @@ async function loadPortfolioPage() {
 
             // Start processing images
             processImagesAndCreateCarousel();
+
+            // Handle window resize to adjust carousel for mobile/desktop
+            let isMobileView = isMobile();
+            window.addEventListener('resize', () => {
+                const currentlyMobile = isMobile();
+                if (isMobileView !== currentlyMobile) {
+                    isMobileView = currentlyMobile;
+                    // Rebuild carousel when switching between mobile and desktop
+                    carouselImagesContainer.innerHTML = '';
+                    currentImageIndex = 0;
+                    processImagesAndCreateCarousel();
+                }
+            });
 
         } else if (carouselImagesContainer) {
             carouselImagesContainer.innerHTML = '<p>No portfolio images available.</p>';
