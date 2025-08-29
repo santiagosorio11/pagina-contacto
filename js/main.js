@@ -360,6 +360,21 @@ async function loadPortfolioPage() {
             carouselImagesContainer.innerHTML = '<p>No portfolio images available.</p>';
         }
 
+        // Update tab links with the current model ID
+        const portfolioTab = document.getElementById('portfolio-tab');
+        const polaroidsTab = document.getElementById('polaroids-tab');
+        const videosTab = document.getElementById('videos-tab');
+        
+        if (portfolioTab) {
+            portfolioTab.href = `portfolio.html?id=${modelId}`;
+        }
+        if (polaroidsTab) {
+            polaroidsTab.href = `polaroids.html?id=${modelId}`;
+        }
+        if (videosTab) {
+            videosTab.href = `videos.html?id=${modelId}`;
+        }
+
         console.log("Portfolio page built successfully");
 
     } catch (error) {
