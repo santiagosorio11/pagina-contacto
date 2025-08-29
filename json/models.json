@@ -1662,10 +1662,10 @@
       ]
     },
     {
-      "id": "davida",
+      "id": "david-a",
       "name": "DAVID A",
       "category": "men",
-      "thumbnailUrl": "/assets/thumbnail%20men/DAVID A.webp",
+      "thumbnailUrl": "/assets/thumbnail%20men/DAVIDA.webp",
       "details": {
         "ESTATURA": "1.84 mts",
         "CAMISA": "M",
@@ -1675,7 +1675,7 @@
         "OJOS": "Verdes"
       },
       "portfolioImages": [
-        "/assets/thumbnail%20men/DAVID%20A.webp",
+        "/assets/thumbnail%20men/DAVIDA.webp",
         "/models/hombres/DAVID%20ACUNA/DAVID%20ACUNA%201.webp",
         "/models/hombres/DAVID%20ACUNA/DAVID%20ACUNA%2010.webp",
         "/models/hombres/DAVID%20ACUNA/DAVID%20ACUNA%2011.webp",
@@ -1701,10 +1701,10 @@
       ]
     },
     {
-      "id": "davidc",
+      "id": "david-c",
       "name": "DAVID C",
       "category": "men",
-      "thumbnailUrl": "/assets/thumbnail%20men/DAVID C.webp",
+      "thumbnailUrl": "/assets/thumbnail%20men/DAVIDC.webp",
       "details": {
         "ESTATURA": "1.85 mts",
         "CAMISA": "M",
@@ -1714,29 +1714,8 @@
         "OJOS": "Azules"
       },
       "portfolioImages": [
-        "/assets/thumbnail%20men/DAVID%20C.webp",
-        "/models/hombres/DAVID%20ACUNA/DAVID%20ACUNA%201.webp",
-        "/models/hombres/DAVID%20ACUNA/DAVID%20ACUNA%2010.webp",
-        "/models/hombres/DAVID%20ACUNA/DAVID%20ACUNA%2011.webp",
-        "/models/hombres/DAVID%20ACUNA/DAVID%20ACUNA%2012.webp",
-        "/models/hombres/DAVID%20ACUNA/DAVID%20ACUNA%2013.webp",
-        "/models/hombres/DAVID%20ACUNA/DAVID%20ACUNA%2014.webp",
-        "/models/hombres/DAVID%20ACUNA/DAVID%20ACUNA%2015.webp",
-        "/models/hombres/DAVID%20ACUNA/DAVID%20ACUNA%2017.webp",
-        "/models/hombres/DAVID%20ACUNA/DAVID%20ACUNA%2018.webp",
-        "/models/hombres/DAVID%20ACUNA/DAVID%20ACUNA%2019.webp",
-        "/models/hombres/DAVID%20ACUNA/DAVID%20ACUNA%202.webp",
-        "/models/hombres/DAVID%20ACUNA/DAVID%20ACUNA%2020.webp",
-        "/models/hombres/DAVID%20ACUNA/DAVID%20ACUNA%2021.webp",
-        "/models/hombres/DAVID%20ACUNA/DAVID%20ACUNA%2022.webp",
-        "/models/hombres/DAVID%20ACUNA/DAVID%20ACUNA%2023.webp",
-        "/models/hombres/DAVID%20ACUNA/DAVID%20ACUNA%203.webp",
-        "/models/hombres/DAVID%20ACUNA/DAVID%20ACUNA%204.webp",
-        "/models/hombres/DAVID%20ACUNA/DAVID%20ACUNA%205.webp",
-        "/models/hombres/DAVID%20ACUNA/DAVID%20ACUNA%206.webp",
-        "/models/hombres/DAVID%20ACUNA/DAVID%20ACUNA%207.webp",
-        "/models/hombres/DAVID%20ACUNA/DAVID%20ACUNA%208.webp",
-        "/models/hombres/DAVID%20ACUNA/DAVID%20ACUNA%209.webp"
+        "/assets/thumbnail%20men/DAVIDC.webp"
+    
       ]
     },
     {
