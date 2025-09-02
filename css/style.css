@@ -530,6 +530,7 @@ p, a, li, label, input, textarea, button, .event-description, .about-us-content 
   box-shadow: 0 4px 20px rgba(0, 0, 0, .1);
   transition: all .3s ease;
   width: 350px;
+  height: 500px;
   display: block;
   position: relative;
   transform-origin: center;
@@ -545,8 +546,8 @@ p, a, li, label, input, textarea, button, .event-description, .about-us-content 
 }
 
 .event-image {
-  width: 100%;
-  height: 200px;
+  width: 350px;
+  height: 220px;
   object-fit: cover;
   transition: transform .3s ease;
 }
@@ -556,35 +557,33 @@ p, a, li, label, input, textarea, button, .event-description, .about-us-content 
 }
 
 .event-details {
-  padding: 1.5rem;
+  padding: 0.5rem;
 }
 
 .event-title {
   font-family: var(--font-primary);
   font-size: 1.125rem;
-  font-weight: normal;
-  margin-bottom: .5rem;
+  font-weight: 600;
+  margin-bottom: -5px;
   color: var(--color-title);
   text-transform: capitalize;
+  text-align: center;
 }
 
-.event-date {
-  color: var(--color-text-light);
-  font-size: .9rem;
-  margin-bottom: 1rem;
-}
 
 .event-description {
   line-height: 1.6;
-  margin-bottom: 1rem;
+  margin-bottom: -30px;
   font-size: 0.9rem;
   color: var(--color-text);
+  text-align: justify;
 }
 
 .event-social {
   font-size: 0.9rem;
   color: var(--color-text-light);
   font-style: italic;
+  font-weight: 600;
 }
 
 /* --- CONTACT --- */

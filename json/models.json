@@ -1131,7 +1131,7 @@
       ]
     },
     {
-      "id": "marianelly",
+      "id": "maria-nelly",
       "name": "MARIA NELLY",
       "category": "women",
       "thumbnailUrl": "/assets/thumbnail%20women/MARIA NELLY.webp",
@@ -1205,13 +1205,39 @@
       ]
     },
     {
-      "id": "maria,\"\"\"1\",80,64,90,s,6,38,castaño,verdes,32a,s,",
-      "name": "MARIA,\"\"\"1\",80,64,90,S,6,38,Castaño,Verdes,32A,S,",
+      "id": "maria",
+      "name": "MARIA",
       "category": "women",
-      "thumbnailUrl": "/assets/thumbnail%20women/MARIA,\"\"\"1\",80,64,90,S,6,38,CASTAÑO,VERDES,32A,S,.webp",
+      "thumbnailUrl": "/assets/thumbnail%20women/MARIA.webp",
       "details": {},
       "portfolioImages": [
-        "/assets/thumbnail%20women/MARIA,\"\"\"1\",80,64,90,S,6,38,CASTAÑO,VERDES,32A,S,.webp"
+        "/assets/thumbnail%20women/MARIA.webp",
+        "/models/mujeres/maria%20castillo/MARIA%20CASTILLO%201.webp",
+        "/models/mujeres/maria%20castillo/MARIA%20CASTILLO%2010.webp",
+        "/models/mujeres/maria%20castillo/MARIA%20CASTILLO%2011.webp",
+        "/models/mujeres/maria%20castillo/MARIA%20CASTILLO%2012.webp",
+        "/models/mujeres/maria%20castillo/MARIA%20CASTILLO%2013.webp",
+        "/models/mujeres/maria%20castillo/MARIA%20CASTILLO%2014.webp",
+        "/models/mujeres/maria%20castillo/MARIA%20CASTILLO%2015.webp",
+        "/models/mujeres/maria%20castillo/MARIA%20CASTILLO%2016.webp",
+        "/models/mujeres/maria%20castillo/MARIA%20CASTILLO%2017.webp",
+        "/models/mujeres/maria%20castillo/MARIA%20CASTILLO%2018.webp",
+        "/models/mujeres/maria%20castillo/MARIA%20CASTILLO%2019.webp",
+        "/models/mujeres/maria%20castillo/MARIA%20CASTILLO%202.webp",
+        "/models/mujeres/maria%20castillo/MARIA%20CASTILLO%2020.webp",
+        "/models/mujeres/maria%20castillo/MARIA%20CASTILLO%2021.webp",
+        "/models/mujeres/maria%20castillo/MARIA%20CASTILLO%2023.webp",
+        "/models/mujeres/maria%20castillo/MARIA%20CASTILLO%2024.webp",
+        "/models/mujeres/maria%20castillo/MARIA%20CASTILLO%2025.webp",
+        "/models/mujeres/maria%20castillo/MARIA%20CASTILLO%2026.webp",
+        "/models/mujeres/maria%20castillo/MARIA%20CASTILLO%2027.webp",
+        "/models/mujeres/maria%20castillo/MARIA%20CASTILLO%2028.webp",
+        "/models/mujeres/maria%20castillo/MARIA%20CASTILLO%203.webp",
+        "/models/mujeres/maria%20castillo/MARIA%20CASTILLO%205.webp",
+        "/models/mujeres/maria%20castillo/MARIA%20CASTILLO%206.webp",
+        "/models/mujeres/maria%20castillo/MARIA%20CASTILLO%207.webp",
+        "/models/mujeres/maria%20castillo/MARIA%20CASTILLO%208.webp",
+        "/models/mujeres/maria%20castillo/MARIA%20CASTILLO%209.webp"
       ]
     },
     {
@@ -3447,17 +3473,6 @@
     },
     
     
-    {
-      "id": "maria",
-      "name": "MARIA",
-      "category": "women",
-      "thumbnailUrl": "/assets/thumbnail%20women/MARIA.webp",
-      "details": {},
-      "portfolioImages": [
-        "/assets/thumbnail%20women/MARIA.webp"
-        
-      ]
-    },
     {
       "id": "jose",
       "name": "JOSE",
