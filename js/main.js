@@ -134,147 +134,129 @@ async function loadPortfolioPage() {
     const mainContainer = document.getElementById('portfolio-main');
     if (!mainContainer) {
         console.error("Could not find the element with id 'portfolio-main'");
-        // Make sure body is visible even if there's an error
         document.body.style.visibility = 'visible';
         return;
     }
 
     const params = new URLSearchParams(window.location.search);
     const modelId = params.get('id');
-    console.log("Model ID from URL:", modelId);
-
     if (!modelId) {
         mainContainer.innerHTML = '<h1>Model not specified.</h1>';
-        // Make sure body is visible
         document.body.style.visibility = 'visible';
         return;
     }
 
     try {
-        console.log("Fetching models.json and translations.json...");
         const [data, translations] = await fetchData(['/json/models.json', '/json/translations.json']);
-        console.log("Successfully parsed models.json and translations.json");
-
         const model = data.models.find(m => m.id === modelId);
-        console.log("Found model:", model);
 
         if (!model) {
             mainContainer.innerHTML = '<h1>Model not found.</h1>';
-            // Make sure body is visible
             document.body.style.visibility = 'visible';
             return;
         }
 
         document.title = `Contacto Basico - ${model.name}`;
-
-        // Populate Model Name
         const modelNameElement = document.querySelector('.modelNameBook');
         if (modelNameElement) {
             modelNameElement.textContent = model.name;
         }
 
-        // Populate Model Measurements
         const measurementsList = document.querySelector('.modelBookMeasurements');
         if (measurementsList) {
-            measurementsList.innerHTML = ''; // Clear existing placeholders
+            measurementsList.innerHTML = '';
             const currentLang = localStorage.getItem('preferred_language') || detectLanguage();
-
             for (const key in model.details) {
                 const value = model.details[key];
                 const measurementItem = document.createElement('div');
                 measurementItem.classList.add('measurement-item');
-
                 const nameSpan = document.createElement('span');
                 nameSpan.className = 'measurementName';
                 const translationKey = `detail_${key.toLowerCase()}`;
                 nameSpan.setAttribute('data-translation-key', translationKey);
                 const translatedLabel = translations[currentLang][translationKey] || key;
                 nameSpan.textContent = `${translatedLabel}: `;
-
                 const valueSpan = document.createElement('span');
                 valueSpan.className = 'measurements';
-
                 valueSpan.textContent = value;
                 measurementItem.classList.add('non-convertible');
-
                 measurementItem.appendChild(nameSpan);
                 measurementItem.appendChild(valueSpan);
                 measurementsList.appendChild(measurementItem);
             }
         }
 
-        // Custom Carousel Implementation with Slide Animation
         const carouselImagesContainer = document.querySelector('.carousel-images');
         const prevButton = document.querySelector('.carousel-button.prev');
         const nextButton = document.querySelector('.carousel-button.next');
         let currentImageIndex = 0;
 
         if (carouselImagesContainer && model.portfolioImages && model.portfolioImages.length > 0) {
-            carouselImagesContainer.innerHTML = ''; // Clear existing images
+            carouselImagesContainer.innerHTML = '';
 
-            // Function to check if an image is horizontal
-            const isImageHorizontal = (imgUrl) => {
-                return new Promise((resolve) => {
-                    const img = new Image();
-                    img.onload = function() {
-                        resolve(this.naturalWidth > this.naturalHeight);
-                    };
-                    img.onerror = function() {
-                        // If there's an error loading the image, assume it's not horizontal
-                        resolve(false);
-                    };
-                    img.src = imgUrl;
-                });
-            };
+            const isImageHorizontal = (imgUrl) => new Promise((resolve) => {
+                const img = new Image();
+                img.onload = () => resolve(img.naturalWidth > img.naturalHeight);
+                img.onerror = () => resolve(false);
+                img.src = imgUrl;
+            });
 
-            // Function to check if device is mobile
-            const isMobile = () => {
-                return window.innerWidth <= 768;
-            };
+            const isMobile = () => window.innerWidth <= 768;
 
-            // Function to process images and create carousel
             const processImagesAndCreateCarousel = async () => {
-                // Separate horizontal images from regular images
-                const regularImages = [];
-                const horizontalImages = [];
-                
-                // Check all images concurrently
-                const imageChecks = model.portfolioImages.map(async (imgUrl, index) => {
-                    const isHorizontal = await isImageHorizontal(imgUrl);
-                    return { url: imgUrl, index, isHorizontal };
-                });
-                
+                const imageChecks = model.portfolioImages.map(async (imgUrl, index) => ({ url: imgUrl, index, isHorizontal: await isImageHorizontal(imgUrl) }));
                 const imageResults = await Promise.all(imageChecks);
-                
-                // Separate images based on their orientation
-                imageResults.forEach(imgData => {
-                    if (imgData.isHorizontal) {
-                        horizontalImages.push(imgData);
-                    } else {
-                        regularImages.push(imgData);
-                    }
-                });
-                
-                // Create slide elements
+                const regularImages = imageResults.filter(img => !img.isHorizontal);
+                const horizontalImages = imageResults.filter(img => img.isHorizontal);
+
                 const slideElements = [];
-                
+                carouselImagesContainer.innerHTML = '';
+
                 if (isMobile()) {
-                    // On mobile, show one image per slide
-                    [...regularImages, ...horizontalImages].forEach((imgData, index) => {
+                    [...regularImages, ...horizontalImages].forEach((imgData) => {
                         const slideContainer = document.createElement('div');
                         slideContainer.classList.add('carousel-slide');
-                        
                         const img = document.createElement('img');
                         img.src = imgData.url;
                         img.alt = `${model.name} ${imgData.index + 1}`;
                         slideContainer.appendChild(img);
-                        
                         carouselImagesContainer.appendChild(slideContainer);
                         slideElements.push(slideContainer);
                     });
+
+                    let touchStartX = 0;
+                    let touchEndX = 0;
+                    let isDragging = false;
+
+                    carouselImagesContainer.addEventListener('touchstart', (e) => {
+                        isDragging = true;
+                        touchStartX = e.touches[0].clientX;
+                        carouselImagesContainer.style.transition = 'none';
+                    });
+
+                    carouselImagesContainer.addEventListener('touchmove', (e) => {
+                        if (!isDragging) return;
+                        const currentX = e.touches[0].clientX;
+                        const diff = currentX - touchStartX;
+                        carouselImagesContainer.style.transform = `translateX(calc(-${currentImageIndex * 100}% + ${diff}px))`;
+                    });
+
+                    carouselImagesContainer.addEventListener('touchend', (e) => {
+                        isDragging = false;
+                        touchEndX = e.changedTouches[0].clientX;
+                        carouselImagesContainer.style.transition = 'transform 0.3s ease-out';
+                        const swipeThreshold = 50;
+
+                        if (touchStartX - touchEndX > swipeThreshold) {
+                            currentImageIndex = Math.min(currentImageIndex + 1, slideElements.length - 1);
+                        } else if (touchEndX - touchStartX > swipeThreshold) {
+                            currentImageIndex = Math.max(currentImageIndex - 1, 0);
+                        }
+                        carouselImagesContainer.style.transform = `translateX(-${currentImageIndex * 100}%)`;
+                    });
+
                 } else {
                     // On desktop, use the existing logic
-                    // Process regular images: first image alone, others in pairs
                     for (let i = 0; i < regularImages.length; i++) {
                         let slideContainer = document.createElement('div');
                         slideContainer.classList.add('carousel-slide');
@@ -321,75 +303,71 @@ async function loadPortfolioPage() {
                         carouselImagesContainer.appendChild(slideContainer);
                         slideElements.push(slideContainer);
                     });
-                }
 
-                const showSlide = (index) => {
-                    // Position all slides
-                    slideElements.forEach((slide, i) => {
-                        slide.classList.remove('active', 'prev', 'next');
+                    const showSlide = (index) => {
+                        // Position all slides
+                        slideElements.forEach((slide, i) => {
+                            slide.classList.remove('active', 'prev', 'next');
+                            
+                            if (i === index) {
+                                slide.classList.add('active');
+                            } else if (i < index) {
+                                slide.classList.add('prev');
+                            } else {
+                                slide.classList.add('next');
+                            }
+                        });
                         
-                        if (i === index) {
-                            slide.classList.add('active');
-                        } else if (i < index) {
-                            slide.classList.add('prev');
+                        // Update button states
+                        if (index === 0) {
+                            prevButton.disabled = true;
+                            prevButton.style.opacity = '0.5';
+                            prevButton.style.cursor = 'not-allowed';
                         } else {
-                            slide.classList.add('next');
+                            prevButton.disabled = false;
+                            prevButton.style.opacity = '1';
+                            prevButton.style.cursor = 'pointer';
                         }
-                    });
-                    
-                    // Update button states
-                    if (index === 0) {
-                        prevButton.disabled = true;
-                        prevButton.style.opacity = '0.5';
-                        prevButton.style.cursor = 'not-allowed';
-                    } else {
-                        prevButton.disabled = false;
-                        prevButton.style.opacity = '1';
-                        prevButton.style.cursor = 'pointer';
-                    }
-                    
-                    // Always keep next button enabled for infinite looping
-                    nextButton.disabled = false;
-                    nextButton.style.opacity = '1';
-                    nextButton.style.cursor = 'pointer';
-                };
+                        
+                        // Always keep next button enabled for infinite looping
+                        nextButton.disabled = false;
+                        nextButton.style.opacity = '1';
+                        nextButton.style.cursor = 'pointer';
+                    };
 
-                const goToNextSlide = () => {
-                    // Jump to first image when clicking next on the last image
-                    if (currentImageIndex < slideElements.length - 1) {
-                        currentImageIndex++;
-                    } else {
-                        currentImageIndex = 0; // Jump back to first image
-                    }
-                    showSlide(currentImageIndex);
-                };
-
-                const goToPrevSlide = () => {
-                    // Non-infinite carousel - stop at the beginning
-                    if (currentImageIndex > 0) {
-                        currentImageIndex--;
+                    const goToNextSlide = () => {
+                        // Jump to first image when clicking next on the last image
+                        if (currentImageIndex < slideElements.length - 1) {
+                            currentImageIndex++;
+                        } else {
+                            currentImageIndex = 0; // Jump back to first image
+                        }
                         showSlide(currentImageIndex);
-                    }
-                };
+                    };
 
-                prevButton.addEventListener('click', goToPrevSlide);
-                nextButton.addEventListener('click', goToNextSlide);
+                    const goToPrevSlide = () => {
+                        // Non-infinite carousel - stop at the beginning
+                        if (currentImageIndex > 0) {
+                            currentImageIndex--;
+                            showSlide(currentImageIndex);
+                        }
+                    };
 
-                // Initialize carousel display
-                showSlide(currentImageIndex);
+                    prevButton.addEventListener('click', goToPrevSlide);
+                    nextButton.addEventListener('click', goToNextSlide);
+
+                    // Initialize carousel display
+                    showSlide(currentImageIndex);
+                }
             };
 
-            // Start processing images
             processImagesAndCreateCarousel();
 
-            // Handle window resize to adjust carousel for mobile/desktop
             let isMobileView = isMobile();
             window.addEventListener('resize', () => {
                 const currentlyMobile = isMobile();
                 if (isMobileView !== currentlyMobile) {
                     isMobileView = currentlyMobile;
-                    // Rebuild carousel when switching between mobile and desktop
-                    carouselImagesContainer.innerHTML = '';
                     currentImageIndex = 0;
                     processImagesAndCreateCarousel();
                 }
@@ -399,28 +377,17 @@ async function loadPortfolioPage() {
             carouselImagesContainer.innerHTML = '<p>No portfolio images available.</p>';
         }
 
-        // Update tab links with the current model ID
         const portfolioTab = document.getElementById('portfolio-tab');
         const polaroidsTab = document.getElementById('polaroids-tab');
         const videosTab = document.getElementById('videos-tab');
-        
-        if (portfolioTab) {
-            portfolioTab.href = `portfolio.html?id=${modelId}`;
-        }
-        if (polaroidsTab) {
-            polaroidsTab.href = `polaroids.html?id=${modelId}`;
-        }
-        if (videosTab) {
-            videosTab.href = `videos.html?id=${modelId}`;
-        }
-
-        console.log("Portfolio page built successfully");
+        if (portfolioTab) portfolioTab.href = `portfolio.html?id=${modelId}`;
+        if (polaroidsTab) polaroidsTab.href = `polaroids.html?id=${modelId}`;
+        if (videosTab) videosTab.href = `videos.html?id=${modelId}`;
 
     } catch (error) {
         mainContainer.innerHTML = '<h1>Error loading portfolio. Please try again later.</h1>';
         console.error('Fetch error:', error);
     } finally {
-        // Always make sure the body is visible
         document.body.style.visibility = 'visible';
     }
 }
