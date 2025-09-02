@@ -374,9 +374,8 @@ p, a, li, label, input, textarea, button, .event-description, .about-us-content 
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  padding: 1.5rem;
-  text-align: center;
+  align-items: flex-start;
+  padding: 1.5rem 0.5rem;
   pointer-events: none;
 }
 
@@ -387,16 +386,19 @@ p, a, li, label, input, textarea, button, .event-description, .about-us-content 
 .model-details {
   color: white;
   font-size: .9rem;
-  line-height: 1.2;
+  line-height: 1.5;
   margin-top: .5rem;
   opacity: 0;
   transform: translateY(15px);
   transition: opacity .4s .1s ease, transform .4s .1s ease;
-  text-align: center;
+  text-align: left;
+  white-space: normal;
+  word-wrap: break-word;
 }
 
 .model-details p {
   margin: .2rem 0;
+  padding: 1px 0;
   font-family: 'Proxima Nova', sans-serif;
 }
 
