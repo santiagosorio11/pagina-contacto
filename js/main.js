@@ -213,7 +213,8 @@ async function loadPortfolioPage() {
                 carouselImagesContainer.innerHTML = '';
 
                 if (isMobile()) {
-                    [...regularImages, ...horizontalImages].forEach((imgData) => {
+                    const allImages = [...regularImages, ...horizontalImages];
+                    allImages.forEach((imgData) => {
                         const slideContainer = document.createElement('div');
                         slideContainer.classList.add('carousel-slide');
                         const img = document.createElement('img');
@@ -225,35 +226,60 @@ async function loadPortfolioPage() {
                     });
 
                     let touchStartX = 0;
-                    let touchEndX = 0;
+                    let currentX = 0;
                     let isDragging = false;
+                    let startPos = 0;
+                    let currentTranslate = 0;
+                    let prevTranslate = 0;
 
-                    carouselImagesContainer.addEventListener('touchstart', (e) => {
-                        isDragging = true;
-                        touchStartX = e.touches[0].clientX;
-                        carouselImagesContainer.style.transition = 'none';
-                    });
+                    const sliderWidth = carouselImagesContainer.offsetWidth;
 
-                    carouselImagesContainer.addEventListener('touchmove', (e) => {
-                        if (!isDragging) return;
-                        const currentX = e.touches[0].clientX;
-                        const diff = currentX - touchStartX;
-                        carouselImagesContainer.style.transform = `translateX(calc(-${currentImageIndex * 100}% + ${diff}px))`;
-                    });
-
-                    carouselImagesContainer.addEventListener('touchend', (e) => {
-                        isDragging = false;
-                        touchEndX = e.changedTouches[0].clientX;
-                        carouselImagesContainer.style.transition = 'transform 0.3s ease-out';
-                        const swipeThreshold = 50;
-
-                        if (touchStartX - touchEndX > swipeThreshold) {
-                            currentImageIndex = Math.min(currentImageIndex + 1, slideElements.length - 1);
-                        } else if (touchEndX - touchStartX > swipeThreshold) {
-                            currentImageIndex = Math.max(currentImageIndex - 1, 0);
+                    function touchStart(index) {
+                        return function(event) {
+                            currentImageIndex = index;
+                            startPos = event.touches[0].clientX;
+                            isDragging = true;
+                            carouselImagesContainer.style.transition = 'none';
                         }
-                        carouselImagesContainer.style.transform = `translateX(-${currentImageIndex * 100}%)`;
+                    }
+
+                    function touchMove(event) {
+                        if (isDragging) {
+                            const currentPosition = event.touches[0].clientX;
+                            currentTranslate = prevTranslate + currentPosition - startPos;
+                        }
+                    }
+
+                    function touchEnd() {
+                        isDragging = false;
+                        const movedBy = currentTranslate - prevTranslate;
+
+                        if (movedBy < -50 && currentImageIndex < allImages.length - 1) {
+                            currentImageIndex++;
+                        }
+
+                        if (movedBy > 50 && currentImageIndex > 0) {
+                            currentImageIndex--;
+                        }
+
+                        setPositionByIndex();
+
+                        carouselImagesContainer.style.transition = 'transform 0.3s ease-out';
+                    }
+
+                    function setPositionByIndex() {
+                        currentTranslate = currentImageIndex * -sliderWidth;
+                        prevTranslate = currentTranslate;
+                        carouselImagesContainer.style.transform = `translateX(${currentTranslate}px)`;
+                    }
+
+                    slideElements.forEach((slide, index) => {
+                        slide.addEventListener('touchstart', touchStart(index), {passive: true});
+                        slide.addEventListener('touchmove', touchMove, {passive: true});
+                        slide.addEventListener('touchend', touchEnd);
                     });
+
+                    setPositionByIndex();
 
                 } else {
                     // On desktop, use the existing logic
