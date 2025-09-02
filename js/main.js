@@ -52,10 +52,32 @@ function initializeHomepage() {
     const columns = document.querySelectorAll('.mosaic-column');
     if (columns.length === 0) return;
 
+    function getVisibleColumns() {
+        // Get the computed style of the first column to check its display property
+        const firstColumn = columns[0];
+        const computedStyle = window.getComputedStyle(firstColumn);
+        if (computedStyle.display === 'none') return 0;
+
+        // Check viewport width for responsive design
+        const viewportWidth = window.innerWidth;
+        if (viewportWidth < 768) return 1; // Mobile: 1 column
+        if (viewportWidth < 1024) return 2; // Tablet: 2 columns
+        return 3; // Desktop: 3 columns
+    }
+
+    let visibleColumns = getVisibleColumns();
+
     columns.forEach((column, colIndex) => {
         // Apply entrance animation
         column.classList.add('mosaic-entrance-animation');
-        column.style.animationDelay = `${0.1 * (colIndex + 1)}s`; // Staggered entrance
+        
+        // Only show the columns that should be visible based on screen size
+        if (colIndex < visibleColumns) {
+            column.style.animationDelay = `${0.1 * (colIndex + 1)}s`; // Staggered entrance
+            column.style.display = 'block';
+        } else {
+            column.style.display = 'none';
+        }
 
         const images = column.querySelectorAll('img');
         let currentIndex = 0;
@@ -71,16 +93,33 @@ function initializeHomepage() {
         // Staggered interval for image changes
         setTimeout(() => {
             setInterval(() => {
-                // Remove 'active' class from current image
-                images[currentIndex].classList.remove('active');
+                if (colIndex < visibleColumns) { // Solo anima las columnas visibles
+                    // Remove 'active' class from current image
+                    images[currentIndex].classList.remove('active');
 
-                // Calculate index of the next image
-                currentIndex = (currentIndex + 1) % images.length;
+                    // Calculate index of the next image
+                    currentIndex = (currentIndex + 1) % images.length;
 
-                // Add 'active' class to the new image
-                images[currentIndex].classList.add('active');
+                    // Add 'active' class to the new image
+                    images[currentIndex].classList.add('active');
+                }
             }, 4000); // Change image every 4 seconds
-        }, colIndex * 1333); // Stagger the start of each column's interval for a more noticeable effect
+        }, colIndex * 1333); // Stagger the start of each column's interval
+    });
+
+    // Manejar cambios de tamaño de ventana
+    window.addEventListener('resize', () => {
+        const newVisibleColumns = getVisibleColumns();
+        if (newVisibleColumns !== visibleColumns) {
+            visibleColumns = newVisibleColumns;
+            columns.forEach((column, colIndex) => {
+                if (colIndex < visibleColumns) {
+                    column.style.display = 'block';
+                } else {
+                    column.style.display = 'none';
+                }
+            });
+        }
     });
 }
 

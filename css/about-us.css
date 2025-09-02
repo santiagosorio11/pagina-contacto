@@ -1,0 +1,167 @@
+/* About Us Styles */
+.homepage-main-static {
+    padding: 2rem 70px;
+    position: relative;
+    overflow: hidden;
+}
+
+.about-us-container {
+    display: grid;
+    grid-template-columns: 45% 55%;
+    width: 100%;
+    height: 750px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    gap: 2rem;
+}
+
+.about-us-text {
+    padding: 2rem 3rem;
+    width: 650px;
+    margin-left: auto;
+    position: relative;
+    z-index: 2;
+}
+
+.about-us-text .site-title {
+    margin-bottom: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.about-us-text p {
+    font-family: 'Proxima Nova', sans-serif;
+    text-align: justify !important;
+    line-height: 1.6;
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    color: var(--color-text);
+    hyphens: auto;
+}
+
+.about-us-carousel {
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+    width: calc(100% + 70px);
+    margin-top: -20px;
+    margin-left: -70px;
+}
+
+.film-roll-container {
+    display: flex;
+    flex-direction: column;
+    animation: vertical-scroll 80s linear infinite;
+    width: 100%;
+    padding: 0;
+}
+
+.film-roll-container img {
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+    object-fit: contain;
+    margin-bottom: 20px;
+}
+
+@media (min-width: 1024px) {
+    .film-roll-container img {
+        width: 400px;
+        height: auto;
+        max-height: none;
+    }
+    .about-us-container {
+        display: grid;
+        grid-template-columns: 45% 55%;
+        width: 100%;
+        height: 600px;
+        margin: 0;
+        padding: 0;
+        position: relative;
+        gap: 2rem;
+    }
+    .about-us-text {
+        padding: 2rem 3rem;
+        width: 650px;
+        margin-left: auto;
+        position: relative;
+        z-index: 2;
+        margin-top: 110px;
+    }
+}
+
+@keyframes vertical-scroll {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(calc(-50% + 20px)); /* Ajustado para el margin-bottom */
+    }
+}
+
+/* Tablet Styles */
+@media (max-width: 1024px) {
+    .homepage-main-static {
+        padding: 2rem 0 1rem 0;
+        min-height: auto;
+    }
+
+    .about-us-container {
+        grid-template-columns: 1fr;
+        min-height: auto;
+    }
+
+    .about-us-text {
+        padding: 0 1.5rem;
+        margin: 0 auto;
+        width: 100%;
+        max-width: 550px;
+    }
+
+    .about-us-text .site-title {
+        text-align: center;
+    }
+
+    .about-us-carousel {
+        position: relative;
+        width: 450px;
+        height: 700px;
+        margin: 1.5rem auto 0;
+        overflow: hidden;
+        top: auto;
+        left: auto;
+    }
+
+    .film-roll-container img {
+        height: auto;
+        max-height: 100vh;
+    }
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .homepage-main-static {
+        padding: 4rem 0 2rem 0;
+    }
+
+    .about-us-text {
+        padding: 0 1.5rem;
+        max-width: 420px;
+    }
+
+    .about-us-text p {
+        font-size: 1rem;
+        text-align: left;
+    }
+
+    .about-us-carousel {
+        height: 650px;
+        width: 400px;
+        margin-top: 2rem;
+    }
+
+    .film-roll-container img {
+        max-height: 70vh;
+    }
+}

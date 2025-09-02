@@ -47,6 +47,43 @@
       }
     }
     </script>
+
+    <style>
+        .instagram-feed {
+            width: 100%;
+            max-width: 700px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        .instagram-feed iframe {
+            width: 100%;
+            aspect-ratio: 2/1;
+            max-height: 350px;
+            border: none;
+        }
+        @media (max-width: 768px) {
+            .contact-main {
+                padding: 10px;
+            }
+            .social-links {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 10px;
+            }
+            .social-links img {
+                width: 40px;
+                height: 40px;
+            }
+            .instagram-feed {
+                padding: 0 15px;
+            }
+            .instagram-feed iframe {
+                aspect-ratio: 1/1;
+                max-height: none;
+            }
+        }
+    </style>
 </head>
 <body class="subpage" style="visibility: hidden;">
     <header class="main-header">
@@ -100,7 +137,7 @@
                 <div class="instagram-feed">
                     <h2 data-translate="contact_instagram_title">Nuestro Contenido en Instagram</h2>
                     <p data-translate="contact_instagram_desc">Descubre nuestras últimas publicaciones y novedades</p>
-                    <iframe src="https://www.instagram.com/contactobasicomodelmgmt/embed" width="700" height="350" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+                    <iframe src="https://www.instagram.com/contactobasicomodelmgmt/embed" scrolling="no" allowtransparency="true"></iframe>
                 </div>
             </section>
         </div>

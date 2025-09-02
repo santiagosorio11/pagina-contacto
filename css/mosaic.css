@@ -1,0 +1,91 @@
+/* Estilos del mosaico */
+.static-mosaic-container {
+  display: grid;
+  grid-template-columns: repeat(3, 340px);
+  gap: 0;
+  padding: 0;
+  max-width: 1200px;
+  margin: 0 auto 0 auto;
+  width: fit-content;
+  justify-content: center;
+}
+
+.mosaic-column {
+  position: relative;
+  aspect-ratio: 2/3;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  width: 320px;
+}
+
+.mosaic-column img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 320px;
+  height: 450px;
+  object-fit: contain;
+  opacity: 0;
+  transform: translateY(20px) rotateX(10deg);
+  transition: opacity .8s ease, transform .8s ease;
+  transform-origin: bottom center;
+  padding: 0;
+  margin: 0;
+}
+
+.mosaic-column img.active {
+  opacity: 1;
+  transform: translateY(0) rotateX(0deg);
+}
+
+/* Desktop (1024px y superior): 3 columnas */
+@media (min-width: 1024px) {
+  .mosaic-column img {
+    height: 500px;
+    margin-bottom: -4rem;
+    margin-top: -2rem;
+  }
+}
+
+/* Tablet (768px a 1023px): 2 columnas */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .static-mosaic-container {
+    grid-template-columns: repeat(2, 330px);
+    max-width: 700px;
+    margin-bottom: -4rem;
+  }
+  
+  .mosaic-column img {
+    height: 400px;
+  }
+  
+  .mosaic-column:nth-child(3) {
+    display: none;
+  }
+}
+
+/* Mobile (menos de 768px): 1 columna */
+@media (max-width: 767px) {
+  .static-mosaic-container {
+    grid-template-columns: 1fr;
+    width: 100%;
+    padding: 0 40px;
+  }
+  
+  .mosaic-column {
+    height: 400px;
+    width: 100%;
+  }
+  
+  .mosaic-column img {
+    height: 100%;
+    width: 100%;
+  }
+  
+  .mosaic-column:nth-child(2),
+  .mosaic-column:nth-child(3) {
+    display: none;
+  }
+}
