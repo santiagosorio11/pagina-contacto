@@ -225,47 +225,13 @@ async function loadPortfolioPage() {
                         slideElements.push(slideContainer);
                     });
 
-                    let touchStartX = 0;
-                    let currentX = 0;
                     let isDragging = false;
                     let startPos = 0;
                     let currentTranslate = 0;
                     let prevTranslate = 0;
+                    let animationId = 0;
 
                     const sliderWidth = carouselImagesContainer.offsetWidth;
-
-                    function touchStart(index) {
-                        return function(event) {
-                            currentImageIndex = index;
-                            startPos = event.touches[0].clientX;
-                            isDragging = true;
-                            carouselImagesContainer.style.transition = 'none';
-                        }
-                    }
-
-                    function touchMove(event) {
-                        if (isDragging) {
-                            const currentPosition = event.touches[0].clientX;
-                            currentTranslate = prevTranslate + currentPosition - startPos;
-                        }
-                    }
-
-                    function touchEnd() {
-                        isDragging = false;
-                        const movedBy = currentTranslate - prevTranslate;
-
-                        if (movedBy < -50 && currentImageIndex < allImages.length - 1) {
-                            currentImageIndex++;
-                        }
-
-                        if (movedBy > 50 && currentImageIndex > 0) {
-                            currentImageIndex--;
-                        }
-
-                        setPositionByIndex();
-
-                        carouselImagesContainer.style.transition = 'transform 0.3s ease-out';
-                    }
 
                     function setPositionByIndex() {
                         currentTranslate = currentImageIndex * -sliderWidth;
@@ -273,11 +239,46 @@ async function loadPortfolioPage() {
                         carouselImagesContainer.style.transform = `translateX(${currentTranslate}px)`;
                     }
 
-                    slideElements.forEach((slide, index) => {
-                        slide.addEventListener('touchstart', touchStart(index), {passive: true});
-                        slide.addEventListener('touchmove', touchMove, {passive: true});
-                        slide.addEventListener('touchend', touchEnd);
-                    });
+                    function touchStart(event) {
+                        startPos = event.touches[0].clientX;
+                        isDragging = true;
+                        carouselImagesContainer.style.transition = 'none';
+                        prevTranslate = currentTranslate;
+                    }
+
+                    function touchMove(event) {
+                        if (!isDragging) return;
+
+                        const currentPosition = event.touches[0].clientX;
+                        currentTranslate = prevTranslate + currentPosition - startPos;
+
+                        // Smooth the movement
+                        carouselImagesContainer.style.transform = `translateX(${currentTranslate}px)`;
+                    }
+
+                    function touchEnd() {
+                        if (!isDragging) return;
+
+                        isDragging = false;
+                        carouselImagesContainer.style.transition = 'transform 0.3s ease-out';
+
+                        const movedBy = currentTranslate - prevTranslate;
+
+                        // Threshold for changing slide
+                        const threshold = sliderWidth / 6;
+
+                        if (movedBy < -threshold && currentImageIndex < allImages.length - 1) {
+                            currentImageIndex++;
+                        } else if (movedBy > threshold && currentImageIndex > 0) {
+                            currentImageIndex--;
+                        }
+
+                        setPositionByIndex();
+                    }
+
+                    carouselImagesContainer.addEventListener('touchstart', touchStart, { passive: true });
+                    carouselImagesContainer.addEventListener('touchmove', touchMove, { passive: true });
+                    carouselImagesContainer.addEventListener('touchend', touchEnd);
 
                     setPositionByIndex();
 
@@ -493,5 +494,13 @@ document.addEventListener('DOMContentLoaded', async () => {
             header.classList.remove('header-hidden');
         }
         lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // For Mobile or negative scrolling
+    });
+
+    // Disable right-click on all images
+    const images = document.querySelectorAll('img');
+    images.forEach(function(image) {
+        image.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
     });
 });
