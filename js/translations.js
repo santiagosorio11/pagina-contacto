@@ -39,6 +39,14 @@ function applyTranslations(translations, language) {
         }
     });
 
+    const placeholderElements = document.querySelectorAll('[data-translate-placeholder]');
+    placeholderElements.forEach(element => {
+        const key = element.getAttribute('data-translate-placeholder');
+        if (translations[language][key]) {
+            element.placeholder = translations[language][key];
+        }
+    });
+
     const translatableElements = document.querySelectorAll('[data-translation-key]');
     translatableElements.forEach(element => {
         const key = element.getAttribute('data-translation-key');

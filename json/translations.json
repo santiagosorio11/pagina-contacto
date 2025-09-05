@@ -110,7 +110,12 @@
     "eye_color_green": "Green",
     "eye_color_blue": "Blue",
     "eye_color_honey": "Honey",
-    "eye_color_black": "Black"
+    "eye_color_black": "Black",
+    "form_portfolio_placeholder": "https://",
+    "form_instagram_placeholder": "@username",
+    "form_experience_placeholder": "Please describe any modeling experience you have (if any)",
+    "form_skills_placeholder": "List any special skills (dancing, acting, languages, etc.)",
+    "form_about_placeholder": "Why do you want to become a model? What are your goals?"
   },
   "es": {
     "nav_home": "Inicio",
@@ -224,6 +229,11 @@
     "eye_color_green": "Verdes",
     "eye_color_blue": "Azules",
     "eye_color_honey": "Miel",
-    "eye_color_black": "Negros"
+    "eye_color_black": "Negros",
+    "form_portfolio_placeholder": "https://",
+    "form_instagram_placeholder": "@usuario",
+    "form_experience_placeholder": "Describa cualquier experiencia previa en modelaje (si tiene)",
+    "form_skills_placeholder": "Liste habilidades especiales (danza, actuación, idiomas, etc.)",
+    "form_about_placeholder": "¿Por qué quieres ser modelo? ¿Cuáles son tus metas?"
   }
 }

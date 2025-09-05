@@ -645,7 +645,7 @@ p, a, li, label, input, textarea, button, .event-description, .about-us-content 
 
 .instagram-section {
     text-align: center;
-    margin: 1rem 0;
+    margin: 2rem 0;
 }
 
 .instagram-section h2 {
@@ -656,9 +656,6 @@ p, a, li, label, input, textarea, button, .event-description, .about-us-content 
     text-transform: uppercase;
     letter-spacing: 2px;
     text-align: center;
-    background-color: white;
-    padding: 0.5rem;
-    z-index: 10;
 }
 
 .instagram-section h2::before,
@@ -674,17 +671,11 @@ p, a, li, label, input, textarea, button, .event-description, .about-us-content 
 .instagram-section h2::before {
     left: 0;
     transform: translateY(-10px); /* Reducir separación con el texto */
-    display: none; /* Ocultar antes para solo usar despues */
 }
 
 .instagram-section h2::after {
-    top: auto;
-    bottom: 10px;
-    left: calc(50% - 10px);
-    transform: translateX(-50%);
-    width: 980px;
-    height: 1px;
-    z-index: 1;
+    right: 0;
+    transform: translateY(-10px); /* Reducir separación con el texto */
 }
 
 .instagram-gallery {
@@ -692,8 +683,8 @@ p, a, li, label, input, textarea, button, .event-description, .about-us-content 
     grid-template-columns: repeat(6, 150px);
     gap: 15px;
     justify-content: center;
-    margin: 0 1rem;
-    transform: translateX(-10px);
+    margin: 0 15px;
+    padding: 0;
 }
 
 .instagram-gallery a {
@@ -717,15 +708,41 @@ p, a, li, label, input, textarea, button, .event-description, .about-us-content 
 
 @media (max-width: 768px) {
     .instagram-gallery {
-        grid-template-columns: repeat(3, 1fr); /* 3 columnas en dispositivos medianos */
-        grid-template-rows: auto;
+        grid-template-columns: repeat(3, 120px); /* 3 columnas fijas para móviles */
+        gap: 10px;
+        justify-content: center;
+        margin: 0 auto;
+        max-width: 380px; /* 3*120px + 2*10px gap */
+    }
+
+    .instagram-gallery a {
+        width: 120px;
+        height: 160px; /* Imágenes fijas en móviles */
+    }
+
+    .instagram-gallery img {
+        object-fit: cover;
     }
 }
 
-@media (max-width: 576px) {
+/* Tablet styles - 3x2 grid with larger images */
+@media (min-width: 769px) and (max-width: 1024px) {
     .instagram-gallery {
-        grid-template-columns: repeat(3, 1fr); /* 3 columnas */
-        grid-template-rows: repeat(2, auto); /* 2 filas */
+        grid-template-columns: repeat(3, 180px); /* 3 columnas fijas para tablets */
+        gap: 15px;
+        justify-content: center;
+        margin: 0 auto;
+        max-width: 575px; /* 3*180px + 2*15px gap = 575px */
+    }
+
+    .instagram-gallery a {
+        width: 180px;
+        height: 220px; /* Imágenes fijas más grandes en tablets */
+    }
+
+    .instagram-gallery img {
+        object-fit: cover;
+        background-color: transparent;
     }
 }
 
@@ -735,13 +752,7 @@ p, a, li, label, input, textarea, button, .event-description, .about-us-content 
   max-width: 700px;
   margin-top: 15px;
   margin: 0 auto;
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(20px);
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  border-radius: 16px;
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  padding: 2rem;
-  position: relative;
+  background: white;
 }
 .form-intro {
   text-align: center;
@@ -753,8 +764,8 @@ p, a, li, label, input, textarea, button, .event-description, .about-us-content 
   line-height: 1.6;
   max-width: 700px;
   justify-content: center;
-  
-  margin-bottom: 2rem;
+  margin: 0 auto;
+  margin-bottom: -1rem;
 }
 
 .form-row {
