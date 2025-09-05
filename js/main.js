@@ -216,9 +216,14 @@ async function loadPortfolioPage() {
                     // Filmstrip-style carousel for mobile
                     const allImages = [...regularImages, ...horizontalImages];
 
-                    allImages.forEach((imgData) => {
+                    allImages.forEach((imgData, index) => {
                         const slideContainer = document.createElement('div');
                         slideContainer.classList.add('carousel-slide', 'loading');
+
+                        // Add horizontal class for horizontal images
+                        if (imgData.isHorizontal) {
+                            slideContainer.classList.add('horizontal');
+                        }
 
                         // Crear spinner de carga
                         const loadingSpinner = document.createElement('div');
@@ -227,7 +232,7 @@ async function loadPortfolioPage() {
 
                         const img = document.createElement('img');
                         img.src = imgData.url;
-                        img.alt = `${model.name} ${imgData.index + 1}`;
+                        img.alt = `${model.name} ${index + 1}`;
                         img.loading = 'lazy';
 
                         // Manejar la carga de la imagen

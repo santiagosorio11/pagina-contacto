@@ -1947,8 +1947,8 @@
       ]
     },
     {
-      "id": "alan",
-      "name": "ALAN",
+      "id": "delfino",
+      "name": "DELFINO - DELFINO",
       "category": "men",
       "thumbnailUrl": "/assets/thumbnail%20men/ALAN.webp",
       "details": {
@@ -2448,6 +2448,54 @@
         "/models/hombres/DIEGO%20ALVAREZ/DIEGO%20ALVAREZ%207.webp",
         "/models/hombres/DIEGO%20ALVAREZ/DIEGO%20ALVAREZ%208.webp",
         "/models/hombres/DIEGO%20ALVAREZ/DIEGO%20ALVAREZ%209.webp"
+      ]
+    },
+    {
+      "id": "delfino",
+      "name": "DELFINO - DELFINO",
+      "category": "men",
+      "thumbnailUrl": "/assets/thumbnail%20men/ALAN.webp",
+      "details": {
+        "ESTATURA": "1.88 m",
+        "CAMISA": "M",
+        "PANTALON": 31,
+        "ZAPATOS": 42,
+        "CABELLO": "Castaño",
+        "OJOS": "Miel"
+      },
+      "portfolioImages": [
+        "/assets/thumbnail%20men/ALAN.webp",
+        "/models/hombres/ALAN/DELFINO%20BREN%20ALAN%20AVILA%201.webp",
+        "/models/hombres/ALAN/DELFINO%20BREN%20ALAN%20AVILA%2010.webp",
+        "/models/hombres/ALAN/DELFINO%20BREN%20ALAN%20AVILA%2011.webp",
+        "/models/hombres/ALAN/DELFINO%20BREN%20ALAN%20AVILA%2012.webp",
+        "/models/hombres/ALAN/DELFINO%20BREN%20ALAN%20AVILA%2013.webp",
+        "/models/hombres/ALAN/DELFINO%20BREN%20ALAN%20AVILA%2014.webp",
+        "/models/hombres/ALAN/DELFINO%20BREN%20ALAN%20AVILA%2015.webp",
+        "/models/hombres/ALAN/DELFINO%20BREN%20ALAN%20AVILA%2016.webp",
+        "/models/hombres/ALAN/DELFINO%20BREN%20ALAN%20AVILA%2017.webp",
+        "/models/hombres/ALAN/DELFINO%20BREN%20ALAN%20AVILA%2018.webp",
+        "/models/hombres/ALAN/DELFINO%20BREN%20ALAN%20AVILA%2019.webp",
+        "/models/hombres/ALAN/DELFINO%20BREN%20ALAN%20AVILA%202.webp",
+        "/models/hombres/ALAN/DELFINO%20BREN%20ALAN%20AVILA%2020.webp",
+        "/models/hombres/ALAN/DELFINO%20BREN%20ALAN%20AVILA%2021.webp",
+        "/models/hombres/ALAN/DELFINO%20BREN%20ALAN%20AVILA%2022.webp",
+        "/models/hombres/ALAN/DELFINO%20BREN%20ALAN%20AVILA%2023.webp",
+        "/models/hombres/ALAN/DELFINO%20BREN%20ALAN%20AVILA%2025.webp",
+        "/models/hombres/ALAN/DELFINO%20BREN%20ALAN%20AVILA%2026.webp",
+        "/models/hombres/ALAN/DELFINO%20BREN%20ALAN%20AVILA%2027.webp",
+        "/models/hombres/ALAN/DELFINO%20BREN%20ALAN%20AVILA%2028.webp",
+        "/models/hombres/ALAN/DELFINO%20BREN%20ALAN%20AVILA%2029.webp",
+        "/models/hombres/ALAN/DELFINO%20BREN%20ALAN%20AVILA%203.webp",
+        "/models/hombres/ALAN/DELFINO%20BREN%20ALAN%20AVILA%2030.webp",
+        "/models/hombres/ALAN/DELFINO%20BREN%20ALAN%20AVILA%2031.webp",
+        "/models/hombres/ALAN/DELFINO%20BREN%20ALAN%20AVILA%2032.webp",
+        "/models/hombres/ALAN/DELFINO%20BREN%20ALAN%20AVILA%204.webp",
+        "/models/hombres/ALAN/DELFINO%20BREN%20ALAN%20AVILA%205.webp",
+        "/models/hombres/ALAN/DELFINO%20BREN%20ALAN%20AVILA%206.webp",
+        "/models/hombres/ALAN/DELFINO%20BREN%20ALAN%20AVILA%207.webp",
+        "/models/hombres/ALAN/DELFINO%20BREN%20ALAN%20AVILA%208.webp",
+        "/models/hombres/ALAN/DELFINO%20BREN%20ALAN%20AVILA%209.webp"
       ]
     },
     {
