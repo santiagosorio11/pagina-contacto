@@ -213,75 +213,51 @@ async function loadPortfolioPage() {
                 carouselImagesContainer.innerHTML = '';
 
                 if (isMobile()) {
+                    // Filmstrip-style carousel for mobile
                     const allImages = [...regularImages, ...horizontalImages];
+
                     allImages.forEach((imgData) => {
                         const slideContainer = document.createElement('div');
-                        slideContainer.classList.add('carousel-slide');
+                        slideContainer.classList.add('carousel-slide', 'loading');
+
+                        // Crear spinner de carga
+                        const loadingSpinner = document.createElement('div');
+                        loadingSpinner.classList.add('image-loading');
+                        slideContainer.appendChild(loadingSpinner);
+
                         const img = document.createElement('img');
                         img.src = imgData.url;
                         img.alt = `${model.name} ${imgData.index + 1}`;
+                        img.loading = 'lazy';
+
+                        // Manejar la carga de la imagen
+                        img.onload = () => {
+                            slideContainer.classList.remove('loading');
+                            slideContainer.classList.add('loaded');
+                            loadingSpinner.style.display = 'none';
+                        };
+
+                        img.onerror = () => {
+                            slideContainer.classList.remove('loading');
+                            loadingSpinner.style.display = 'none';
+                            slideContainer.innerHTML = '<div style="display: flex; align-items: center; justify-content: center; height: 100%; color: #666;">Imagen no disponible</div>';
+                        };
+
                         slideContainer.appendChild(img);
                         carouselImagesContainer.appendChild(slideContainer);
-                        slideElements.push(slideContainer);
                     });
 
-                    let isDragging = false;
-                    let startPos = 0;
-                    let currentTranslate = 0;
-                    let prevTranslate = 0;
-
-                    let sliderWidth = carouselImagesContainer.offsetWidth;
-
-                    function setPositionByIndex() {
-                        currentTranslate = currentImageIndex * -sliderWidth;
-                        prevTranslate = currentTranslate;
-                        carouselImagesContainer.style.transform = `translateX(${currentTranslate}px)`;
-                    }
-
-                    function touchStart(event) {
-                        startPos = event.touches[0].clientX;
-                        isDragging = true;
-                        carouselImagesContainer.style.transition = 'none';
-                        prevTranslate = currentTranslate;
-                        // Recalculate sliderWidth in case of resize
-                        sliderWidth = carouselImagesContainer.offsetWidth;
-                    }
-
-                    function touchMove(event) {
-                        if (!isDragging) return;
-
-                        const currentPosition = event.touches[0].clientX;
-                        currentTranslate = prevTranslate + currentPosition - startPos;
-
-                        // Smooth the movement
-                        carouselImagesContainer.style.transform = `translateX(${currentTranslate}px)`;
-                    }
-
-                    function touchEnd() {
-                        if (!isDragging) return;
-
-                        isDragging = false;
-                        carouselImagesContainer.style.transition = 'transform 0.3s ease-out';
-
-                        const movedBy = currentTranslate - prevTranslate;
-
-                        // Threshold for changing slide
-                        const threshold = sliderWidth / 6;
-
-                        if (movedBy < -threshold && currentImageIndex < allImages.length - 1) {
-                            currentImageIndex++;
-                        } else if (movedBy > threshold && currentImageIndex > 0) {
-                            currentImageIndex--;
+                    // Auto-scroll to center the first image after loading
+                    setTimeout(() => {
+                        const firstSlide = carouselImagesContainer.querySelector('.carousel-slide');
+                        if (firstSlide) {
+                            firstSlide.scrollIntoView({
+                                behavior: 'smooth',
+                                block: 'nearest',
+                                inline: 'center'
+                            });
                         }
-
-                        setPositionByIndex();
-                    }
-
-                    carouselImagesContainer.addEventListener('touchstart', touchStart, { passive: true });
-                    carouselImagesContainer.addEventListener('touchmove', touchMove, { passive: true });
-                    carouselImagesContainer.addEventListener('touchend', touchEnd);
-
-                    setPositionByIndex();
+                    }, 500);
 
                 } else {
                     // On desktop, use the existing logic

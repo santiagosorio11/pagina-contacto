@@ -188,16 +188,68 @@
   padding-bottom: .5rem;
 }
 
+/* Loading spinner styles */
+.image-loading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40px;
+  height: 40px;
+  border: 3px solid #f3f3f3;
+  border-top: 3px solid #333;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  opacity: 0.8;
+  z-index: 1;
+}
+
+@keyframes spin {
+  0% { transform: translate(-50%, -50%) rotate(0deg); }
+  100% { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+.carousel-slide.loading img {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.carousel-slide.loaded img {
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.carousel-slide.loading {
+  background-color: #f8f9fa;
+  position: relative;
+}
+
+.carousel-slide.loaded {
+  background-color: transparent;
+}
+
+@media (max-width: 768px) {
+  .image-loading {
+    width: 30px;
+    height: 30px;
+    border-width: 2px;
+  }
+
+  .carousel-slide.loading {
+    background-color: #f8f9fa;
+  }
+}
+
 @media (max-width: 768px) {
   .modelBookMeasurements {
     flex-wrap: wrap;
     padding-bottom: 0.5rem;
   }
-  
+
   .portfolio-main .modelNameBook {
     font-size: 1.5rem;
   }
-  
+
   .carousel-container {
     max-width: 100%;
     padding: 0;
@@ -206,46 +258,57 @@
 
   .carousel-images {
     display: flex;
-    transition: transform 0.3s ease-out;
+    transition: none;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .carousel-images::-webkit-scrollbar {
+    display: none;
   }
 
   .carousel-slide {
     position: static;
-    flex: 0 0 100%;
+    flex: 0 0 80vw;
     opacity: 1;
     transform: none;
     z-index: 1;
+    margin-right: 10px;
   }
-  
+
   .carousel-slide img {
     max-width: 100%;
     height: auto;
-    max-height: 70vh; /* Adjust as needed */
+    max-height: 70vh;
+    transition: opacity 0.3s ease-in-out;
   }
 
   .carousel-button {
     display: none;
   }
-  
+
   .model-details-container {
     padding: 0.5rem;
   }
-  
+
   .model-details-container h2 {
     font-size: 1.125rem;
   }
-  
+
   .portfolio-grid {
     grid-template-columns: repeat(5, 1fr);
     gap: 0.5rem;
   }
-  
+
   .portfolio-grid img {
     width: 100%;
     height: 95px;
     object-fit: cover;
   }
-  
+
   .portfolio-tabs {
     margin: 0.25rem 0;
   }
