@@ -229,9 +229,8 @@ async function loadPortfolioPage() {
                     let startPos = 0;
                     let currentTranslate = 0;
                     let prevTranslate = 0;
-                    let animationId = 0;
 
-                    const sliderWidth = carouselImagesContainer.offsetWidth;
+                    let sliderWidth = carouselImagesContainer.offsetWidth;
 
                     function setPositionByIndex() {
                         currentTranslate = currentImageIndex * -sliderWidth;
@@ -244,6 +243,8 @@ async function loadPortfolioPage() {
                         isDragging = true;
                         carouselImagesContainer.style.transition = 'none';
                         prevTranslate = currentTranslate;
+                        // Recalculate sliderWidth in case of resize
+                        sliderWidth = carouselImagesContainer.offsetWidth;
                     }
 
                     function touchMove(event) {
