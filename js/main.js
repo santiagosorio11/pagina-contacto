@@ -252,6 +252,35 @@ async function loadPortfolioPage() {
                         carouselImagesContainer.appendChild(slideContainer);
                     });
 
+                    // Add touch event handling to reduce sensitivity
+                    let startX = 0;
+                    let currentScrollLeft = 0;
+                    let isDragging = false;
+
+                    carouselImagesContainer.addEventListener('touchstart', (e) => {
+                        startX = e.touches[0].clientX;
+                        currentScrollLeft = carouselImagesContainer.scrollLeft;
+                        isDragging = false;
+                    }, { passive: true });
+
+                    carouselImagesContainer.addEventListener('touchmove', (e) => {
+                        if (!isDragging) {
+                            const deltaX = Math.abs(e.touches[0].clientX - startX);
+                            if (deltaX > 10) { // Start dragging after 10px movement
+                                isDragging = true;
+                            }
+                        }
+                    }, { passive: true });
+
+                    carouselImagesContainer.addEventListener('touchend', () => {
+                        if (isDragging) {
+                            // Ensure snap behavior after touch ends
+                            setTimeout(() => {
+                                isDragging = false;
+                            }, 100);
+                        }
+                    });
+
                     // Auto-scroll to center the first image after loading
                     setTimeout(() => {
                         const firstSlide = carouselImagesContainer.querySelector('.carousel-slide');

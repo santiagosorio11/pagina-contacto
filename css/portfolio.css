@@ -265,6 +265,7 @@
     scrollbar-width: none;
     -ms-overflow-style: none;
     scroll-snap-type: x mandatory;
+    scroll-snap-stop: always;
   }
 
   .carousel-images::-webkit-scrollbar {
@@ -273,11 +274,11 @@
 
   .carousel-slide {
     position: static;
-    flex: 0 0 80vw;
+    flex: 0 0 85vw;
     opacity: 1;
     transform: none;
     z-index: 1;
-    margin-right: 10px;
+    margin-right: 15px;
     scroll-snap-align: center;
   }
 
