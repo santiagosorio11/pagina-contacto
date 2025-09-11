@@ -189,6 +189,28 @@
       ]
     },
     {
+      "id": "brigh",
+      "name": "BRIGH",
+      "category": "women",
+      "thumbnailUrl": "/assets/thumbnail%20women/BRIGH.webp",
+      "details": {
+        "ESTATURA": "1.75 m",
+        "BUSTO": "84",
+        "CINTURA": "63",
+        "CADERA": "94",
+        "BLUSA": "S",
+        "PANTALON": "6",
+        "ZAPATOS": "39",
+        "CABELLO": "Rubio",
+        "OJOS": "Azules",
+        "BRASSIER": "32B",
+        "PANTY": "M"
+      },
+      "portfolioImages": [
+        "/assets/thumbnail%20women/BRIGH.webp"
+      ]
+    },
+    {
       "id": "camila",
       "name": "CAMILA",
       "category": "women",

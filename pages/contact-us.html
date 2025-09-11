@@ -25,6 +25,7 @@
 
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/contact-us.css">
 
     <!-- JSON-LD Schema -->
     <script type="application/ld+json">
@@ -49,38 +50,17 @@
     </script>
 
     <style>
-        .instagram-feed {
-            width: 100%;
-            max-width: 700px;
-            margin: 0 auto;
-            overflow: hidden;
-        }
+        /* Instagram iframe styles */
         .instagram-feed iframe {
             width: 100%;
-            aspect-ratio: 2/1;
-            height: 600px;
+            height: 700px;
+            border-radius: 10px;
             border: none;
         }
+
         @media (max-width: 768px) {
-            .contact-main {
-                padding: 10px;
-            }
-            .social-links {
-                display: flex;
-                justify-content: center;
-                flex-wrap: wrap;
-                gap: 10px;
-            }
-            .social-links img {
-                width: 40px;
-                height: 40px;
-            }
-            .instagram-feed {
-                padding: 0 15px;
-            }
             .instagram-feed iframe {
-                aspect-ratio: 1/1;
-                max-height: none;
+                height: 600px;
             }
         }
     </style>
@@ -121,22 +101,77 @@
     <main class="contact-main">
         <section class="contact-intro" style="margin-top: 40px;">
             <h1 class="site-title" data-translate="contact_us_title">Contact Us</h1>
-            <p data-translate="contact_us_p2">Síguenos en nuestras redes sociales y mantente al tanto de nuestras últimas novedades y contenido exclusivo.</p>
+            <p style="text-align: center; max-width: 600px; margin: 20px auto;" data-translate="contact_us_p2">Síguenos en nuestras redes sociales y mantente al tanto de nuestras últimas novedades y contenido exclusivo.</p>
         </section>
 
-        <div class="social-media-container">
-            <section class="social-media-section">
-                <h2 data-translate="contact_social_title">Síguenos en Nuestras Redes</h2>
-                <ul class="social-links">
-                    <li><a href="https://www.instagram.com/contactobasicomodelmgmt/" target="_blank" aria-label="Instagram"><img src="/assets/buttons/instagram.png" alt="Instagram"></a></li>
-                    <li><a href="https://facebook.com/contactobasico" target="_blank" aria-label="Facebook"><img src="/assets/buttons/facebook.png" alt="Facebook"></a></li>
-                    <li><a href="https://twitter.com/contactobasico" target="_blank" aria-label="Twitter"><img src="/assets/buttons/gorjeo.png" alt="Twitter"></a></li>
-                    <li><a href="https://tiktok.com/@contactobasico" target="_blank" aria-label="TikTok"><img src="/assets/buttons/tik-tok.png" alt="TikTok"></a></li>
-                </ul>
-                
-                <div class="instagram-feed">
+        <div class="contact-grid-container">
+            <section class="contact-section contact-emails">
+                <div class="section-header">
+                    <h2 class="section-title">Correos Electrónicos</h2>
+                </div>
+
+                <div class="contact-card email-card">
+                    <div class="card-icon">
+                        <img src="../assets/buttons/lupa.png" alt="Email Icon">
+                    </div>
+                    <div class="contact-details">
+                        <a href="mailto:info@contactobasico.com" class="contact-link">info@contactobasico.com</a>
+                        <a href="mailto:produccion@contactobasico.com" class="contact-link">produccion@contactobasico.com</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="contact-section contact-phones">
+                <div class="section-header">
+                    <h2 class="section-title">Contáctanos por WhatsApp</h2>
+                </div>
+
+                <div class="contact-card phone-card">
+                    <div class="card-icon">
+                        <img src="../assets/buttons/whatsapp.png" alt="WhatsApp Icon">
+                    </div>
+                    <div class="contact-details">
+                        <a href="https://wa.me/573112692593" target="_blank" class="contact-link whatsapp-link">
+                            +57 311 269 2593
+                        </a>
+                        <a href="https://wa.me/573174048044" target="_blank" class="contact-link whatsapp-link">
+                            +57 317 404 8044
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="contact-section contact-phones social-media">
+                <div class="section-header">
+                    <h2 data-translate="contact_social_title">Síguenos en Nuestras Redes</h2>
+                    <p class="section-description">Mantente conectado y descubre nuestro contenido exclusivo.</p>
+                </div>
+
+                <div class="contact-card social-card">
+                    <div class="social-icons-container">
+                        <a href="https://www.instagram.com/contactobasicomodelmgmt/" target="_blank" aria-label="Instagram" class="social-link">
+                            <img src="../assets/buttons/instagram.png" alt="Instagram" class="social-icon">
+                            <span class="social-label">Instagram</span>
+                        </a>
+                        <a href="https://facebook.com/contactobasico" target="_blank" aria-label="Facebook" class="social-link">
+                            <img src="../assets/buttons/facebook.png" alt="Facebook" class="social-icon">
+                            <span class="social-label">Facebook</span>
+                        </a>
+                        <a href="https://tiktok.com/@contactobasico" target="_blank" aria-label="TikTok" class="social-link">
+                            <img src="../assets/buttons/tik-tok.png" alt="TikTok" class="social-icon">
+                            <span class="social-label">TikTok</span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="contact-section instagram-section contact-phones">
+                <div class="section-header">
                     <h2 data-translate="contact_instagram_title">Nuestro Contenido en Instagram</h2>
                     <p data-translate="contact_instagram_desc">Descubre nuestras últimas publicaciones y novedades</p>
+                </div>
+
+                <div class="instagram-feed">
                     <iframe src="https://www.instagram.com/contactobasicomodelmgmt/embed" scrolling="no" allowtransparency="true"></iframe>
                 </div>
             </section>

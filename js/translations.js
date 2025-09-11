@@ -34,7 +34,7 @@ function applyTranslations(translations, language) {
             if (element.tagName === 'INPUT' && element.type === 'placeholder') {
                 element.placeholder = translations[language][key];
             } else {
-                element.textContent = translations[language][key];
+                element.innerHTML = translations[language][key];
             }
         }
     });
