@@ -1,79 +1,72 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const dragDropArea = document.getElementById('dragDropArea');
-    const fileInput = document.getElementById('fileInput');
-    const uploadedImages = document.getElementById('uploadedImages');
+    const uploadBoxes = document.querySelectorAll('.upload-box');
 
-    // Prevenir el comportamiento por defecto del navegador
-    ['dragenter', 'dragover', 'dragleave', 'drop'].forEach(eventName => {
-        dragDropArea.addEventListener(eventName, preventDefaults, false);
-        document.body.addEventListener(eventName, preventDefaults, false);
-    });
-
-    // Resaltar el área de drop cuando se arrastra un archivo sobre ella
-    ['dragenter', 'dragover'].forEach(eventName => {
-        dragDropArea.addEventListener(eventName, highlight, false);
-    });
-
-    ['dragleave', 'drop'].forEach(eventName => {
-        dragDropArea.addEventListener(eventName, unhighlight, false);
-    });
-
-    // Manejar el drop de archivos
-    dragDropArea.addEventListener('drop', handleDrop, false);
-    
-    // Manejar click en el área para seleccionar archivos
-    dragDropArea.addEventListener('click', () => fileInput.click());
-    
-    // Manejar selección de archivos mediante el input
-    fileInput.addEventListener('change', handleFiles);
-
-    function preventDefaults(e) {
-        e.preventDefault();
-        e.stopPropagation();
-    }
-
-    function highlight(e) {
-        dragDropArea.classList.add('drag-over');
-    }
-
-    function unhighlight(e) {
-        dragDropArea.classList.remove('drag-over');
-    }
-
-    function handleDrop(e) {
-        const dt = e.dataTransfer;
-        const files = dt.files;
-        handleFiles(files);
-    }
-
-    function handleFiles(e) {
-        const files = e.target?.files || e;
-        [...files].forEach(previewFile);
-    }
-
-    function previewFile(file) {
-        if (!file.type.startsWith('image/')) return;
-
-        const reader = new FileReader();
-        reader.readAsDataURL(file);
+    uploadBoxes.forEach(box => {
+        const input = box.querySelector('input[type="file"]');
+        const imagePreview = box.querySelector('.image-preview');
+        const uploadLabel = box.querySelector('.upload-label');
         
-        reader.onloadend = function() {
-            const div = document.createElement('div');
-            div.className = 'uploaded-image';
-            
-            const img = document.createElement('img');
-            img.src = reader.result;
-            
-            const removeBtn = document.createElement('button');
-            removeBtn.className = 'remove-image';
-            removeBtn.innerHTML = '×';
-            removeBtn.onclick = function() {
-                div.remove();
-            };
-            
-            div.appendChild(img);
-            div.appendChild(removeBtn);
-            uploadedImages.appendChild(div);
-        };
-    }
+        // Create the preview structure
+        const filePreviewContainer = document.createElement('div');
+        filePreviewContainer.className = 'file-preview';
+        filePreviewContainer.style.display = 'none';
+
+        const previewImage = document.createElement('img');
+        previewImage.className = 'file-preview-image';
+        
+        const previewDetails = document.createElement('div');
+        previewDetails.className = 'file-preview-details';
+
+        const previewName = document.createElement('span');
+        previewName.className = 'file-preview-name';
+
+        const previewActions = document.createElement('div');
+        previewActions.className = 'file-preview-actions';
+
+        const replaceBtn = document.createElement('button');
+        replaceBtn.type = 'button';
+        replaceBtn.className = 'file-replace-btn';
+        replaceBtn.textContent = 'Reemplazar';
+
+        const deleteBtn = document.createElement('button');
+        deleteBtn.type = 'button';
+        deleteBtn.className = 'file-delete-btn';
+        deleteBtn.textContent = 'Eliminar';
+
+        previewActions.appendChild(replaceBtn);
+        previewActions.appendChild(deleteBtn);
+        previewDetails.appendChild(previewName);
+        previewDetails.appendChild(previewActions);
+        filePreviewContainer.appendChild(previewImage);
+        filePreviewContainer.appendChild(previewDetails);
+        
+        box.appendChild(filePreviewContainer);
+
+        input.addEventListener('change', () => {
+            const file = input.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    previewImage.src = e.target.result;
+                    previewName.textContent = file.name;
+                    
+                    imagePreview.style.display = 'none';
+                    uploadLabel.style.display = 'none';
+                    filePreviewContainer.style.display = 'flex';
+                }
+                reader.readAsDataURL(file);
+            }
+        });
+
+        deleteBtn.addEventListener('click', () => {
+            input.value = ''; // Clear the file input
+            filePreviewContainer.style.display = 'none';
+            imagePreview.style.display = 'block';
+            uploadLabel.style.display = 'block';
+        });
+
+        replaceBtn.addEventListener('click', () => {
+            input.click();
+        });
+    });
 });

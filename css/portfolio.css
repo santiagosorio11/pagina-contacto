@@ -83,6 +83,7 @@
   opacity: 0;
   transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
   z-index: 0;
+  
 }
 
 .carousel-slide.active {
@@ -99,11 +100,16 @@
   transform: translateX(100%);
 }
 
-.carousel-slide img {
+.carousel-slide img, .carousel-slide video {
   height: 420px;
   max-width: none;
   max-height: none;
   object-fit: contain;
+  display: block;
+}
+
+.carousel-slide video {
+  background-color: black;
 }
 
 .carousel-slide.pair {

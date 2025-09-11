@@ -18,7 +18,7 @@
     <link rel="icon" href="../assets/favicon.jpg" type="image/png">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/header.css">
-</head>
+    </head>
 <body class="subpage" style="visibility: hidden;">
     <header class="main-header">
         <a href="/" class="logo-link">
@@ -151,35 +151,56 @@
                     <h3 data-translate="form_photos">Photos</h3>
                     <p class="photo-instructions" data-translate="form_photo_instructions">Please upload clear, high-quality photos. Avoid filters or heavy editing.</p>
                     
-                    <div class="photo-upload-row">
-                        <div class="photo-upload-section">
-                            <h4 data-translate="form_frontal_photo">Frontal Photo *</h4>
-                            <div class="drag-drop-area" id="frontalPhotoArea">
-                                <i class="fas fa-user"></i>
-                                <p data-translate="form_frontal_photo_desc">Upload frontal photo (face clearly visible)</p>
-                                <input type="file" id="frontalPhotoInput" accept="image/*" style="display: none">
+                    <div class="upload-container">
+                        <div class="upload-box">
+                            <div class="image-preview" style="background-image: url('../assets/forms/headshot.webp');"></div>
+                            <div class="upload-label" data-translate="form_headshot">Rostro</div>
+                            <input type="file" name="headshot" accept="image/*">
+                            <!-- new preview container -->
+                            <div class="file-preview">
+                                <img class="file-preview-image" src="" alt="Preview">
+                                <div class="file-preview-details">
+                                    <span class="file-preview-name"></span>
+                                    <div class="file-preview-actions">
+                                        <button type="button" class="file-replace-btn" data-translate="form_replace_button"></button>
+                                        <button type="button" class="file-delete-btn" data-translate="form_delete_button"></button>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="uploaded-images" id="frontalPhotoPreview"></div>
                         </div>
 
-                        <div class="photo-upload-section">
-                            <h4 data-translate="form_profile_photo">Profile Photo *</h4>
-                            <div class="drag-drop-area" id="profilePhotoArea">
-                                <i class="fas fa-user-circle"></i>
-                                <p data-translate="form_profile_photo_desc">Upload profile photo (side view)</p>
-                                <input type="file" id="profilePhotoInput" accept="image/*" style="display: none">
+                        <div class="upload-box">
+                            <div class="image-preview" style="background-image: url('../assets/forms/sideprofile.webp');"></div>
+                            <div class="upload-label" data-translate="form_side_profile">Perfil</div>
+                            <input type="file" name="sideprofile" accept="image/*">
+                            <!-- new preview container -->
+                            <div class="file-preview">
+                                <img class="file-preview-image" src="" alt="Preview">
+                                <div class="file-preview-details">
+                                    <span class="file-preview-name"></span>
+                                    <div class="file-preview-actions">
+                                        <button type="button" class="file-replace-btn" data-translate="form_replace_button"></button>
+                                        <button type="button" class="file-delete-btn" data-translate="form_delete_button"></button>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="uploaded-images" id="profilePhotoPreview"></div>
                         </div>
 
-                        <div class="photo-upload-section">
-                            <h4 data-translate="form_full_body_photo">Full Body Photo *</h4>
-                            <div class="drag-drop-area" id="fullBodyPhotoArea">
-                                <i class="fas fa-portrait"></i>
-                                <p data-translate="form_full_body_photo_desc">Upload full body photo (standing straight)</p>
-                                <input type="file" id="fullBodyPhotoInput" accept="image/*" style="display: none">
+                        <div class="upload-box">
+                            <div class="image-preview" style="background-image: url('../assets/forms/fullsize.webp');"></div>
+                            <div class="upload-label" data-translate="form_full_length">Cuerpo Completo</div>
+                            <input type="file" name="fulllength" accept="image/*">
+                            <!-- new preview container -->
+                            <div class="file-preview">
+                                <img class="file-preview-image" src="" alt="Preview">
+                                <div class="file-preview-details">
+                                    <span class="file-preview-name"></span>
+                                    <div class="file-preview-actions">
+                                        <button type="button" class="file-replace-btn" data-translate="form_replace_button"></button>
+                                        <button type="button" class="file-delete-btn" data-translate="form_delete_button"></button>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="uploaded-images" id="fullBodyPhotoPreview"></div>
                         </div>
                     </div>
                 </div>
@@ -192,6 +213,13 @@
                         <textarea id="about" name="about" rows="4" data-translate-placeholder="form_about_placeholder" required></textarea>
                     </div>
                 </div>
+
+                <div class="form-group checkbox-group">
+                    <input type="checkbox" id="data-consent" name="data-consent" required>
+                    <label for="data-consent" data-translate="form_data_consent">I agree to the processing of my personal data.</label>
+                </div>
+
+                <div class="g-recaptcha" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"></div>
 
                 <button type="submit" class="submit-button" data-translate="form_submit">Submit Application</button>
             </form>

@@ -2057,6 +2057,9 @@
         "/models/hombres/ALEJO/ALEJANDRO%20NEUMAN%207.webp",
         "/models/hombres/ALEJO/ALEJANDRO%20NEUMAN%208.webp",
         "/models/hombres/ALEJO/ALEJANDRO%20NEUMAN%209.webp"
+      ],
+      "videos": [
+        "/models/hombres/ALEJO/Alejo%20video.webm"
       ]
     },
     {
@@ -2392,6 +2395,10 @@
         "/models/hombres/DAVID%20ACUNA/DAVID%20ACUNA%207.webp",
         "/models/hombres/DAVID%20ACUNA/DAVID%20ACUNA%208.webp",
         "/models/hombres/DAVID%20ACUNA/DAVID%20ACUNA%209.webp"
+      ],
+      "videos": [
+        "/models/hombres/DAVID%20ACUNA/DAVID%20ACUNA%20VIDEO.webm"
+        
       ]
     },
     {
@@ -2408,7 +2415,15 @@
         "OJOS": "Azules"
       },
       "portfolioImages": [
-        "/assets/thumbnail%20men/DAVIDC.webp"
+        "/assets/thumbnail%20men/DAVIDC.webp",
+        "/models/hombres/DAVID%20C/DAVID%20CABRALES%200.webp",
+        "/models/hombres/DAVID%20C/DAVID%20CABRALES%201.webp",
+        "/models/hombres/DAVID%20C/DAVID%20CABRALES%202.webp",
+        "/models/hombres/DAVID%20C/DAVID%20CABRALES%203.webp",
+        "/models/hombres/DAVID%20C/DAVID%20CABRALES%204.webp",
+        "/models/hombres/DAVID%20C/DAVID%20CABRALES%205.webp",
+        "/models/hombres/DAVID%20C/DAVID%20CABRALES%207.webp",
+        "/models/hombres/DAVID%20C/DAVID%20CABRALES%208.webp"       
       ]
     },
     {

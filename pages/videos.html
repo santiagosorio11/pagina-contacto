@@ -63,11 +63,7 @@
             <a href="polaroids.html?id=" class="portfolio-tab" id="polaroids-tab">Polaroids</a>
             <a href="videos.html?id=" class="portfolio-tab active" id="videos-tab">Videos</a>
         </div>
-        <div class="carousel-container">
-            <div class="carousel-images"></div>
-            <button class="carousel-button prev"></button>
-            <button class="carousel-button next"></button>
-        </div>
+        <div class="videos-container"></div>
         <div class="model-details-container">
             <ul class="modelBookMeasurements"></ul>
         </div>
@@ -208,193 +204,101 @@
                 let currentImageIndex = 0;
 
                 if (carouselImagesContainer && model.videos && model.videos.length > 0) {
-                    carouselImagesContainer.innerHTML = ''; // Clear existing images
+                    carouselImagesContainer.innerHTML = ''; // Clear existing content
 
-                    // Function to check if an image is horizontal
-                    const isImageHorizontal = (imgUrl) => {
-                        return new Promise((resolve) => {
-                            const img = new Image();
-                            img.onload = function() {
-                                resolve(this.naturalWidth > this.naturalHeight);
-                            };
-                            img.onerror = function() {
-                                // If there's an error loading the image, assume it's not horizontal
-                                resolve(false);
-                            };
-                            img.src = imgUrl;
-                        });
-                    };
+                    const slideElements = [];
 
-                    // Function to check if device is mobile
-                    const isMobile = () => {
-                        return window.innerWidth <= 768;
-                    };
+                    model.videos.forEach((videoUrl, index) => {
+                        console.log("Video URL:", videoUrl);
+                        const slideContainer = document.createElement('div');
+                        slideContainer.classList.add('carousel-slide');
 
-                    // Function to process images and create carousel
-                    const processImagesAndCreateCarousel = async () => {
-                        // Use videos instead of portfolioImages
-                        const contentArray = model.videos;
+                        const video = document.createElement('video');
+                        video.controls = true;
+                        video.preload = 'metadata'; // Load metadata to get dimensions
+                        video.style.width = '100%';
+                        video.style.height = 'auto';
+                        video.style.display = 'block'; // Ensure it takes up space
 
-                        // Separate horizontal images from regular images
-                        const regularImages = [];
-                        const horizontalImages = [];
-                        
-                        // Check all images concurrently
-                        const imageChecks = contentArray.map(async (imgUrl, index) => {
-                            const isHorizontal = await isImageHorizontal(imgUrl);
-                            return { url: imgUrl, index, isHorizontal };
-                        });
-                        
-                        const imageResults = await Promise.all(imageChecks);
-                        
-                        // Separate images based on their orientation
-                        imageResults.forEach(imgData => {
-                            if (imgData.isHorizontal) {
-                                horizontalImages.push(imgData);
-                            } else {
-                                regularImages.push(imgData);
-                            }
-                        });
-                        
-                        // Create slide elements
-                        const slideElements = [];
-                        
-                        if (isMobile()) {
-                            // On mobile, show one image per slide
-                            [...regularImages, ...horizontalImages].forEach((imgData, index) => {
-                                const slideContainer = document.createElement('div');
-                                slideContainer.classList.add('carousel-slide');
-                                
-                                const img = document.createElement('img');
-                                img.src = imgData.url;
-                                img.alt = `${model.name} ${imgData.index + 1}`;
-                                slideContainer.appendChild(img);
-                                
-                                carouselImagesContainer.appendChild(slideContainer);
-                                slideElements.push(slideContainer);
-                            });
+                        const source = document.createElement('source');
+                        source.src = videoUrl;
+                        // Determine type based on extension, or provide a common one
+                        if (videoUrl.endsWith('.mp4')) {
+                            source.type = 'video/mp4';
+                        } else if (videoUrl.endsWith('.webm')) {
+                            source.type = 'video/webm';
+                        } else if (videoUrl.endsWith('.ogg')) {
+                            source.type = 'video/ogg';
                         } else {
-                            // On desktop, use the existing logic
-                            // Process regular images: first image alone, others in pairs
-                            for (let i = 0; i < regularImages.length; i++) {
-                                let slideContainer = document.createElement('div');
-                                slideContainer.classList.add('carousel-slide');
-                                
-                                if (i === 0) {
-                                    // First image alone
-                                    const img = document.createElement('img');
-                                    img.src = regularImages[i].url;
-                                    img.alt = `${model.name} ${regularImages[i].index + 1}`;
-                                    slideContainer.appendChild(img);
-                                } else {
-                                    // Create pairs for remaining images
-                                    slideContainer.classList.add('pair');
-                                    
-                                    const img1 = document.createElement('img');
-                                    img1.src = regularImages[i].url;
-                                    img1.alt = `${model.name} ${regularImages[i].index + 1}`;
-                                    slideContainer.appendChild(img1);
-                                    
-                                    // Check if there's a second image for this pair
-                                    if (i + 1 < regularImages.length) {
-                                        const img2 = document.createElement('img');
-                                        img2.src = regularImages[i + 1].url;
-                                        img2.alt = `${model.name} ${regularImages[i + 1].index + 1}`;
-                                        slideContainer.appendChild(img2);
-                                        i++; // Skip next image as it's already processed
-                                    }
-                                }
-                                
-                                carouselImagesContainer.appendChild(slideContainer);
-                                slideElements.push(slideContainer);
-                            }
-                            
-                            // Process horizontal images (alone at the end)
-                            horizontalImages.forEach((imgData, hIndex) => {
-                                const slideContainer = document.createElement('div');
-                                slideContainer.classList.add('carousel-slide');
-                                
-                                const img = document.createElement('img');
-                                img.src = imgData.url;
-                                img.alt = `${model.name} ${imgData.index + 1}`;
-                                slideContainer.appendChild(img);
-                                
-                                carouselImagesContainer.appendChild(slideContainer);
-                                slideElements.push(slideContainer);
-                            });
+                            source.type = 'video/mp4'; // Default or fallback
                         }
+                        
+                        video.appendChild(source);
+                        video.textContent = 'Your browser does not support the video tag.'; // Fallback for old browsers
 
-                        const showSlide = (index) => {
-                            // Position all slides
-                            slideElements.forEach((slide, i) => {
-                                slide.classList.remove('active', 'prev', 'next');
-                                
-                                if (i === index) {
-                                    slide.classList.add('active');
-                                } else if (i < index) {
-                                    slide.classList.add('prev');
-                                } else {
-                                    slide.classList.add('next');
+                        slideContainer.appendChild(video);
+                        video.load(); // Force load to trigger fetch
+                        carouselImagesContainer.appendChild(slideContainer);
+                        slideElements.push(slideContainer);
+                    });
+
+                    const showSlide = (index) => {
+                        slideElements.forEach((slide, i) => {
+                            slide.classList.remove('active', 'prev', 'next');
+                            const video = slide.querySelector('video');
+                            if (video) {
+                                video.pause();  // Pause video when not active
+                            }
+                            if (i === index) {
+                                slide.classList.add('active');
+                                // Optionally start playing the active video
+                                if (video) {
+                                    // video.play();
                                 }
-                            });
-                            
-                            // Update button states
-                            if (index === 0) {
-                                prevButton.disabled = true;
-                                prevButton.style.opacity = '0.5';
-                                prevButton.style.cursor = 'not-allowed';
+                            } else if (i < index) {
+                                slide.classList.add('prev');
                             } else {
-                                prevButton.disabled = false;
-                                prevButton.style.opacity = '1';
-                                prevButton.style.cursor = 'pointer';
+                                slide.classList.add('next');
                             }
-                            
-                            // Always keep next button enabled for infinite looping
-                            nextButton.disabled = false;
-                            nextButton.style.opacity = '1';
-                            nextButton.style.cursor = 'pointer';
-                        };
+                        });
 
-                        const goToNextSlide = () => {
-                            // Jump to first image when clicking next on the last image
-                            if (currentImageIndex < slideElements.length - 1) {
-                                currentImageIndex++;
-                            } else {
-                                currentImageIndex = 0; // Jump back to first image
-                            }
-                            showSlide(currentImageIndex);
-                        };
-
-                        const goToPrevSlide = () => {
-                            // Non-infinite carousel - stop at the beginning
-                            if (currentImageIndex > 0) {
-                                currentImageIndex--;
-                                showSlide(currentImageIndex);
-                            }
-                        };
-
-                        prevButton.addEventListener('click', goToPrevSlide);
-                        nextButton.addEventListener('click', goToNextSlide);
-
-                        // Initialize carousel display
-                        showSlide(currentImageIndex);
+                        if (index === 0) {
+                            prevButton.disabled = true;
+                            prevButton.style.opacity = '0.5';
+                            prevButton.style.cursor = 'not-allowed';
+                        } else {
+                            prevButton.disabled = false;
+                            prevButton.style.opacity = '1';
+                            prevButton.style.cursor = 'pointer';
+                        }
+                        
+                        nextButton.disabled = false;
+                        nextButton.style.opacity = '1';
+                        nextButton.style.cursor = 'pointer';
                     };
 
-                    // Start processing images
-                    processImagesAndCreateCarousel();
+                    let currentVideoIndex = 0;
 
-                    // Handle window resize to adjust carousel for mobile/desktop
-                    let isMobileView = isMobile();
-                    window.addEventListener('resize', () => {
-                        const currentlyMobile = isMobile();
-                        if (isMobileView !== currentlyMobile) {
-                            isMobileView = currentlyMobile;
-                            // Rebuild carousel when switching between mobile and desktop
-                            carouselImagesContainer.innerHTML = '';
-                            currentImageIndex = 0;
-                            processImagesAndCreateCarousel();
+                    const goToNextSlide = () => {
+                        if (currentVideoIndex < slideElements.length - 1) {
+                            currentVideoIndex++;
+                        } else {
+                            currentVideoIndex = 0; // Loop back to the first video
                         }
-                    });
+                        showSlide(currentVideoIndex);
+                    };
+
+                    const goToPrevSlide = () => {
+                        if (currentVideoIndex > 0) {
+                            currentVideoIndex--;
+                            showSlide(currentVideoIndex);
+                        }
+                    };
+
+                    prevButton.addEventListener('click', goToPrevSlide);
+                    nextButton.addEventListener('click', goToNextSlide);
+
+                    showSlide(currentVideoIndex);
 
                 } else if (carouselImagesContainer) {
                     carouselImagesContainer.innerHTML = '<p>No videos available.</p>';

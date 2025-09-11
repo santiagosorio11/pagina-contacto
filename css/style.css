@@ -781,111 +781,128 @@ p, a, li, label, input, textarea, button, .event-description, .about-us-content 
   background-color: var(--color-accent);
   border-radius: 2px;
 }
-
-.photo-upload-row {
-  display: grid !important;
-  grid-template-columns: repeat(3, 200px) !important;
-  gap: 2rem !important;
-  justify-content: center !important;
-  margin: 2rem auto !important;
-  width: fit-content !important;
+/* --- Drag and Drop Photo Upload --- */
+.upload-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px 0;
+    margin-bottom: 1rem;
+    margin-top: -30px;
 }
 
-.photo-upload-section {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 200px !important;
+.upload-box {
+    width: 200px;
+    height: 270px;
+    position: relative;
+    overflow: hidden;
+    background-color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-.photo-upload-section h4 {
-  font-size: 0.9rem;
-  margin-bottom: 0.5rem;
-  font-weight: 600;
-  color: var(--color-title);
-  width: 100%;
-  min-height: 2.5em;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.upload-box:hover {
+    background-color: #e9e9e9;
 }
 
-.drag-drop-area {
-  width: 200px !important;
-  height: 120px !important;
-  border: 2px dashed var(--color-border);
-  border-radius: 8px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  transition: all .3s ease;
-  margin: 0 !important;
-  position: relative;
-  overflow: hidden;
-  background-color: rgba(0, 0, 0, 0.02);
+.upload-box .image-preview {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5;
+    z-index: 1;
+    transition: opacity 0.3s ease;
 }
 
-/* Mobile */
-@media (max-width: 768px) {
-  .photo-upload-row {
-    grid-template-columns: 1fr !important;
-    gap: 1rem !important;
-    padding: 0 1rem;
-    width: 100% !important;
-  }
-
-  .photo-upload-section {
-    width: 100% !important;
-    margin: 0 auto 1rem auto;
-  }
-
-  .drag-drop-area {
-    width: 350px !important;
-    max-width: 100% !important;
-    height: 120px !important;
-    width:100%;
-  }
-    
-  }
-
-  .photo-upload-section:last-child {
-    margin-bottom: 0;
-  }
-
-  .photo-upload-section h4 {
-    margin-bottom: 0.5rem;
-  }
-
-
-.drag-drop-area:hover {
-  background-color: #f0f0f0;
-  border-color: #a0a0a0;
-  transform: translateY(-3px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.upload-box:hover .image-preview {
+    opacity: 0.5;
 }
 
-.drag-drop-area.drag-over {
-  background-color: rgba(0, 0, 0, .02);
-  border-color: var(--color-accent);
-  transform: translateY(-3px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.upload-box .upload-label {
+    position: relative;
+    z-index: 2;
+    color: #3a3a3aff;
+    font-family: 'Proxima Nova', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    pointer-events: none;
+    text-align: center;
+    width: 100%;
+    padding: 0 10px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
 }
 
-.drag-drop-area i {
-  font-size: 1.5rem;
-  color: var(--color-text-light);
-  margin-bottom: 0.5rem;
+.upload-box input[type="file"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 3;
 }
 
-.drag-drop-area p {
-  text-transform: none;
-  color: var(--color-text-light);
-  margin-bottom: 0;
-  padding: 0 0.5rem;
-  font-size: 0.7rem;
+/* --- Upload Preview --- */
+.file-preview {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 4; /* above the input */
+    background-color: #fff;
+    display: none; /* Hidden by default */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.file-preview-image {
+    max-width: 100%;
+    max-height: 60%;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.file-preview-details {
+    text-align: center;
+}
+
+.file-preview-name {
+    font-size: 0.8rem;
+    word-break: break-all;
+    display: block;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.file-preview-actions button {
+    background: transparent;
+    border: 1px solid #000;
+    color: #000;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 0.7rem;
+    margin: 0 5px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+}
+
+.file-preview-actions button:hover {
+    background: #000;
+    color: #fff;
 }
 
 .photo-instructions {
@@ -895,23 +912,44 @@ p, a, li, label, input, textarea, button, .event-description, .about-us-content 
   text-align: center;
 }
 
-/* Mobile Styles */
+/* --- Media Queries for Upload Boxes --- */
 @media (max-width: 768px) {
-  .photo-upload-row {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-    padding: 0 1rem;
-  }
+    .upload-container {
+        gap: 15px;
+    }
+    .upload-box {
+        width: 150px;
+        height: 210px;
+    }
+    .upload-label {
+      font-size: 0.7rem;
+    }  
+}
 
-  .photo-upload-section {
-    width: 100%;
-  }
+@media (max-width: 576px) {
+    .upload-container {
+        gap: 10px;
+    }
+    .upload-box {
+        width: 120px;
+        height: 180px;
+    }
+    .upload-label {
+      font-size: 0.6rem;
+    }  
+}
 
-  .drag-drop-area {
-    width: 350px;
-    height: 120px;
-    max-width: 100%;
-  }
+@media (max-width: 420px) {
+    .upload-container {
+        gap: 10px;
+    }
+    .upload-box {
+        width: 100px;
+        height: 160px;
+    }
+    .upload-label {
+      font-size: 0.6rem;
+    }  
 }
 
 /* --- FOOTER --- */
@@ -1179,20 +1217,6 @@ p, a, li, label, input, textarea, button, .event-description, .about-us-content 
     font-size: 1.2rem;
   }
   
-  .photo-upload-section h4 {
-    font-size: 1rem;
-  }
-  
-  .photo-upload-row {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-  }
-  
-  .drag-drop-area {
-    width: 100px;
-    height: 100px;
-  }
-  
   .form-group input, .form-group textarea {
     font-size: 16px; /* Prevent zoom on iOS */
   }
@@ -1272,3 +1296,6 @@ p, a, li, label, input, textarea, button, .event-description, .about-us-content 
 .back-button:hover::after {
   width: 100%;
 }
+
+
+
