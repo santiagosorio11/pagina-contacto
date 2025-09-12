@@ -5,15 +5,19 @@
     font-weight: 300;
     font-style: normal;
 }
-
+@font-face {
+    font-family: 'Louis George Cafe Bold';
+    src: url('../fonts/Louis George Cafe Bold.woff2') format('woff2');
+    font-weight: bold;
+}
 
 :root {
-  --font-primary: 'Open Sans', sans-serif;
+  --font-primary: 'Louis George Cafe Bold', sans-serif;
   --font-secondary: sans-serif;
   --color-background: #fff;
   --color-text: #202020;
   --color-text-light: #6b7280;
-  --color-title: #423f3f;
+  --color-title: #1f1f1f;
   --color-accent: #1f1f1f;
   --color-border: #d4d5d6;
 }
@@ -183,7 +187,7 @@ img {
 }
 
 .site-title {
-  font-family: var(--font-primary);
+  font-family: 'Louis George Cafe Bold', sans-serif;
   font-size: 3rem;
   font-weight: 400;
   text-align: center;
@@ -198,7 +202,7 @@ img {
 }
 
 .site-title, h1, h2, h3, .modelNameBook {
-  font-family: 'Open Sans', sans-serif !important;
+  font-family: 'Louis George Cafe Bold', sans-serif;
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: .02em;

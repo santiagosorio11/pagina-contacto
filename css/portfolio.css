@@ -357,7 +357,7 @@
 }
 
 .modelBookMeasurements .measurements {
-  font-family: var(--font-secondary);
+  font-family: 'Proxima Nova' , sans-serif;
   font-size: .85rem;
   color: var(--color-text-light);
 }

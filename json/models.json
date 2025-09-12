@@ -441,8 +441,6 @@
         "/models/mujeres/fany%20morelo/FANY%20MORELO%2029.webp",
         "/models/mujeres/fany%20morelo/FANY%20MORELO%2030.webp",
         "/models/mujeres/fany%20morelo/FANY%20MORELO%2031.webp",
-        "/models/mujeres/fany%20morelo/FANY%20MORELO%2032.webp",
-        "/models/mujeres/fany%20morelo/FANY%20MORELO%2033.webp",
         "/models/mujeres/fany%20morelo/FANY%20MORELO%2034.webp"
       ]
     },
@@ -2415,8 +2413,8 @@
         "OJOS": "Azules"
       },
       "portfolioImages": [
-        "/assets/thumbnail%20men/DAVIDC.webp",
         "/models/hombres/DAVID%20C/DAVID%20CABRALES%200.webp",
+        "/assets/thumbnail%20men/DAVIDC.webp",
         "/models/hombres/DAVID%20C/DAVID%20CABRALES%201.webp",
         "/models/hombres/DAVID%20C/DAVID%20CABRALES%202.webp",
         "/models/hombres/DAVID%20C/DAVID%20CABRALES%203.webp",
