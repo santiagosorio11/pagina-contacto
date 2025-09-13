@@ -82,26 +82,61 @@ document.addEventListener('DOMContentLoaded', () => {
                     // Assuming YouTube embeds for now. Adjust if other video sources are used.
                     // Example YouTube URL: https://www.youtube.com/watch?v=VIDEO_ID
                     // Example embed URL: https://www.youtube.com/embed/VIDEO_ID
-                    let embedUrl = '';
-                    if (videoUrl.includes('youtube.com/watch?v=')) {
-                        const videoId = videoUrl.split('v=')[1].split('&')[0];
-                        embedUrl = `https://www.youtube.com/embed/${videoId}`;
-                    } else if (videoUrl.includes('youtu.be/')) {
-                        const videoId = videoUrl.split('youtu.be/')[1].split('?')[0];
-                        embedUrl = `https://www.youtube.com/embed/${videoId}`;
-                    } else {
-                        // If not a recognized YouTube URL, assume it's a direct video file or another embed link
-                        embedUrl = videoUrl;
-                    }
+                    // Check if the videoUrl is a local file (ends with .mp4 or .webm)
+                    const isLocalVideo = videoUrl.endsWith('.mp4') || videoUrl.endsWith('.webm');
 
-                    const iframe = document.createElement('iframe');
-                    iframe.src = embedUrl;
-                    iframe.setAttribute('frameborder', '0');
-                    iframe.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture');
-                    iframe.setAttribute('allowfullscreen', '');
-                    iframe.setAttribute('loading', 'lazy');
-                    videoWrapper.appendChild(iframe);
-                    videoPlayerContainer.appendChild(videoWrapper);
+                    if (isLocalVideo) {
+                        const videoElement = document.createElement('video');
+                        videoElement.setAttribute('controls', '');
+                        videoElement.setAttribute('preload', 'metadata');
+                        videoElement.style.width = '100%';
+                        videoElement.style.height = 'auto';
+
+                        // Determine base path and create source elements for both formats
+                        const lastDotIndex = videoUrl.lastIndexOf('.');
+                        const basePath = lastDotIndex !== -1 ? videoUrl.substring(0, lastDotIndex) : videoUrl;
+
+                        const mp4Source = document.createElement('source');
+                        mp4Source.src = `${basePath}.mp4`;
+                        mp4Source.type = 'video/mp4';
+                        videoElement.appendChild(mp4Source);
+
+                        const webmSource = document.createElement('source');
+                        webmSource.src = `${basePath}.webm`;
+                        webmSource.type = 'video/webm';
+                        videoElement.appendChild(webmSource);
+
+                        // Fallback for browsers that don't support the video tag
+                        const fallbackText = document.createElement('p');
+                        fallbackText.textContent = 'Tu navegador no soporta videos HTML5.';
+                        videoElement.appendChild(fallbackText);
+
+                        videoWrapper.appendChild(videoElement);
+                        videoPlayerContainer.appendChild(videoWrapper);
+
+                    } else {
+                        // Existing YouTube embed logic
+                        let embedUrl = '';
+                        if (videoUrl.includes('youtube.com/watch?v=')) {
+                            const videoId = videoUrl.split('v=')[1].split('&')[0];
+                            embedUrl = `https://www.youtube.com/embed/${videoId}`;
+                        } else if (videoUrl.includes('youtu.be/')) {
+                            const videoId = videoUrl.split('youtu.be/')[1].split('?')[0];
+                            embedUrl = `https://www.youtube.com/embed/${videoId}`;
+                        } else {
+                            // If not a recognized YouTube URL, assume it's another embed link
+                            embedUrl = videoUrl;
+                        }
+
+                        const iframe = document.createElement('iframe');
+                        iframe.src = embedUrl;
+                        iframe.setAttribute('frameborder', '0');
+                        iframe.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture');
+                        iframe.setAttribute('allowfullscreen', '');
+                        iframe.setAttribute('loading', 'lazy');
+                        videoWrapper.appendChild(iframe);
+                        videoPlayerContainer.appendChild(videoWrapper);
+                    }
                 });
             } else {
                 if (videoPlayerContainer) {
