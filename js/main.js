@@ -422,7 +422,13 @@ async function loadPortfolioPage() {
 
         if (portfolioTab) portfolioTab.href = `portfolio.html?id=${modelId}`;
         if (polaroidsTab) polaroidsTab.href = `polaroids.html?id=${modelId}`;
-        if (videosTab) videosTab.href = `videos.html?id=${modelId}`;
+        if (videosTab) {
+            if (model.videos && model.videos.length > 0) {
+                videosTab.href = `videos.html?id=${modelId}`;
+            } else {
+                videosTab.style.display = 'none';
+            }
+        }
 
         // Update back button functionality
         if (backButton && model.category) {
