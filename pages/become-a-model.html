@@ -216,12 +216,40 @@
 
                 <div class="form-group checkbox-group">
                     <input type="checkbox" id="data-consent" name="data-consent" required>
-                    <label for="data-consent" data-translate="form_data_consent">I agree to the processing of my personal data.</label>
+                    <label for="data-consent" data-translate="form_data_consent">Acepto las <a href="politica-tratamiento-datos.html" target="_blank">políticas de tratamiento de datos</a>.</label>
                 </div>
 
-                <div class="g-recaptcha" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"></div>
+                <div class="form-group checkbox-group">
+                    <input type="checkbox" id="communication-consent" name="communication-consent" required>
+                    <label for="communication-consent" data-translate="form_communication_consent">Autorizo que me contacten por email o celular.</label>
+                </div>
 
                 <button type="submit" class="submit-button" data-translate="form_submit">Submit Application</button>
+            </form>
+        </div>
+
+        <!-- reCAPTCHA Modal -->
+        <div id="recaptcha-modal" style="display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(0,0,0,0.4); justify-content: center; align-items: center;">
+            <div style="background-color: #fefefe; margin: auto; padding: 20px; border: 1px solid #888; width: 80%; max-width: 300px; text-align: center;">
+                <p data-translate="recaptcha_challenge">Please complete the reCAPTCHA challenge.</p>
+                <div id="recaptcha-widget-container" style="margin: 10px auto;"></div>
+                <button id="recaptcha-close-button" style="margin-top: 10px; padding: 8px 15px; background-color: #f44336; color: white; border: none; cursor: pointer;">Close</button>
+            </div>
+        </div>
+
+    </main>
+    <footer class="site-footer">
+        <p>&copy; 2025 Contacto Basico. <span data-translate="copyright">All rights reserved.</span> Diseñado por <a href="https://synapseaiconsulting.co/" target="_blank" style="color: inherit; text-decoration: none;">Synapse AI Consulting</a></p>
+   </footer>
+    <script src="../js/translations.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/upload.js"></script>
+    <script src="../js/menu.js"></script>
+    <script src="../js/model-application.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</body>
+</html>
             </form>
         </div>
     </main>
@@ -233,6 +261,7 @@
     <script src="../js/upload.js"></script>
     <script src="../js/menu.js"></script>
     <script src="../js/model-application.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </body>
 </html>

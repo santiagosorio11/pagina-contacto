@@ -3,7 +3,7 @@
 }
 
 .portfolio-main .modelNameBook {
-  font-family: 'Louis George Cafe', sans-serif !important;
+  font-family: 'Louis George Cafe Bold', sans-serif;
   text-align: center;
   font-size: 1.875rem;
   margin-bottom: 0.25rem;
@@ -349,7 +349,7 @@
 }
 
 .modelBookMeasurements .measurementName {
-  font-family: 'Louis George Cafe', sans-serif;
+  font-family: 'Louis George Cafe Bold', sans-serif;
   font-size: .8rem;
   color: var(--color-text-light);
   margin-bottom: .15rem;
@@ -436,7 +436,7 @@
   font-weight: bold;
   text-transform: capitalize;
   letter-spacing: .05em;
-  font-family: 'Louis George Cafe', sans-serif;
+  font-family: 'Louis George Cafe Bold', sans-serif;
 }
 
 .portfolio-sub-nav {

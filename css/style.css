@@ -204,7 +204,7 @@ img {
 .site-title, h1, h2, h3, .modelNameBook {
   font-family: 'Louis George Cafe Bold', sans-serif;
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: bold;
   letter-spacing: .02em;
 }
 
@@ -1240,21 +1240,42 @@ p, a, li, label, input, textarea, button, .event-description, .about-us-content 
   text-transform: uppercase !important;
   letter-spacing: 1px !important;
   display: block !important;
-  width: 300px !important;
+  width: 100% !important;
+  max-width: 300px !important;
   margin: 2rem auto !important;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2) !important;
 }
+
+.checkbox-group {
+  margin: 1rem 0;
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-group input[type="checkbox"] {
+  margin-right: 0.5rem;
+  width: 16px;
+  height: 16px;
+  position: relative;
+  top: 2px;
+}
+
+.checkbox-group label {
+  font-size: 0.8rem;
+  white-space: nowrap;
+}
+
+.g-recaptcha {
+  margin: 1rem 0;
+  display: flex;
+  justify-content: center;
+}
+
 
 .submit-button:hover {
   background-color: #333333 !important;
   transform: translateY(-2px) !important;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3) !important;
-}
-
-.submit-button:hover {
-  background-color: #333333;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .submit-button:active {
