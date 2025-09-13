@@ -122,6 +122,7 @@ async function initializeTranslation() {
                 applyTranslations(translations, 'en');
                 document.documentElement.lang = 'en';
                 languageDropdown.classList.remove('show');
+                location.reload();
             });
         }
 
@@ -131,6 +132,7 @@ async function initializeTranslation() {
                 applyTranslations(translations, 'es');
                 document.documentElement.lang = 'es';
                 languageDropdown.classList.remove('show');
+                location.reload();
             });
         }
     }
