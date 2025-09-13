@@ -418,9 +418,18 @@ async function loadPortfolioPage() {
         const portfolioTab = document.getElementById('portfolio-tab');
         const polaroidsTab = document.getElementById('polaroids-tab');
         const videosTab = document.getElementById('videos-tab');
+        const backButton = document.getElementById('backButton'); // Get the back button
+
         if (portfolioTab) portfolioTab.href = `portfolio.html?id=${modelId}`;
         if (polaroidsTab) polaroidsTab.href = `polaroids.html?id=${modelId}`;
         if (videosTab) videosTab.href = `videos.html?id=${modelId}`;
+
+        // Update back button functionality
+        if (backButton && model.category) {
+            backButton.onclick = () => {
+                window.location.href = `../pages/${model.category}.html`;
+            };
+        }
 
     } catch (error) {
         mainContainer.innerHTML = '<h1>Error loading portfolio. Please try again later.</h1>';

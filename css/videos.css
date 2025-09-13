@@ -10,17 +10,25 @@
 }
 
 .video-wrapper {
+    position: relative;
     width: 100%;
-    background-color: #000;
-    border-radius: 8px;
+    max-width: 281px; /* Max width for 9:16 aspect ratio with max-height 500px (500 * 9 / 16) */
+    height: 500px; /* Fixed height for the video container */
     overflow: hidden;
+    background-color: #000;
+    border-radius: 0;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
+.video-wrapper iframe,
 .video-wrapper video {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: auto;
-    display: block;
+    height: 100%;
+    border: 0;
+    object-fit: cover; /* This will make the video cover the entire container */
 }
 
 .video-player-container p {

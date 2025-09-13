@@ -1402,7 +1402,9 @@
         "/models/mujeres/monica/MONICA%20HERNANDEZ%2023.webp",
         "/models/mujeres/monica/MONICA%20HERNANDEZ%2024.webp",
         "/models/mujeres/monica/MONICA%20HERNANDEZ%2025.webp",
-        "/models/mujeres/monica/MONICA%20HERNANDEZ%2026.webp"
+        "/models/mujeres/monica/MONICA%20HERNANDEZ%2026.webp",
+        "/models/mujeres/monica/MONICA%20HERNANDEZ%2027.webp",
+        "/models/mujeres/monica/MONICA%20HERNANDEZ%2028.webp"
       ]
     },
     {
@@ -2081,6 +2083,10 @@
         "/models/hombres/ALFREDO/ALFREDO%20%284%29.webp",
         "/models/hombres/ALFREDO/ALFREDO%20%285%29.webp",
         "/models/hombres/ALFREDO/ALFREDO%20%286%29.webp"
+      ],
+      
+      "videos": [
+        "/models/hombres/ALFREDO/Alfredo%20video.webm"
       ]
     },
     {
@@ -2125,6 +2131,10 @@
         "/models/hombres/BENI/BENIGNO%207.webp",
         "/models/hombres/BENI/BENIGNO%208.webp",
         "/models/hombres/BENI/BENIGNO%209.webp"
+      ],
+
+      "videos": [
+        "/models/hombres/BENI/Benig%20video.webm"
       ]
     },
     {
@@ -2166,7 +2176,11 @@
         "/models/hombres/BRIAN/BRIAN%20SALINA%207.webp",
         "/models/hombres/BRIAN/BRIAN%20SALINA%208.webp",
         "/models/hombres/BRIAN/BRIAN%20SALINA%209.webp"
+      ],
+      "videos": [
+        "/models/hombres/BRIAN/Brian%20video.webm"
       ]
+
     },
     {
       "id": "camilo",
@@ -2200,6 +2214,9 @@
         "/models/hombres/CAMILO%20SANCHEZ/CAMILO%20SANCHEZ%207.webp",
         "/models/hombres/CAMILO%20SANCHEZ/CAMILO%20SANCHEZ%208.webp",
         "/models/hombres/CAMILO%20SANCHEZ/CAMILO%20SANCHEZ%209.webp"
+      ],
+      "videos": [
+        "/models/hombres/CAMILO%20SANCHEZ/Camilo%20video.webm"
       ]
     },
     {
@@ -2303,6 +2320,9 @@
         "/models/hombres/DAMIAN%20CACCIAMANI/DAMIAN%20CACCIAMANI%205.webp",
         "/models/hombres/DAMIAN%20CACCIAMANI/DAMIAN%20CACCIAMANI%206.webp",
         "/models/hombres/DAMIAN%20CACCIAMANI/DAMIAN%20CACCIAMANI%209.webp"
+      ],
+      "videos": [
+        "/models/hombres/DAMIAN%20CACCIAMANI/Damian%20video.webm"
       ]
     },
     {
@@ -2395,7 +2415,7 @@
         "/models/hombres/DAVID%20ACUNA/DAVID%20ACUNA%209.webp"
       ],
       "videos": [
-        "/models/hombres/DAVID%20ACUNA/DAVID%20ACUNA%20VIDEO.webm"
+        "/models/hombres/DAVID%20ACUNA/David%20A%20video.webm"
         
       ]
     },
@@ -2422,6 +2442,9 @@
         "/models/hombres/DAVID%20C/DAVID%20CABRALES%205.webp",
         "/models/hombres/DAVID%20C/DAVID%20CABRALES%207.webp",
         "/models/hombres/DAVID%20C/DAVID%20CABRALES%208.webp"       
+      ],
+      "videos": [
+        "/models/hombres/DAVID%20C/David%20Cabrales%20video.webm"
       ]
     },
     {
@@ -2483,6 +2506,9 @@
         "/models/hombres/DIEGO%20ALVAREZ/DIEGO%20ALVAREZ%207.webp",
         "/models/hombres/DIEGO%20ALVAREZ/DIEGO%20ALVAREZ%208.webp",
         "/models/hombres/DIEGO%20ALVAREZ/DIEGO%20ALVAREZ%209.webp"
+      ],
+      "videos": [
+        "/models/hombres/DIEGO%20ALVAREZ/Diego%20video.webm"
       ]
     },
     {
@@ -2567,6 +2593,9 @@
         "/models/hombres/EDUARD%20DIAZ/EDUAR%20DIAZ%207.webp",
         "/models/hombres/EDUARD%20DIAZ/EDUAR%20DIAZ%208.webp",
         "/models/hombres/EDUARD%20DIAZ/EDUAR%20DIAZ%209.webp"
+      ],
+      "videos": [
+        "/models/hombres/EDUARD%20DIAZ/Eduard%20Diaz%20video.webm"
       ]
     },
     {
@@ -2601,6 +2630,9 @@
         "/models/hombres/EDUARDO%20PEREZ/EDUARDO%20PEREZ%206.webp",
         
         "/models/hombres/EDUARDO%20PEREZ/EDUARDO%20PEREZ%208.webp"
+      ],
+      "videos": [
+        "/models/hombres/EDUARDO%20PEREZ/Eduardo%20video.webm"
       ]
     },
     {
@@ -2632,7 +2664,10 @@
         "/models/hombres/EDWARD%20ROJAS/EDWARD%20ROJAS%206.webp",
         "/models/hombres/EDWARD%20ROJAS/EDWARD%20ROJAS%207.webp",
         "/models/hombres/EDWARD%20ROJAS/EDWARD%20ROJAS%208.webp",
-        "/models/hombres/EDWARD%20ROJAS/EDWARD%20ROJAS%209.webp"
+        "/models/hombres/EDWARD%20ROJAS/EDWARD%20ROJAS%209.webp",
+        "/models/hombres/EDWARD%20ROJAS/EDWARD%20ROJAS%2017.webp",
+        "/models/hombres/EDWARD%20ROJAS/EDWARD%20ROJAS%2018.webp",
+        "/models/hombres/EDWARD%20ROJAS/EDWARD%20ROJAS%2019.webp"
       ]
     },
     {
@@ -2673,6 +2708,9 @@
         "/models/hombres/ERIK%20SANCHEZ/ERIK%20SANCHEZ%207.webp",
         "/models/hombres/ERIK%20SANCHEZ/ERIK%20SANCHEZ%208.webp",
         "/models/hombres/ERIK%20SANCHEZ/ERIK%20SANCHEZ%209.webp"
+      ],
+      "videos": [
+        "/models/hombres/ERIK%20SANCHEZ/ERIKVIDEO.webm"
       ]
     },
     {
@@ -2716,6 +2754,9 @@
         "/models/hombres/GABRIEL%20LIZARAZO/GABRIEL%20LIZARAZO%207.webp",
         "/models/hombres/GABRIEL%20LIZARAZO/GABRIEL%20LIZARAZO%208.webp",
         "/models/hombres/GABRIEL%20LIZARAZO/GABRIEL%20LIZARAZO%209.webp"
+      ],
+      "videos": [
+        "/models/hombres/GABRIEL%20LIZARAZO/Gabriel%20video.webm"
       ]
     },
     {
@@ -2850,6 +2891,9 @@
         "/models/hombres/IVO/IVO%20PATRIVO%207.webp",
         "/models/hombres/IVO/IVO%20PATRIVO%208.webp",
         "/models/hombres/IVO/IVO%20PATRIVO%209.webp"
+      ],
+      "videos": [
+        "/models/hombres/IVO/Ivo%20video.webm"
       ]
     },
     {
@@ -2879,6 +2923,9 @@
         "/models/hombres/JAVID/JAVID%20AGAMEZ%207.webp",
         "/models/hombres/JAVID/JAVID%20AGAMEZ%208.webp",
         "/models/hombres/JAVID/JAVID%20AGAMEZ%209.webp"
+      ],
+      "videos": [
+        "/models/hombres/JAVID/Javid%20video.webm"
       ]
     },
     {
@@ -2909,6 +2956,9 @@
         "/models/hombres/JESUS/JESUS%20INSIGNARES%207.webp",
         "/models/hombres/JESUS/JESUS%20INSIGNARES%208.webp",
         "/models/hombres/JESUS/JESUS%20INSIGNARES%209.webp"
+      ],
+      "videos": [
+        "/models/hombres/JESUS/Jesus%20video.webm"
       ]
     },
     {
@@ -2947,7 +2997,9 @@
         "/models/hombres/JHOXAN/JHO%206.webp",
         "/models/hombres/JHOXAN/JHO%207.webp",
         "/models/hombres/JHOXAN/JHO%208.webp"
-        
+      ],
+      "videos": [
+        "/models/hombres/JHOXAN/Jhoxan%20video.webm"
       ]
     },
     {
@@ -3073,6 +3125,9 @@
         "/models/hombres/JUAN%20JOSE/JUAN%20JOSE%20HENAO%207.webp",
         "/models/hombres/JUAN%20JOSE/JUAN%20JOSE%20HENAO%208.webp",
         "/models/hombres/JUAN%20JOSE/JUAN%20JOSE%20HENAO%209.webp"
+      ],
+      "videos": [
+        "/models/hombres/JUAN%20JOSE/Juan%20video.webm"
       ]
     },
     {
@@ -3113,6 +3168,9 @@
         "/models/hombres/JUANFE%20MORENO/JUAN%20FELIPE%20MORENO%207.webp",
         "/models/hombres/JUANFE%20MORENO/JUAN%20FELIPE%20MORENO%208.webp",
         "/models/hombres/JUANFE%20MORENO/JUAN%20FELIPE%20MORENO%209.webp"
+      ],
+      "videos": [
+        "/models/hombres/JUANFE%20MORENO/Juan%20Felipe%20video.webm"
       ]
     },
     {
@@ -3155,6 +3213,9 @@
         "/models/hombres/LORENZO%20CARVAJAL/LORENZO%20CARVAJAL%208.webp",
         "/models/hombres/LORENZO%20CARVAJAL/LORENZO%20CARVAJAL%209.webp",
         "/models/hombres/LORENZO%20CARVAJAL/LORENZO%20CARVAJAL.webp"
+      ],
+      "videos": [
+        "/models/hombres/LORENZO%20CARVAJAL/Lorenzo%20video.webm"
       ]
     },
     {
@@ -3240,6 +3301,9 @@
         "/models/hombres/MARCOS%20SITTNER/MARCOS%20SITTNER%207.webp",
         "/models/hombres/MARCOS%20SITTNER/MARCOS%20SITTNER%208.webp",
         "/models/hombres/MARCOS%20SITTNER/MARCOS%20SITTNER%209.webp"
+      ],
+      "videos": [
+        "/models/hombres/MARCOS%20SITTNER/Marcos%20video.webm"
       ]
     },
     {
@@ -3310,6 +3374,9 @@
         "/models/hombres/MATEO%20SOLARTE/MATEO%20SOLARTE%207.webp",
         
         "/models/hombres/MATEO%20SOLARTE/MATEO%20SOLARTE%209.webp"
+      ],
+      "videos": [
+        "/models/hombres/MATEO%20SOLARTE/Mateo%20video.webm"
       ]
     },
     {
@@ -3353,6 +3420,9 @@
         "/models/hombres/MATIAS%20PAZ/MATIAS%20PAZ%207.webp",
         "/models/hombres/MATIAS%20PAZ/MATIAS%20PAZ%208.webp",
         "/models/hombres/MATIAS%20PAZ/MATIAS%20PAZ%209.webp"
+      ],
+      "videos": [
+        "/models/hombres/MATIAS%20PAZ/Matias%20video.webm"
       ]
     },
     {
@@ -3430,6 +3500,9 @@
         "/models/hombres/PAULO%20PITON/PAULO%20PITON%207.webp",
         "/models/hombres/PAULO%20PITON/PAULO%20PITON%208.webp",
         "/models/hombres/PAULO%20PITON/PAULO%20PITON%209.webp"
+      ],
+      "videos": [
+        "/models/hombres/PAULO%20PITON/Paulo%20video.webm"
       ]
     },
     {
@@ -3469,6 +3542,9 @@
         "/models/hombres/RAUL%20CASSIANI/RAUL%20CASSIANI%207.webp",
         "/models/hombres/RAUL%20CASSIANI/RAUL%20CASSIANI%208.webp",
         "/models/hombres/RAUL%20CASSIANI/RAUL%20CASSIANI%209.webp"
+      ],
+      "videos": [
+        "/models/hombres/RAUL%20CASSIANI/Raul%20video.webm"
       ]
     },
     {
@@ -3506,6 +3582,9 @@
         "/models/hombres/ROMAIN%20CONTI/ROMAIN%20CONTI%208.webp",
         "/models/hombres/ROMAIN%20CONTI/ROMAIN%20CONTI%209.webp",
         "/models/hombres/ROMAIN%20CONTI/ROMAIN%20CONTI.webp"
+      ],
+      "videos": [
+        "/models/hombres/ROMAIN%20CONTI/Romain%20video.webm"
       ]
     },
     {
@@ -3617,6 +3696,9 @@
         "/models/hombres/SEBASTIAN/SEBASTIAN%20LUNA%207.webp",
         "/models/hombres/SEBASTIAN/SEBASTIAN%20LUNA%208.webp",
         "/models/hombres/SEBASTIAN/SEBASTIAN%20LUNA%209.webp"
+      ],
+      "videos": [
+        "/models/hombres/SEBASTIAN/Sebastian%20Luna%20video.webm"
       ]
     },
     {
@@ -3652,6 +3734,9 @@
         "/models/hombres/SERGEY/SERGEY%20OVCHINNIKOV%207.webp",
         "/models/hombres/SERGEY/SERGEY%20OVCHINNIKOV%208.webp",
         "/models/hombres/SERGEY/SERGEY%20OVCHINNIKOV%209.webp"
+      ],
+      "videos": [
+        "/models/hombres/SERGEY/Sergey%20video.webm"
       ]
     },
     {
@@ -3732,6 +3817,9 @@
         "/models/hombres/STANLEY/STANLEY%20MEJIA%206.webp",
         "/models/hombres/STANLEY/STANLEY%20MEJIA%207.webp",
         "/models/hombres/STANLEY/STANLEY%20MEJIA%208.webp"
+      ],
+      "videos": [
+        "/models/hombres/STANLEY/Stanley%20video.webm"
       ]
     },
     {
@@ -3760,7 +3848,9 @@
         "/models/hombres/STEVEN/STEVEN%20PUENTES%205.webp",
         "/models/hombres/STEVEN/STEVEN%20PUENTES%207.webp",
         "/models/hombres/STEVEN/STEVEN%20PUENTES%208.webp"
-        
+      ],
+      "videos": [
+        "/models/hombres/STEVEN/Steven%20video.webm"
       ]
     },
     {
@@ -3874,6 +3964,9 @@
         "/models/hombres/WILLIAM/WILLIAM%20PERDOMO%207.webp",
         "/models/hombres/WILLIAM/WILLIAM%20PERDOMO%208.webp",
         "/models/hombres/WILLIAM/WILLIAM%20PERDOMO%209.webp"
+      ],
+      "videos": [
+        "/models/hombres/WILLIAM/William%20video.webm"
       ]
     },
     

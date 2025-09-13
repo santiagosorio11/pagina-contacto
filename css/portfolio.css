@@ -377,7 +377,8 @@
 /* Portfolio tabs styling */
 .portfolio-tabs {
   display: flex;
-  justify-content: center;
+  justify-content: center; /* Mantener centrado por defecto */
+  align-items: center; /* Alinear verticalmente los elementos */
   gap: 1rem;
   margin: 0.5rem 0;
   padding: 0;
@@ -389,7 +390,7 @@
   border: none;
   padding: 0;
   cursor: pointer;
-  font-size: 0.75rem;
+  font-size: 0.9rem;
   transition: all 0.3s ease;
   position: relative;
   text-transform: uppercase;
@@ -472,4 +473,40 @@
 
 .portfolio-content-section.active {
   display: block;
+}
+
+.portfolio-tabs .back-button {
+  background: none;
+  color: #333;
+  border: none;
+  padding: 0; /* Eliminar padding extra */
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  position: relative;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  font-family: 'Proxima Nova', sans-serif; /* Asegurar la fuente */
+  font-weight: normal; /* Asegurar el peso de la fuente */
+}
+
+.portfolio-tabs .back-button:hover {
+  color: #6b7280;
+  transform: translateY(-2px);
+}
+
+.portfolio-tabs .back-button::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #000;
+  transition: width .3s ease;
+}
+
+.portfolio-tabs .back-button:hover::after {
+  width: 100%;
 }

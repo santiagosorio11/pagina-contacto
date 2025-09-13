@@ -1,106 +1,118 @@
-document.addEventListener('DOMContentLoaded', async () => {
+document.addEventListener('DOMContentLoaded', () => {
+    const urlParams = new URLSearchParams(window.location.search);
+    const modelId = urlParams.get('id');
     const videoPlayerContainer = document.querySelector('.video-player-container');
     const modelNameElement = document.querySelector('.modelNameBook');
-    const measurementsList = document.querySelector('.modelBookMeasurements');
-    const mainContainer = document.getElementById('portfolio-main');
-
-    if (!videoPlayerContainer) {
-        console.error('Video player container not found!');
-        return;
-    }
-
-    const params = new URLSearchParams(window.location.search);
-    const modelId = params.get('id');
 
     if (!modelId) {
-        mainContainer.innerHTML = '<h1>No se ha especificado un modelo.</h1>';
+        console.error('No model ID found in URL');
+        if (videoPlayerContainer) {
+            videoPlayerContainer.innerHTML = '<p>No se encontró el ID del modelo.</p>';
+        }
         return;
     }
 
-    try {
-        const response = await fetch('../json/models.json');
-        if (!response.ok) {
-            throw new Error(`HTTP error! status: ${response.status}`);
-        }
-        const data = await response.json();
-        const model = data.models.find(m => m.id === modelId);
+    Promise.all([
+        fetchData(['../json/models.json', '../json/translations.json'])
+    ])
+        .then(([[data, translations]]) => {
+            const model = data.models.find(m => m.id === modelId);
 
-        if (!model) {
-            mainContainer.innerHTML = '<h1>Modelo no encontrado.</h1>';
-            return;
-        }
-
-        // Update tab links
-        document.getElementById('portfolio-tab').href = `portfolio.html?id=${modelId}`;
-        document.getElementById('polaroids-tab').href = `polaroids.html?id=${modelId}`;
-        document.getElementById('videos-tab').href = `videos.html?id=${modelId}`;
-
-        if (modelNameElement) {
-            modelNameElement.textContent = model.name;
-        }
-        
-        document.title = `Contacto Basico - ${model.name} - Videos`;
-
-        if (measurementsList) {
-            // This part can be simplified if you have a separate translation file,
-            // but for simplicity, we'll just display the details as is.
-            measurementsList.innerHTML = ''; // Clear existing placeholders
-            for (const key in model.details) {
-                const value = model.details[key];
-                const measurementItem = document.createElement('div');
-                measurementItem.classList.add('measurement-item');
-
-                const nameSpan = document.createElement('span');
-                nameSpan.className = 'measurementName';
-                nameSpan.textContent = `${key.charAt(0).toUpperCase() + key.slice(1)}: `;
-
-                const valueSpan = document.createElement('span');
-                valueSpan.className = 'measurements';
-                valueSpan.textContent = value;
-
-                measurementItem.appendChild(nameSpan);
-                measurementItem.appendChild(valueSpan);
-                measurementsList.appendChild(measurementItem);
-            }
-        }
-
-        videoPlayerContainer.innerHTML = ''; // Clear previous content
-
-        if (model.videos && model.videos.length > 0) {
-            model.videos.forEach(videoUrl => {
-                const videoWrapper = document.createElement('div');
-                videoWrapper.className = 'video-wrapper';
-
-                const video = document.createElement('video');
-                video.controls = true;
-                video.preload = 'metadata';
-                
-                const source = document.createElement('source');
-                source.src = `${videoUrl}`; // Assuming videoUrl starts with a slash
-                
-                // Basic type detection
-                if (videoUrl.endsWith('.mp4')) {
-                    source.type = 'video/mp4';
-                } else if (videoUrl.endsWith('.webm')) {
-                    source.type = 'video/webm';
-                } else {
-                    source.type = 'video/mp4'; // Fallback
+            if (!model) {
+                console.error(`Model with ID ${modelId} not found`);
+                if (videoPlayerContainer) {
+                    videoPlayerContainer.innerHTML = '<p>Modelo no encontrado.</p>';
                 }
+                return;
+            }
 
-                video.appendChild(source);
-                video.textContent = 'Tu navegador no soporta el tag de video.';
-                
-                videoWrapper.appendChild(video);
-                videoPlayerContainer.appendChild(videoWrapper);
-            });
-        } else {
-            videoPlayerContainer.innerHTML = '<p>No hay videos disponibles para este modelo.</p>';
-        }
+            if (modelNameElement) {
+                modelNameElement.textContent = model.name;
+            }
 
-    } catch (error) {
-        console.error('Error al cargar los datos del modelo:', error);
-        mainContainer.innerHTML = '<h1>Error al cargar los videos.</h1>';
-    } finally {
-        document.body.style.visibility = 'visible';
-    }
+            // Update portfolio and videos tab links
+            const portfolioTab = document.getElementById('portfolio-tab');
+            const videosTab = document.getElementById('videos-tab');
+            const backButton = document.getElementById('backButton'); // Get the back button
+
+            if (portfolioTab) {
+                portfolioTab.href = `portfolio.html?id=${modelId}`;
+            }
+            if (videosTab) {
+                videosTab.href = `videos.html?id=${modelId}`;
+            }
+
+            // Update back button functionality
+            if (backButton && model.category) {
+                backButton.onclick = () => {
+                    window.location.href = `../pages/${model.category}.html`;
+                };
+            }
+
+            // Load model details
+            const modelBookMeasurements = document.querySelector('.modelBookMeasurements');
+            if (modelBookMeasurements && model.details) {
+                modelBookMeasurements.innerHTML = ''; // Clear existing content
+                const currentLang = localStorage.getItem('preferred_language') || detectLanguage();
+                for (const key in model.details) {
+                    const value = model.details[key];
+                    const measurementItem = document.createElement('div');
+                    measurementItem.classList.add('measurement-item');
+                    const nameSpan = document.createElement('span');
+                    nameSpan.className = 'measurementName';
+                    const translationKey = `detail_${key.toLowerCase()}`;
+                    nameSpan.setAttribute('data-translation-key', translationKey);
+                    const translatedLabel = translations[currentLang][translationKey] || key;
+                    nameSpan.textContent = `${translatedLabel}: `;
+                    const valueSpan = document.createElement('span');
+                    valueSpan.className = 'measurements';
+                    valueSpan.textContent = value;
+                    measurementItem.classList.add('non-convertible');
+                    measurementItem.appendChild(nameSpan);
+                    measurementItem.appendChild(valueSpan);
+                    modelBookMeasurements.appendChild(measurementItem);
+                }
+            }
+
+            if (model.videos && model.videos.length > 0) {
+                model.videos.forEach(videoUrl => {
+                    const videoWrapper = document.createElement('div');
+                    videoWrapper.classList.add('video-wrapper');
+
+                    // Assuming YouTube embeds for now. Adjust if other video sources are used.
+                    // Example YouTube URL: https://www.youtube.com/watch?v=VIDEO_ID
+                    // Example embed URL: https://www.youtube.com/embed/VIDEO_ID
+                    let embedUrl = '';
+                    if (videoUrl.includes('youtube.com/watch?v=')) {
+                        const videoId = videoUrl.split('v=')[1].split('&')[0];
+                        embedUrl = `https://www.youtube.com/embed/${videoId}`;
+                    } else if (videoUrl.includes('youtu.be/')) {
+                        const videoId = videoUrl.split('youtu.be/')[1].split('?')[0];
+                        embedUrl = `https://www.youtube.com/embed/${videoId}`;
+                    } else {
+                        // If not a recognized YouTube URL, assume it's a direct video file or another embed link
+                        embedUrl = videoUrl;
+                    }
+
+                    const iframe = document.createElement('iframe');
+                    iframe.src = embedUrl;
+                    iframe.setAttribute('frameborder', '0');
+                    iframe.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture');
+                    iframe.setAttribute('allowfullscreen', '');
+                    iframe.setAttribute('loading', 'lazy');
+                    videoWrapper.appendChild(iframe);
+                    videoPlayerContainer.appendChild(videoWrapper);
+                });
+            } else {
+                if (videoPlayerContainer) {
+                    videoPlayerContainer.innerHTML = '<p>No hay videos disponibles para este modelo.</p>';
+                }
+            }
+        })
+        .catch(error => {
+            console.error('Error loading model data:', error);
+            if (videoPlayerContainer) {
+                videoPlayerContainer.innerHTML = '<p>Error al cargar los videos.</p>';
+            }
+        });
 });
