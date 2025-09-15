@@ -83,23 +83,47 @@ document.addEventListener('DOMContentLoaded', () => {
                     const videoWrapper = document.createElement('div');
                     videoWrapper.classList.add('video-wrapper');
 
-                    // Assuming YouTube embeds for now. Adjust if other video sources are used.
-                    // Example YouTube URL: https://www.youtube.com/watch?v=VIDEO_ID
-                    // Example embed URL: https://www.youtube.com/embed/VIDEO_ID
+            
                     // Check if the videoUrl is a local file (ends with .mp4 or .webm)
                     const isLocalVideo = videoUrl.endsWith('.mp4') || videoUrl.endsWith('.webm');
 
                     if (isLocalVideo) {
+                        // Wrapper styling for custom controls
+                        videoWrapper.style.position = 'relative';
+                        videoWrapper.style.cursor = 'pointer';
+
                         const videoElement = document.createElement('video');
                         videoElement.setAttribute('autoplay', '');
                         videoElement.setAttribute('loop', '');
-                        videoElement.setAttribute('muted', '');
                         videoElement.setAttribute('playsinline', '');
                         videoElement.setAttribute('preload', 'metadata');
+                        videoElement.poster = "";
+                        videoElement.muted = true;
                         videoElement.style.width = '100%';
-                        videoElement.style.height = 'auto';
+                        videoElement.style.height = '100%';
+                        videoElement.style.objectFit = 'cover';
 
-                        // Determine base path and create source elements for both formats
+                        // Create custom play button
+                        const playButton = document.createElement('div');
+                        playButton.className = 'play-button';
+                        
+                        // Toggle play/pause on wrapper click
+                        videoWrapper.addEventListener('click', () => {
+                            if (videoElement.paused) {
+                                videoElement.play();
+                            } else {
+                                videoElement.pause();
+                            }
+                        });
+
+                        // Show/hide play button based on state
+                        videoElement.addEventListener('play', () => {
+                            playButton.style.display = 'none';
+                        });
+                        videoElement.addEventListener('pause', () => {
+                            playButton.style.display = 'block';
+                        });
+
                         const lastDotIndex = videoUrl.lastIndexOf('.');
                         const basePath = lastDotIndex !== -1 ? videoUrl.substring(0, lastDotIndex) : videoUrl;
 
@@ -108,19 +132,13 @@ document.addEventListener('DOMContentLoaded', () => {
                         mp4Source.type = 'video/mp4';
                         videoElement.appendChild(mp4Source);
 
-                        const webmSource = document.createElement('source');
-                        webmSource.src = `${basePath}.webm`;
-                        webmSource.type = 'video/webm';
-                        videoElement.appendChild(webmSource);
-
-                        // Fallback for browsers that don't support the video tag
                         const fallbackText = document.createElement('p');
                         fallbackText.textContent = 'Tu navegador no soporta videos HTML5.';
                         videoElement.appendChild(fallbackText);
 
                         videoWrapper.appendChild(videoElement);
+                        videoWrapper.appendChild(playButton); // Add play button to wrapper
                         videoPlayerContainer.appendChild(videoWrapper);
-
                     } else {
                         // Existing YouTube embed logic
                         let embedUrl = '';

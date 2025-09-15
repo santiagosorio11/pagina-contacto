@@ -11,6 +11,7 @@
 
 .video-wrapper {
     position: relative;
+    cursor: pointer;
     width: 100%;
     max-width: 281px; /* Max width for 9:16 aspect ratio with max-height 500px (500 * 9 / 16) */
     height: 500px; /* Fixed height for the video container */
@@ -34,4 +35,23 @@
 .video-player-container p {
     font-size: 1.2rem;
     color: #888;
+}
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 20px 0 20px 35px; /* Creates a triangle (play icon) */
+    border-color: transparent transparent transparent rgba(255, 255, 255, 0.8);
+    pointer-events: none; /* Button doesn't intercept clicks on the wrapper */
+    transition: opacity 0.3s ease;
+    opacity: 0.7;
+}
+
+.video-wrapper:hover .play-button {
+    opacity: 1;
 }
