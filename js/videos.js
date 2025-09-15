@@ -91,7 +91,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
                     if (isLocalVideo) {
                         const videoElement = document.createElement('video');
-                        videoElement.setAttribute('controls', '');
+                        videoElement.setAttribute('autoplay', '');
+                        videoElement.setAttribute('loop', '');
+                        videoElement.setAttribute('muted', '');
+                        videoElement.setAttribute('playsinline', '');
                         videoElement.setAttribute('preload', 'metadata');
                         videoElement.style.width = '100%';
                         videoElement.style.height = 'auto';
