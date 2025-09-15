@@ -1263,6 +1263,8 @@ p, a, li, label, input, textarea, button, .event-description, .about-us-content 
 .checkbox-group label {
   font-size: 0.8rem;
   white-space: nowrap;
+  position: relative;
+  top: 5px;
 }
 
 .g-recaptcha {
