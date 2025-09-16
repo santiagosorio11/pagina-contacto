@@ -522,11 +522,10 @@ document.addEventListener('DOMContentLoaded', async () => {
         lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // For Mobile or negative scrolling
     });
 
-    // Disable right-click on all images
-    const images = document.querySelectorAll('img');
-    images.forEach(function(image) {
-        image.addEventListener('contextmenu', function(e) {
+    // Disable right-click on all images and videos using event delegation
+    document.addEventListener('contextmenu', function(e) {
+        if (e.target.nodeName === 'IMG' || e.target.nodeName === 'VIDEO') {
             e.preventDefault();
-        });
+        }
     });
 });
