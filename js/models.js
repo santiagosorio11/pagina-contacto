@@ -11,8 +11,8 @@ document.addEventListener('DOMContentLoaded', async function () {
 
     try {
         const [modelsResponse, translationsResponse] = await Promise.all([
-            fetch('../json/models.json'),
-            fetch('../json/translations.json')
+            fetch('/json/models.json'),
+            fetch('/json/translations.json')
         ]);
 
         if (!modelsResponse.ok) throw new Error('Network response for models was not ok');
@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', async function () {
 
         filteredModels.forEach(model => {
             const modelCard = document.createElement('a');
-            modelCard.href = `portfolio.html?id=${model.id}`;
+            modelCard.href = `portfolio?id=${model.id}`;
             modelCard.className = 'model-card';
 
             const imageWrapper = document.createElement('div');

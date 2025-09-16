@@ -420,11 +420,11 @@ async function loadPortfolioPage() {
         const videosTab = document.getElementById('videos-tab');
         const backButton = document.getElementById('backButton'); // Get the back button
 
-        if (portfolioTab) portfolioTab.href = `portfolio.html?id=${modelId}`;
-        if (polaroidsTab) polaroidsTab.href = `polaroids.html?id=${modelId}`;
+        if (portfolioTab) portfolioTab.href = `portfolio?id=${modelId}`;
+        if (polaroidsTab) polaroidsTab.href = `polaroids?id=${modelId}`;
         if (videosTab) {
             if (model.videos && model.videos.length > 0) {
-                videosTab.href = `videos.html?id=${modelId}`;
+                videosTab.href = `videos?id=${modelId}`;
             } else {
                 videosTab.style.display = 'none';
             }
@@ -433,7 +433,7 @@ async function loadPortfolioPage() {
         // Update back button functionality
         if (backButton && model.category) {
             backButton.onclick = () => {
-                window.location.href = `../pages/${model.category}.html`;
+                window.location.href = `/pages/${model.category}`;
             };
         }
 
@@ -493,10 +493,10 @@ document.addEventListener('DOMContentLoaded', async () => {
     console.log('Current page:', page);
     console.log('Full path:', window.location.pathname);
 
-    if (page === 'portfolio.html') {
+    if (page === 'portfolio') {
         console.log('Loading portfolio page');
         await loadPortfolioPage();
-    } else if (page === 'events.html') { // New condition for events page
+    } else if (page === 'events') { // New condition for events page
         console.log('Loading events page');
         await loadEventsPage();
     }

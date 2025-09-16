@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     Promise.all([
-        fetchData(['../json/models.json', '../json/translations.json'])
+        fetchData(['/json/models.json', '/json/translations.json'])
     ])
         .then(([[data, translations]]) => {
             const model = data.models.find(m => m.id === modelId);
@@ -36,11 +36,11 @@ document.addEventListener('DOMContentLoaded', () => {
             const backButton = document.getElementById('backButton'); // Get the back button
 
             if (portfolioTab) {
-                portfolioTab.href = `portfolio.html?id=${modelId}`;
+                portfolioTab.href = `portfolio?id=${modelId}`;
             }
             if (videosTab) {
                 if (model.videos && model.videos.length > 0) {
-                    videosTab.href = `videos.html?id=${modelId}`;
+                    videosTab.href = `videos?id=${modelId}`;
                 } else {
                     videosTab.style.display = 'none';
                 }
@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // Update back button functionality
             if (backButton && model.category) {
                 backButton.onclick = () => {
-                    window.location.href = `../pages/${model.category}.html`;
+                    window.location.href = `/pages/${model.category}`;
                 };
             }
 
