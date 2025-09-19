@@ -219,7 +219,9 @@
             "PANTY":"M"
          },
          "portfolioImages":[
-            "/assets/thumbnail%20women/BRIGH.webp"
+            "/assets/thumbnail%20women/BRIGH.webp",
+            "/models/mujeres/brigh/BRIGH%201.webp",
+            "/models/mujeres/brigh/BRIGH%202.webp"
          ],
          "videos":[
             "/models/videosmujeres/Brigh%20video.mp4"
@@ -2977,12 +2979,8 @@
             "OJOS":"Azules"
          },
          "portfolioImages":[
+            "/models/hombres/JESUS/JESUS%20INSIGNARES%200.webp",
             "/models/hombres/JESUS/JESUS%20INSIGNARES%201.webp",
-            "/models/hombres/JESUS/JESUS%20INSIGNARES%2010.webp",
-            "/models/hombres/JESUS/JESUS%20INSIGNARES%2011.webp",
-            "/models/hombres/JESUS/JESUS%20INSIGNARES%2012.webp",
-            "/models/hombres/JESUS/JESUS%20INSIGNARES%2013.webp",
-            "/models/hombres/JESUS/JESUS%20INSIGNARES%2015.webp",
             "/models/hombres/JESUS/JESUS%20INSIGNARES%202.webp",
             "/models/hombres/JESUS/JESUS%20INSIGNARES%203.webp",
             "/models/hombres/JESUS/JESUS%20INSIGNARES%204.webp",
@@ -2990,7 +2988,12 @@
             "/models/hombres/JESUS/JESUS%20INSIGNARES%206.webp",
             "/models/hombres/JESUS/JESUS%20INSIGNARES%207.webp",
             "/models/hombres/JESUS/JESUS%20INSIGNARES%208.webp",
-            "/models/hombres/JESUS/JESUS%20INSIGNARES%209.webp"
+            "/models/hombres/JESUS/JESUS%20INSIGNARES%209.webp",
+            "/models/hombres/JESUS/JESUS%20INSIGNARES%2010.webp",
+            "/models/hombres/JESUS/JESUS%20INSIGNARES%2011.webp",
+            "/models/hombres/JESUS/JESUS%20INSIGNARES%2012.webp",
+            "/models/hombres/JESUS/JESUS%20INSIGNARES%2013.webp"
+         
          ],
          "videos":[
             "/models/hombres/JESUS/Jesus%20video.mp4"
@@ -3691,7 +3694,7 @@
          "id":"sebastian",
          "name":"SEBASTIAN",
          "category":"men",
-         "thumbnailUrl":"/assets/thumbnail%20men/SEBASTIAN.webp",
+         "thumbnailUrl":"/models/hombres/SEBASTIAN/SEBASTIAN%20LUNA%200.webp",
          "details":{
             "ESTATURA":"1.85 m",
             "CAMISA":"M",
@@ -3701,11 +3704,8 @@
             "OJOS":"Azules"
          },
          "portfolioImages":[
-            "/assets/thumbnail%20men/SEBASTIAN.webp",
+            "/models/hombres/SEBASTIAN/SEBASTIAN%20LUNA%200.webp",
             "/models/hombres/SEBASTIAN/SEBASTIAN%20LUNA%201.webp",
-            "/models/hombres/SEBASTIAN/SEBASTIAN%20LUNA%2011.webp",
-            "/models/hombres/SEBASTIAN/SEBASTIAN%20LUNA%2012.webp",
-            "/models/hombres/SEBASTIAN/SEBASTIAN%20LUNA%2013.webp",
             "/models/hombres/SEBASTIAN/SEBASTIAN%20LUNA%202.webp",
             "/models/hombres/SEBASTIAN/SEBASTIAN%20LUNA%203.webp",
             "/models/hombres/SEBASTIAN/SEBASTIAN%20LUNA%204.webp",
@@ -3713,7 +3713,14 @@
             "/models/hombres/SEBASTIAN/SEBASTIAN%20LUNA%206.webp",
             "/models/hombres/SEBASTIAN/SEBASTIAN%20LUNA%207.webp",
             "/models/hombres/SEBASTIAN/SEBASTIAN%20LUNA%208.webp",
-            "/models/hombres/SEBASTIAN/SEBASTIAN%20LUNA%209.webp"
+            "/models/hombres/SEBASTIAN/SEBASTIAN%20LUNA%209.webp",
+            "/models/hombres/SEBASTIAN/SEBASTIAN%20LUNA%2010.webp",
+            "/models/hombres/SEBASTIAN/SEBASTIAN%20LUNA%2011.webp",
+            "/models/hombres/SEBASTIAN/SEBASTIAN%20LUNA%2012.webp",
+            "/models/hombres/SEBASTIAN/SEBASTIAN%20LUNA%2013.webp",
+            "/models/hombres/SEBASTIAN/SEBASTIAN%20LUNA%2014.webp",
+            "/models/hombres/SEBASTIAN/SEBASTIAN%20LUNA%2015.webp",
+            "/models/hombres/SEBASTIAN/SEBASTIAN%20LUNA%2016.webp"
          ],
          "videos":[
             "/models/hombres/SEBASTIAN/Sebastian%20Luna%20video.mp4"
@@ -3799,7 +3806,7 @@
          "id":"stanley",
          "name":"STANLEY",
          "category":"men",
-         "thumbnailUrl":"/assets/thumbnail%20men/STANLEY.webp",
+         "thumbnailUrl":"/models/hombres/STANLEY/STANLEY%20MEJIA%200.webp",
          "details":{
             "ESTATURA":"1.85 m",
             "CAMISA":"M",
@@ -3809,8 +3816,15 @@
             "OJOS":"Negros"
          },
          "portfolioImages":[
-            "/assets/thumbnail%20men/STANLEY.webp",
+            "/models/hombres/STANLEY/STANLEY%20MEJIA%200.webp",
             "/models/hombres/STANLEY/STANLEY%20MEJIA%201.webp",
+            "/models/hombres/STANLEY/STANLEY%20MEJIA%202.webp",
+            "/models/hombres/STANLEY/STANLEY%20MEJIA%203.webp",
+            "/models/hombres/STANLEY/STANLEY%20MEJIA%204.webp",
+            "/models/hombres/STANLEY/STANLEY%20MEJIA%205.webp",
+            "/models/hombres/STANLEY/STANLEY%20MEJIA%206.webp",
+            "/models/hombres/STANLEY/STANLEY%20MEJIA%207.webp",
+            "/models/hombres/STANLEY/STANLEY%20MEJIA%208.webp",
             "/models/hombres/STANLEY/STANLEY%20MEJIA%2010.webp",
             "/models/hombres/STANLEY/STANLEY%20MEJIA%2011.webp",
             "/models/hombres/STANLEY/STANLEY%20MEJIA%2012.webp",
@@ -3821,18 +3835,8 @@
             "/models/hombres/STANLEY/STANLEY%20MEJIA%2017.webp",
             "/models/hombres/STANLEY/STANLEY%20MEJIA%2018.webp",
             "/models/hombres/STANLEY/STANLEY%20MEJIA%2019.webp",
-            "/models/hombres/STANLEY/STANLEY%20MEJIA%202.webp",
-            "/models/hombres/STANLEY/STANLEY%20MEJIA%2020.webp",
-            "/models/hombres/STANLEY/STANLEY%20MEJIA%2021.webp",
-            "/models/hombres/STANLEY/STANLEY%20MEJIA%2022.webp",
-            "/models/hombres/STANLEY/STANLEY%20MEJIA%2023.webp",
-            "/models/hombres/STANLEY/STANLEY%20MEJIA%2024.webp",
-            "/models/hombres/STANLEY/STANLEY%20MEJIA%203.webp",
-            "/models/hombres/STANLEY/STANLEY%20MEJIA%204.webp",
-            "/models/hombres/STANLEY/STANLEY%20MEJIA%205.webp",
-            "/models/hombres/STANLEY/STANLEY%20MEJIA%206.webp",
-            "/models/hombres/STANLEY/STANLEY%20MEJIA%207.webp",
-            "/models/hombres/STANLEY/STANLEY%20MEJIA%208.webp"
+            "/models/hombres/STANLEY/STANLEY%20MEJIA%2020.webp"
+            
          ],
          "videos":[
             "/models/hombres/STANLEY/Stanley%20video.mp4"
