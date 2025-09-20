@@ -90,25 +90,8 @@ function applyTranslations(translations, language) {
 
 // Función para inicializar el sistema de traducción
 async function initializeTranslation() {
-    let translations = await loadTranslations();
-    if (!translations) {
-        document.body.style.visibility = 'visible';
-        return; // No se puede hacer nada sin las traducciones base (para EN)
-    }
-
-    // Si el idioma del HTML es español, usamos el contenido del HTML como la fuente principal.
-    if (!translations.es) {
-        translations.es = {};
-    }
-    document.querySelectorAll('[data-translate]').forEach(element => {
-        const key = element.getAttribute('data-translate');
-        translations.es[key] = element.innerHTML;
-    });
-    document.querySelectorAll('[data-translate-placeholder]').forEach(element => {
-        const key = element.getAttribute('data-translate-placeholder');
-        translations.es[key] = element.placeholder;
-    });
-
+    const translations = await loadTranslations();
+    // Always apply translations, even if they are null, to make the body visible
     const currentLang = detectLanguage();
     applyTranslations(translations, currentLang);
 
