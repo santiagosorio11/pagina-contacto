@@ -1,9 +1,22 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', async function() {
     const form = document.getElementById('become-a-model-form');
     if (!form) return;
 
     const submitButton = form.querySelector('button[type="submit"]');
     const originalButtonText = submitButton.innerHTML;
+
+    // Load translations
+    let translations = {};
+    try {
+        const response = await fetch('../json/translations.json');
+        if (response.ok) {
+            translations = await response.json();
+        } else {
+            console.error('Failed to load translations.');
+        }
+    } catch (error) {
+        console.error('Error loading translations:', error);
+    }
 
     // Create a status message container
     const statusMessage = document.createElement('p');
@@ -15,6 +28,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
     form.addEventListener('submit', async function(event) {
         event.preventDefault();
+        if (!validateForm()) {
+            return;
+        }
 
         // --- VALIDATION ---
         const headshot = form.querySelector('input[name="headshot"]').files[0];
@@ -22,13 +38,17 @@ document.addEventListener('DOMContentLoaded', function() {
         const fulllength = form.querySelector('input[name="fulllength"]').files[0];
 
         if (!headshot || !sideprofile || !fulllength) {
-            showStatus('Por favor, sube las tres fotos requeridas.', 'error');
+            const lang = localStorage.getItem('preferred_language') || 'es';
+            const message = lang === 'es' ? 'Por favor, sube las tres fotos requeridas.' : 'Please upload all three required photos.';
+            showStatus(message, 'error');
             return;
         }
 
         // --- START SUBMISSION ---
         setLoading(true);
-        showStatus('Enviando tu aplicación, por favor espera...', 'loading');
+        const lang = localStorage.getItem('preferred_language') || 'es';
+        const sendingMessage = lang === 'es' ? 'Enviando tu aplicación, por favor espera...' : 'Sending your application, please wait...';
+        showStatus(sendingMessage, 'loading');
 
         try {
             // 1. Convert images to Base64
@@ -68,21 +88,57 @@ document.addEventListener('DOMContentLoaded', function() {
 
             // 5. Handle response
             if (result.status === 'success') {
-                showStatus('¡Aplicación enviada con éxito! Gracias por tu interés.', 'success');
+                const successMessage = lang === 'es' ? '¡Aplicación enviada con éxito! Gracias por tu interés.' : 'Application submitted successfully! Thank you for your interest.';
+                showStatus(successMessage, 'success');
                 form.reset();
                 // Reset file previews from upload.js
                 document.querySelectorAll('.file-delete-btn').forEach(btn => btn.click());
             } else {
-                throw new Error(result.message || 'Ocurrió un error desconocido.');
+                throw new Error(result.message || (lang === 'es' ? 'Ocurrió un error desconocido.' : 'An unknown error occurred.'));
             }
 
         } catch (error) {
             console.error('Submission Error:', error);
-            showStatus(`Error al enviar: ${error.message}. Por favor, inténtalo de nuevo.`, 'error');
+            const errorMessage = lang === 'es' ? `Error al enviar: ${error.message}. Por favor, inténtalo de nuevo.` : `Error submitting: ${error.message}. Please try again.`;
+            showStatus(errorMessage, 'error');
         } finally {
             setLoading(false);
         }
     });
+
+    function validateForm() {
+        let isValid = true;
+        const lang = localStorage.getItem('preferred_language') || 'es';
+        const requiredMessage = translations[lang]?.form_validation_required || 'Please fill out this field.';
+
+        // Clear previous validation messages
+        form.querySelectorAll('.validation-message').forEach(el => el.remove());
+
+        const requiredFields = form.querySelectorAll('[required]');
+        requiredFields.forEach(field => {
+            const isCheckbox = field.type === 'checkbox';
+            const isFile = field.type === 'file';
+            let value = isCheckbox ? field.checked : field.value.trim();
+            if (isFile) {
+                value = field.files.length > 0;
+            }
+
+            if (!value) {
+                isValid = false;
+                field.classList.add('is-invalid');
+                const error = document.createElement('div');
+                error.className = 'validation-message';
+                error.style.color = 'red';
+                error.style.fontSize = '0.8em';
+                error.textContent = requiredMessage;
+                field.parentNode.insertBefore(error, field.nextSibling);
+            } else {
+                field.classList.remove('is-invalid');
+            }
+        });
+
+        return isValid;
+    }
 
     /**
      * Converts a file to a Base64 encoded string.
@@ -103,9 +159,11 @@ document.addEventListener('DOMContentLoaded', function() {
      * @param {boolean} isLoading Whether the form is loading.
      */
     function setLoading(isLoading) {
+        const lang = localStorage.getItem('preferred_language') || 'es';
+        const sendingText = lang === 'es' ? 'Enviando...' : 'Sending...';
         if (isLoading) {
             submitButton.disabled = true;
-            submitButton.innerHTML = '<span class="spinner"></span> Enviando...'; // You can style the spinner with CSS
+            submitButton.innerHTML = `<span class="spinner"></span> ${sendingText}`;
         } else {
             submitButton.disabled = false;
             submitButton.innerHTML = originalButtonText;

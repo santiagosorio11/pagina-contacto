@@ -124,7 +124,8 @@
     "mision": "Mission",
     "mision_text": "Discover, develop and project models and talents with a global vision, boosting their careers in the fashion industry through ethical, human and strategic management. At Contacto Básico Model Management we work to connect our models with the best national and international opportunities, building real paths to professional success and personal growth.",
     "vision": "Vision",
-    "vision_text": "To be the most influential and recognized modeling agency in Colombia, consolidating ourselves as a benchmark for projecting national talent to the world. We aspire to continue creating visibility and training platforms, boosting new generations of models with potential, character and authenticity, in tune with the demands of the global industry."
+    "vision_text": "To be the most influential and recognized modeling agency in Colombia, consolidating ourselves as a benchmark for projecting national talent to the world. We aspire to continue creating visibility and training platforms, boosting new generations of models with potential, character and authenticity, in tune with the demands of the global industry.",
+    "form_validation_required": "Please fill out this field."
   },
   "es": {
     "nav_home": "Inicio",
@@ -251,6 +252,7 @@
     "mision": "Misión",
     "vision": "Visión",
     "form_replace_button": "Reemplazar",
-    "form_delete_button": "Eliminar"
+    "form_delete_button": "Eliminar",
+    "form_validation_required": "Por favor, rellena este campo."
   }
 }
