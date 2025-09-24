@@ -9,6 +9,9 @@ document.addEventListener('DOMContentLoaded', async function () {
         return;
     }
 
+    // Ensure body is hidden initially while loading
+    document.body.style.visibility = 'hidden';
+
     try {
         const [modelsResponse, translationsResponse] = await Promise.all([
             fetch('/json/models.json'),
@@ -95,8 +98,38 @@ document.addEventListener('DOMContentLoaded', async function () {
             modelGrid.appendChild(modelCard);
         });
 
+        // Hide loader and make body visible
+        const loader = document.getElementById('page-loader');
+        if (loader) {
+            loader.style.transition = 'opacity 0.3s';
+            loader.style.opacity = '0';
+            setTimeout(() => {
+                loader.style.display = 'none';
+            }, 300);
+        }
+
+        // Show body content after a brief delay to ensure loader animation finishes
+        setTimeout(() => {
+            document.body.style.visibility = 'visible';
+        }, filteredModels.length > 0 ? 350 : 100);
+
     } catch (error) {
         console.error('Error loading or processing model data:', error);
         modelGrid.innerHTML = '<p>Error loading models. Please try again later.</p>';
+
+        // Hide loader even in case of error and make body visible
+        const loader = document.getElementById('page-loader');
+        if (loader) {
+            loader.style.transition = 'opacity 0.3s';
+            loader.style.opacity = '0';
+            setTimeout(() => {
+                loader.style.display = 'none';
+            }, 300);
+        }
+
+        // Show body content
+        setTimeout(() => {
+            document.body.style.visibility = 'visible';
+        }, 100);
     }
 });
