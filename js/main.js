@@ -25,13 +25,10 @@ async function fetchData(urls) {
             return '/' + url;
         });
         
-        console.log('Fetching data from:', absoluteUrls);
         const responses = await Promise.all(absoluteUrls.map(url => {
-            console.log('Fetching:', url);
             return fetch(url);
         }));
         const data = await Promise.all(responses.map((response, index) => {
-            console.log(`Response for ${absoluteUrls[index]}:`, response.status, response.ok);
             if (!response.ok) {
                 throw new Error(`Network response was not ok for ${absoluteUrls[index]}: ${response.status} ${response.statusText}`);
             }
@@ -130,7 +127,6 @@ function initializeHomepage() {
  * Carga el perfil de un modelo individual en portfolio.html
  */
 async function loadPortfolioPage() {
-    console.log("loadPortfolioPage function started");
     const mainContainer = document.getElementById('portfolio-main');
     if (!mainContainer) {
         console.error("Could not find the element with id 'portfolio-main'");
@@ -455,6 +451,11 @@ async function loadEventsPage() {
         return;
     }
 
+    if (eventsContainer.children.length > 0) {
+        document.body.style.visibility = 'visible';
+        return;
+    }
+
     try {
         const [events] = await fetchData(['/json/events.json']);
 
@@ -490,14 +491,10 @@ document.addEventListener('DOMContentLoaded', async () => {
     // Get the page name correctly when pages are in a subdirectory
     const pathParts = window.location.pathname.split("/");
     const page = pathParts[pathParts.length - 1];
-    console.log('Current page:', page);
-    console.log('Full path:', window.location.pathname);
 
     if (page === 'portfolio') {
-        console.log('Loading portfolio page');
         await loadPortfolioPage();
     } else if (page === 'events') { // New condition for events page
-        console.log('Loading events page');
         await loadEventsPage();
     }
 
