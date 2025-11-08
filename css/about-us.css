@@ -142,6 +142,16 @@
     }
 }
 
+@media (min-width: 1600px) {
+    .about-us-container {
+        gap: 0.48rem;
+    }
+
+    .about-us-text {
+        padding: 1.7rem 2.2rem;
+    }
+}
+
 @keyframes vertical-scroll {
     0% {
         transform: translateY(0);
