@@ -13,7 +13,7 @@
     margin: 0 0 20px 0;
     padding: 0;
     position: relative;
-    gap: 0;
+    gap: 2.5rem;
 }
 
 .about-us-text {
@@ -94,7 +94,7 @@
         margin: 0 0 20px 0;
         padding: 0;
         position: relative;
-        gap: 0;
+        gap: 2.5rem;
     }
     .about-us-text {
         padding: 1.9rem 2.6rem;
@@ -109,7 +109,7 @@
 @media (min-width: 1024px) and (max-width: 1365px) {
     .about-us-container {
         grid-template-columns: 48% 52%;
-        gap: 0;
+        gap: 2.5rem;
     }
 
     .about-us-text {
