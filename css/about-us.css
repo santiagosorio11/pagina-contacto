@@ -10,10 +10,10 @@
     grid-template-columns: 52% 48%;
     width: 100%;
     height: auto;
-    margin: 0 0 20px 0;
+    margin: 0 0 10px 0;
     padding: 0;
     position: relative;
-    gap: 18px;
+    gap: 10px;
     align-items: start;
 }
 
@@ -166,6 +166,7 @@
     .about-us-container {
         grid-template-columns: 1fr;
         min-height: auto;
+        gap: 15px;
     }
 
     .about-us-text {
@@ -208,6 +209,10 @@
     .about-us-text {
         padding: 0 1.5rem;
         max-width: 420px;
+    }
+
+    .about-us-container {
+        gap: 15px;
     }
 
     .about-us-text h2 {

@@ -3813,37 +3813,6 @@
          ]
       },
       {
-         "id":"steven",
-         "name":"STEVEN",
-         "category":"men",
-         "thumbnailUrl":"/assets/thumbnail%20men/STEVEN.webp",
-         "details":{
-            "ESTATURA":"1.92 m",
-            "CAMISA":"M",
-            "PANTALON":32,
-            "ZAPATOS":42,
-            "CABELLO":"Castaño",
-            "OJOS":"Negros"
-         },
-         "portfolioImages":[
-            "/assets/thumbnail%20men/STEVEN.webp",
-            "/models/hombres/STEVEN/STEVEN%20PUENTES%201.webp",
-            "/models/hombres/STEVEN/STEVEN%20PUENTES%2010.webp",
-            "/models/hombres/STEVEN/STEVEN%20PUENTES%2011.webp",
-            "/models/hombres/STEVEN/STEVEN%20PUENTES%2012.webp",
-            "/models/hombres/STEVEN/STEVEN%20PUENTES%2013.webp",
-            "/models/hombres/STEVEN/STEVEN%20PUENTES%202.webp",
-            "/models/hombres/STEVEN/STEVEN%20PUENTES%203.webp",
-            "/models/hombres/STEVEN/STEVEN%20PUENTES%204.webp",
-            "/models/hombres/STEVEN/STEVEN%20PUENTES%205.webp",
-            "/models/hombres/STEVEN/STEVEN%20PUENTES%207.webp",
-            "/models/hombres/STEVEN/STEVEN%20PUENTES%208.webp"
-         ],
-         "videos":[
-            "/models/hombres/STEVEN/Steven%20video.mp4"
-         ]
-      },
-      {
          "id":"tanner",
          "name":"TANNER",
          "category":"men",
