@@ -204,7 +204,7 @@
          "id": "brigh",
          "name": "BRIGH",
          "category": "women",
-         "thumbnailUrl": "/assets/thumbnail%20women/BRIGH.webp",
+         "thumbnailUrl": "/assets/thumbnail%20women/BRIGH.jpg",
          "details": {
             "ESTATURA": "1.75 m",
             "BUSTO": "84",
@@ -219,7 +219,7 @@
             "PANTY": "M"
          },
          "portfolioImages": [
-            "/assets/thumbnail%20women/BRIGH.webp",
+            "/assets/thumbnail%20women/BRIGH.jpg",
             "/models/mujeres/brigh/1%20BRIGH.webp",
             "/models/mujeres/brigh/2%20BRIGH.webp",
             "/models/mujeres/brigh/3%20BRIGH.webp",
@@ -2257,6 +2257,34 @@
          ],
          "videos": [
             "/models/hombres/CAMILO%20SANCHEZ/Camilo%20video.mp4"
+         ]
+      },
+      {
+         "id": "carlos-q",
+         "name": "CARLOS Q",
+         "category": "men",
+         "thumbnailUrl": "/assets/thumbnail%20men/CARLOS%20Q.webp",
+         "details": {
+            "ESTATURA": "1.84 m",
+            "CAMISA": "M",
+            "PANTALON": 31,
+            "ZAPATOS": 41,
+            "CABELLO": "Castaño",
+            "OJOS": "Verdes"
+         },
+         "portfolioImages": [
+            "/assets/thumbnail%20men/CARLOS%20Q.webp",
+            "/models/hombres/CARLOS%20Q/carlos%20quintero%201.webp",
+            "/models/hombres/CARLOS%20Q/carlos%20quintero%2010.webp",
+            "/models/hombres/CARLOS%20Q/carlos%20quintero%2011.webp",
+            "/models/hombres/CARLOS%20Q/carlos%20quintero%202.webp",
+            "/models/hombres/CARLOS%20Q/carlos%20quintero%203.webp",
+            "/models/hombres/CARLOS%20Q/carlos%20quintero%204.webp",
+            "/models/hombres/CARLOS%20Q/carlos%20quintero%205.webp",
+            "/models/hombres/CARLOS%20Q/carlos%20quintero%206.webp",
+            "/models/hombres/CARLOS%20Q/carlos%20quintero%207.webp",
+            "/models/hombres/CARLOS%20Q/carlos%20quintero%208.webp",
+            "/models/hombres/CARLOS%20Q/carlos%20quintero%209.webp"
          ]
       },
       {
