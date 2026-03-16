@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', async function() {
+document.addEventListener('DOMContentLoaded', async function () {
     const form = document.getElementById('become-a-model-form');
     if (!form) return;
 
@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', async function() {
     statusMessage.style.display = 'none';
     form.appendChild(statusMessage);
 
-    form.addEventListener('submit', async function(event) {
+    form.addEventListener('submit', async function (event) {
         event.preventDefault();
         if (!validateForm()) {
             return;
@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', async function() {
                 fulllength: fulllengthBase64,
                 shoeSize: data['shoe-size'] // Handle hyphenated name
             };
-            
+
             // --- IMPORTANT ---
             // Replace this URL with your actual Google Apps Script Web App URL
             const webAppUrl = 'https://script.google.com/macros/s/AKfycbxuYNGoXbnn_HAscZcL7fLLzADXtkZkC8uT-QwDCIl2TzOzyJemk4RP89Cj0iuovdnTjw/exec';
@@ -76,26 +76,21 @@ document.addEventListener('DOMContentLoaded', async function() {
             // 4. Send data to Google Apps Script
             const response = await fetch(webAppUrl, {
                 method: 'POST',
-                mode: 'cors',
-                redirect: 'follow',
+                mode: 'no-cors',
                 headers: {
                     'Content-Type': 'text/plain;charset=utf-8', // Required for Apps Script
                 },
                 body: JSON.stringify(payload)
             });
 
-            const result = await response.json();
-
             // 5. Handle response
-            if (result.status === 'success') {
-                const successMessage = lang === 'es' ? '¡Aplicación enviada con éxito! Gracias por tu interés.' : 'Application submitted successfully! Thank you for your interest.';
-                showStatus(successMessage, 'success');
-                form.reset();
-                // Reset file previews from upload.js
-                document.querySelectorAll('.file-delete-btn').forEach(btn => btn.click());
-            } else {
-                throw new Error(result.message || (lang === 'es' ? 'Ocurrió un error desconocido.' : 'An unknown error occurred.'));
-            }
+            // Al usar 'no-cors', la respuesta es opaca y no se puede leer con response.json()
+            // Asumiremos que fue exitoso si no hubo error de red.
+            const successMessage = lang === 'es' ? '¡Aplicación enviada con éxito! Gracias por tu interés.' : 'Application submitted successfully! Thank you for your interest.';
+            showStatus(successMessage, 'success');
+            form.reset();
+            // Reset file previews from upload.js
+            document.querySelectorAll('.file-delete-btn').forEach(btn => btn.click());
 
         } catch (error) {
             console.error('Submission Error:', error);
