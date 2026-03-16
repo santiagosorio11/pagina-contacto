@@ -71,26 +71,31 @@ document.addEventListener('DOMContentLoaded', async function () {
 
             // --- IMPORTANT ---
             // Replace this URL with your actual Google Apps Script Web App URL
-            const webAppUrl = 'https://script.google.com/macros/s/AKfycbxuYNGoXbnn_HAscZcL7fLLzADXtkZkC8uT-QwDCIl2TzOzyJemk4RP89Cj0iuovdnTjw/exec';
+            const webAppUrl = 'https://script.google.com/macros/s/AKfycbwB1Sg-xqMK7v4yYv2tD91QGjvjr6iWRkFHAHD9EIHXeP9XWWZ0XHj4md2RocufvvL7rQ/exec';
 
             // 4. Send data to Google Apps Script
             const response = await fetch(webAppUrl, {
                 method: 'POST',
-                mode: 'no-cors',
+                mode: 'cors',
+                redirect: 'follow',
                 headers: {
                     'Content-Type': 'text/plain;charset=utf-8', // Required for Apps Script
                 },
                 body: JSON.stringify(payload)
             });
 
+            const result = await response.json();
+
             // 5. Handle response
-            // Al usar 'no-cors', la respuesta es opaca y no se puede leer con response.json()
-            // Asumiremos que fue exitoso si no hubo error de red.
-            const successMessage = lang === 'es' ? '¡Aplicación enviada con éxito! Gracias por tu interés.' : 'Application submitted successfully! Thank you for your interest.';
-            showStatus(successMessage, 'success');
-            form.reset();
-            // Reset file previews from upload.js
-            document.querySelectorAll('.file-delete-btn').forEach(btn => btn.click());
+            if (result.status === 'success') {
+                const successMessage = lang === 'es' ? '¡Aplicación enviada con éxito! Gracias por tu interés.' : 'Application submitted successfully! Thank you for your interest.';
+                showStatus(successMessage, 'success');
+                form.reset();
+                // Reset file previews from upload.js
+                document.querySelectorAll('.file-delete-btn').forEach(btn => btn.click());
+            } else {
+                throw new Error(result.message || (lang === 'es' ? 'Ocurrió un error desconocido.' : 'An unknown error occurred.'));
+            }
 
         } catch (error) {
             console.error('Submission Error:', error);
