@@ -71,7 +71,7 @@ document.addEventListener('DOMContentLoaded', async function () {
 
             // --- IMPORTANT ---
             // Replace this URL with your actual Google Apps Script Web App URL
-            const webAppUrl = 'https://script.google.com/macros/s/AKfycbwB1Sg-xqMK7v4yYv2tD91QGjvjr6iWRkFHAHD9EIHXeP9XWWZ0XHj4md2RocufvvL7rQ/exec';
+            const webAppUrl = 'https://script.google.com/macros/s/AKfycbzE2ehzf72KIj1yq5X5AE9hParEyBz9G-dYgYYesjHkUe79PaLx3M7FhmeDttTi4IMe-A/exec';
 
             // 4. Send data to Google Apps Script
             const response = await fetch(webAppUrl, {
