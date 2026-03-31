@@ -886,7 +886,7 @@
          "id": "july",
          "name": "JULY",
          "category": "women",
-         "thumbnailUrl": "/assets/thumbnail%20women/JULY.webp",
+         "thumbnailUrl": "/assets/thumbnail%20women/JULY.jpg",
          "details": {
             "ESTATURA": "1.72 m",
             "BUSTO": 89.0,
@@ -962,7 +962,7 @@
          "id": "lau",
          "name": "LAU",
          "category": "women",
-         "thumbnailUrl": "/assets/thumbnail%20women/LAU.webp",
+         "thumbnailUrl": "/assets/thumbnail%20women/LAU.jpg",
          "details": {},
          "portfolioImages": [
             "/assets/thumbnail%20women/LAU.webp",
@@ -1705,7 +1705,7 @@
          "id": "sheyla",
          "name": "SHEYLA",
          "category": "women",
-         "thumbnailUrl": "/assets/thumbnail%20women/SHEYLA.webp",
+         "thumbnailUrl": "/assets/thumbnail%20women/SHEYLA.jpg",
          "details": {},
          "portfolioImages": [
             "/assets/thumbnail%20women/SHEYLA.webp",
