@@ -1,6 +1,37 @@
 {
    "models": [
       {
+         "id": "ade",
+         "name": "ADE",
+         "category": "women",
+         "thumbnailUrl": "/assets/thumbnail%20women/ADE.webp",
+         "details": {
+            "ESTATURA": "1.76 m",
+            "BUSTO": 86,
+            "CINTURA": 63,
+            "CADERA": 94,
+            "BLUSA": "S",
+            "PANTALON": 6,
+            "ZAPATOS": 40,
+            "CABELLO": "Castaño",
+            "OJOS": "Verdes",
+            "BRASSIER": "32A",
+            "PANTY": "S"
+         },
+         "portfolioImages": [
+            "/models/mujeres/ade/ADE%200.webp",
+            "/models/mujeres/ade/ADE%201.webp",
+            "/models/mujeres/ade/ADE%202.webp",
+            "/models/mujeres/ade/ADE%203.webp",
+            "/models/mujeres/ade/ADE%204.webp",
+            "/models/mujeres/ade/ADE%205.webp",
+            "/models/mujeres/ade/ADE%206.webp",
+            "/models/mujeres/ade/ADE%207.webp",
+            "/models/mujeres/ade/ADE%208.webp",
+            "/models/mujeres/ade/ADE%209.webp"
+         ]
+      },
+      {
          "id": "alejandra",
          "name": "ALEJANDRA",
          "category": "women",
@@ -220,6 +251,12 @@
             "PANTY": "M"
          },
          "portfolioImages": [
+            "/models/mujeres/brigh/BRIGH%2036.webp",
+            "/models/mujeres/brigh/BRIGH%2037.webp",
+            "/models/mujeres/brigh/BRIGH%2038.webp",
+            "/models/mujeres/brigh/BRIGH%2039.webp",
+            "/models/mujeres/brigh/BRIGH%2040.webp",
+            "/models/mujeres/brigh/BRIGH%2041.webp",
             "/assets/thumbnail%20women/BRIGH.webp",
             "/models/mujeres/brigh/BRIGH%201.webp",
             "/models/mujeres/brigh/BRIGH%202.webp",
@@ -903,7 +940,19 @@
          "name": "LAU",
          "category": "women",
          "thumbnailUrl": "/assets/thumbnail%20women/LAU.jpg",
-         "details": {},
+         "details": {
+            "ESTATURA": "1.72 m",
+            "BUSTO": 87,
+            "CINTURA": 64,
+            "CADERA": 90,
+            "BLUSA": "S",
+            "PANTALON": 6,
+            "ZAPATOS": 38,
+            "CABELLO": "Rubio",
+            "OJOS": "Café",
+            "BRASSIER": "32",
+            "PANTY": "S"
+         },
          "portfolioImages": [
             "/assets/thumbnail%20women/LAU.webp",
             "/models/mujeres/lau%20diaz/LAU%201.webp",
@@ -1220,11 +1269,59 @@
          ]
       },
       {
+         "id": "maria-salo",
+         "name": "SALOME",
+         "category": "women",
+         "thumbnailUrl": "/assets/thumbnail%20women/MARIA%20SALO.webp",
+         "details": {
+            "ESTATURA": "1.75 m",
+            "BUSTO": 88,
+            "CINTURA": 66,
+            "CADERA": 91,
+            "BLUSA": "S",
+            "PANTALON": 6,
+            "ZAPATOS": 39,
+            "CABELLO": "Castaño",
+            "OJOS": "Negros",
+            "BRASSIER": "32B",
+            "PANTY": "S"
+         },
+         "portfolioImages": [
+            "/models/mujeres/maria%20salo/MARIA%20SALO%201.webp",
+            "/models/mujeres/maria%20salo/MARIA%20SALO%202.webp",
+            "/models/mujeres/maria%20salo/MARIA%20SALO%203.webp",
+            "/models/mujeres/maria%20salo/MARIA%20SALO%204.webp",
+            "/models/mujeres/maria%20salo/MARIA%20SALO%205.webp",
+            "/models/mujeres/maria%20salo/MARIA%20SALO%206.webp",
+            "/models/mujeres/maria%20salo/MARIA%20SALO%207.webp",
+            "/models/mujeres/maria%20salo/MARIA%20SALO%208.webp",
+            "/models/mujeres/maria%20salo/MARIA%20SALO%209.webp",
+            "/models/mujeres/maria%20salo/MARIA%20SALO%2010.webp",
+            "/models/mujeres/maria%20salo/MARIA%20SALO%2011.webp",
+            "/models/mujeres/maria%20salo/MARIA%20SALO%2012.webp",
+            "/models/mujeres/maria%20salo/MARIA%20SALO%2013.webp",
+            "/models/mujeres/maria%20salo/MARIA%20SALO%2014.webp",
+            "/models/mujeres/maria%20salo/MARIA%20SALO%2015.webp"
+         ]
+      },
+      {
          "id": "maria",
          "name": "MARIA",
          "category": "women",
          "thumbnailUrl": "/assets/thumbnail%20women/MARIA.webp",
-         "details": {},
+         "details": {
+            "ESTATURA": "1.75 m",
+            "BUSTO": 80,
+            "CINTURA": 64,
+            "CADERA": 92,
+            "BLUSA": "S",
+            "PANTALON": 6,
+            "ZAPATOS": 38,
+            "CABELLO": "Castaño",
+            "OJOS": "Verdes",
+            "BRASSIER": "32A",
+            "PANTY": "S"
+         },
          "portfolioImages": [
             "/assets/thumbnail%20women/MARIA.webp",
             "/models/mujeres/maria%20castillo/MARIA%201.webp",
@@ -1304,7 +1401,19 @@
          "name": "MEYLEN",
          "category": "women",
          "thumbnailUrl": "/assets/thumbnail%20women/MEYLEN.webp",
-         "details": {},
+         "details": {
+            "ESTATURA": "1.80 m",
+            "BUSTO": 94,
+            "CINTURA": 68,
+            "CADERA": 96,
+            "BLUSA": "S",
+            "PANTALON": 8,
+            "ZAPATOS": 40,
+            "CABELLO": "Castaño",
+            "OJOS": "Café",
+            "BRASSIER": "34",
+            "PANTY": "M"
+         },
          "portfolioImages": [
             "/assets/thumbnail%20women/MEYLEN.webp",
             "/models/mujeres/meylen/MEYLEN%201.webp",
@@ -1571,17 +1680,17 @@
       },
       {
          "id": "salome",
-         "name": "SALOME",
+         "name": "SALO",
          "category": "women",
          "thumbnailUrl": "/assets/thumbnail%20women/SALOME.webp",
          "details": {
             "ESTATURA": "1.70 m",
-            "BUSTO": 86.0,
-            "CINTURA": 62.0,
-            "CADERA": 95.0,
+            "BUSTO": 86,
+            "CINTURA": 62,
+            "CADERA": 95,
             "BLUSA": "S",
-            "PANTALON": 6.0,
-            "ZAPATOS": 37.0,
+            "PANTALON": 6,
+            "ZAPATOS": 37,
             "CABELLO": "Castaño",
             "OJOS": "Verdes",
             "BRASSIER": "34B",
@@ -1613,7 +1722,19 @@
          "name": "SHEYLA",
          "category": "women",
          "thumbnailUrl": "/assets/thumbnail%20women/SHEYLA.jpg",
-         "details": {},
+         "details": {
+            "ESTATURA": "1.75 m",
+            "BUSTO": 89,
+            "CINTURA": 65,
+            "CADERA": 94,
+            "BLUSA": "S",
+            "PANTALON": 6,
+            "ZAPATOS": 40,
+            "CABELLO": "Castaño",
+            "OJOS": "Café",
+            "BRASSIER": "32A",
+            "PANTY": "S"
+         },
          "portfolioImages": [
             "/assets/thumbnail%20women/SHEYLA.webp",
             "/models/mujeres/sheyla/SHEYLA%201.webp",
@@ -2741,31 +2862,26 @@
          "details": {
             "ESTATURA": "1.80 m",
             "CAMISA": "M",
-            "PANTALON": 32,
-            "ZAPATOS": 44,
-            "CABELLO": "Castaño",
-            "OJOS": "Azules"
+            "PANTALON": 30,
+            "ZAPATOS": 41,
+            "CABELLO": "Rubio",
+            "OJOS": "Verdes"
          },
          "portfolioImages": [
-            "/assets/thumbnail%20men/EDWARD.webp",
-            "/models/hombres/EDWARD%20ROJAS/EDWARD%20ROJAS%201.webp",
-            "/models/hombres/EDWARD%20ROJAS/EDWARD%20ROJAS%202.webp",
-            "/models/hombres/EDWARD%20ROJAS/EDWARD%20ROJAS%203.webp",
-            "/models/hombres/EDWARD%20ROJAS/EDWARD%20ROJAS%204.webp",
-            "/models/hombres/EDWARD%20ROJAS/EDWARD%20ROJAS%205.webp",
-            "/models/hombres/EDWARD%20ROJAS/EDWARD%20ROJAS%206.webp",
-            "/models/hombres/EDWARD%20ROJAS/EDWARD%20ROJAS%207.webp",
-            "/models/hombres/EDWARD%20ROJAS/EDWARD%20ROJAS%208.webp",
-            "/models/hombres/EDWARD%20ROJAS/EDWARD%20ROJAS%209.webp",
-            "/models/hombres/EDWARD%20ROJAS/EDWARD%20ROJAS%2010.webp",
-            "/models/hombres/EDWARD%20ROJAS/EDWARD%20ROJAS%2011.webp",
-            "/models/hombres/EDWARD%20ROJAS/EDWARD%20ROJAS%2012.webp",
-            "/models/hombres/EDWARD%20ROJAS/EDWARD%20ROJAS%2013.webp",
-            "/models/hombres/EDWARD%20ROJAS/EDWARD%20ROJAS%2014.webp",
-            "/models/hombres/EDWARD%20ROJAS/EDWARD%20ROJAS%2015.webp",
-            "/models/hombres/EDWARD%20ROJAS/EDWARD%20ROJAS%2016.webp",
-            "/models/hombres/EDWARD%20ROJAS/EDWARD%20ROJAS%2017.webp",
-            "/models/hombres/EDWARD%20ROJAS/EDWARD%20ROJAS%2018.webp"
+            "/models/hombres/EDWARD/EDWARD%200.webp",
+            "/models/hombres/EDWARD/EDWARD%201.webp",
+            "/models/hombres/EDWARD/EDWARD%202.webp",
+            "/models/hombres/EDWARD/EDWARD%203.webp",
+            "/models/hombres/EDWARD/EDWARD%204.webp",
+            "/models/hombres/EDWARD/EDWARD%205.webp",
+            "/models/hombres/EDWARD/EDWARD%206.webp",
+            "/models/hombres/EDWARD/EDWARD%207.webp",
+            "/models/hombres/EDWARD/EDWARD%208.webp",
+            "/models/hombres/EDWARD/EDWARD%209.webp",
+            "/models/hombres/EDWARD/EDWARD%2010.webp",
+            "/models/hombres/EDWARD/EDWARD%2011.webp",
+            "/models/hombres/EDWARD/EDWARD%2012.webp",
+            "/models/hombres/EDWARD/EDWARD%2013.webp"
          ]
       },
       {
@@ -3140,6 +3256,78 @@
             "/models/hombres/JOHAN/JOHANN%20CAMBOULIVE%207.webp",
             "/models/hombres/JOHAN/JOHANN%20CAMBOULIVE%208.webp",
             "/models/hombres/JOHAN/JOHANN%20CAMBOULIVE%209.webp"
+         ]
+      },
+      {
+         "id": "jose",
+         "name": "JOSE",
+         "category": "men",
+         "thumbnailUrl": "/assets/thumbnail%20men/JOSE.webp",
+         "details": {
+            "ESTATURA": "1.87 m",
+            "CAMISA": "M",
+            "PANTALON": 31,
+            "ZAPATOS": 43,
+            "CABELLO": "Castaño",
+            "OJOS": "Café"
+         },
+         "portfolioImages": [
+            "/models/hombres/JOSE/JOSE%200.webp",
+            "/models/hombres/JOSE/JOSE%201.webp",
+            "/models/hombres/JOSE/JOSE%202.webp",
+            "/models/hombres/JOSE/JOSE%203.webp",
+            "/models/hombres/JOSE/JOSE%204.webp",
+            "/models/hombres/JOSE/JOSE%205.webp",
+            "/models/hombres/JOSE/JOSE%206.webp",
+            "/models/hombres/JOSE/JOSE%207.webp",
+            "/models/hombres/JOSE/JOSE%208.webp",
+            "/models/hombres/JOSE/JOSE%209.webp",
+            "/models/hombres/JOSE/JOSE%2010.webp",
+            "/models/hombres/JOSE/JOSE%2011.webp",
+            "/models/hombres/JOSE/JOSE%2012.webp",
+            "/models/hombres/JOSE/JOSE%2013.webp",
+            "/models/hombres/JOSE/JOSE%2014.webp",
+            "/models/hombres/JOSE/JOSE%2015.webp",
+            "/models/hombres/JOSE/JOSE%2016.webp",
+            "/models/hombres/JOSE/JOSE%2017.webp",
+            "/models/hombres/JOSE/JOSE%2018.webp"
+         ]
+      },
+      {
+         "id": "josue",
+         "name": "JOSUE",
+         "category": "men",
+         "thumbnailUrl": "/assets/thumbnail%20men/JOSUE.webp",
+         "details": {
+            "ESTATURA": "1.94 m",
+            "CAMISA": "L",
+            "PANTALON": 32,
+            "ZAPATOS": 43,
+            "CABELLO": "Rubio",
+            "OJOS": "Café"
+         },
+         "portfolioImages": [
+            "/models/hombres/JOSUE/JOSUE%200.webp",
+            "/models/hombres/JOSUE/JOSUE%201.webp",
+            "/models/hombres/JOSUE/JOSUE%202.webp",
+            "/models/hombres/JOSUE/JOSUE%203.webp",
+            "/models/hombres/JOSUE/JOSUE%204.webp",
+            "/models/hombres/JOSUE/JOSUE%205.webp",
+            "/models/hombres/JOSUE/JOSUE%206.webp",
+            "/models/hombres/JOSUE/JOSUE%207.webp",
+            "/models/hombres/JOSUE/JOSUE%208.webp",
+            "/models/hombres/JOSUE/JOSUE%209.webp",
+            "/models/hombres/JOSUE/JOSUE%2010.webp",
+            "/models/hombres/JOSUE/JOSUE%2011.webp",
+            "/models/hombres/JOSUE/JOSUE%2012.webp",
+            "/models/hombres/JOSUE/JOSUE%2013.webp",
+            "/models/hombres/JOSUE/JOSUE%2014.webp",
+            "/models/hombres/JOSUE/JOSUE%2015.webp",
+            "/models/hombres/JOSUE/JOSUE%2016.webp",
+            "/models/hombres/JOSUE/JOSUE%2017.webp",
+            "/models/hombres/JOSUE/JOSUE%2018.webp",
+            "/models/hombres/JOSUE/JOSUE%2019.webp",
+            "/models/hombres/JOSUE/JOSUE%2020.webp"
          ]
       },
       {
