@@ -562,34 +562,6 @@
          "instagram": []
       },
       {
-         "id": "gaelle",
-         "name": "GAELLE",
-         "category": "women",
-         "thumbnailUrl": "/assets/thumbnail%20women/GAELLE.webp",
-         "details": {},
-         "portfolioImages": [
-            "/assets/thumbnail%20women/GAELLE.webp",
-            "/models/mujeres/gaelle%20francesa/GAELLE%201.webp",
-            "/models/mujeres/gaelle%20francesa/GAELLE%2010.webp",
-            "/models/mujeres/gaelle%20francesa/GAELLE%2011.webp",
-            "/models/mujeres/gaelle%20francesa/GAELLE%2012.webp",
-            "/models/mujeres/gaelle%20francesa/GAELLE%2013.webp",
-            "/models/mujeres/gaelle%20francesa/GAELLE%2014.webp",
-            "/models/mujeres/gaelle%20francesa/GAELLE%2015.webp",
-            "/models/mujeres/gaelle%20francesa/GAELLE%2016.webp",
-            "/models/mujeres/gaelle%20francesa/GAELLE%2017.webp",
-            "/models/mujeres/gaelle%20francesa/GAELLE%202.webp",
-            "/models/mujeres/gaelle%20francesa/GAELLE%203.webp",
-            "/models/mujeres/gaelle%20francesa/GAELLE%204.webp",
-            "/models/mujeres/gaelle%20francesa/GAELLE%206.webp",
-            "/models/mujeres/gaelle%20francesa/GAELLE%207.webp",
-            "/models/mujeres/gaelle%20francesa/GAELLE%208.webp",
-            "/models/mujeres/gaelle%20francesa/GAELLE%209.webp"
-         ],
-         "videos": [],
-         "instagram": []
-      },
-      {
          "id": "geraldine",
          "name": "GERALDINE",
          "category": "women",
@@ -802,38 +774,6 @@
          ],
          "videos": [
             "/models/videosmujeres/Jonna%20video.mp4"
-         ]
-      },
-      {
-         "id": "jousyn",
-         "name": "JOUSYN",
-         "category": "women",
-         "thumbnailUrl": "/assets/thumbnail%20women/JOUSYN.webp",
-         "details": {},
-         "portfolioImages": [
-            "/assets/thumbnail%20women/JOUSYN.webp",
-            "/models/mujeres/jousyn/JOUSYN%201.webp",
-            "/models/mujeres/jousyn/JOUSYN%2010.webp",
-            "/models/mujeres/jousyn/JOUSYN%2011.webp",
-            "/models/mujeres/jousyn/JOUSYN%2012.webp",
-            "/models/mujeres/jousyn/JOUSYN%2013.webp",
-            "/models/mujeres/jousyn/JOUSYN%2014.webp",
-            "/models/mujeres/jousyn/JOUSYN%2015.webp",
-            "/models/mujeres/jousyn/JOUSYN%2016.webp",
-            "/models/mujeres/jousyn/JOUSYN%2017.webp",
-            "/models/mujeres/jousyn/JOUSYN%2018.webp",
-            "/models/mujeres/jousyn/JOUSYN%202.webp",
-            "/models/mujeres/jousyn/JOUSYN%2020.webp",
-            "/models/mujeres/jousyn/JOUSYN%2021.webp",
-            "/models/mujeres/jousyn/JOUSYN%203.webp",
-            "/models/mujeres/jousyn/JOUSYN%204.webp",
-            "/models/mujeres/jousyn/JOUSYN%205.webp",
-            "/models/mujeres/jousyn/JOUSYN%206.webp",
-            "/models/mujeres/jousyn/JOUSYN%207.webp",
-            "/models/mujeres/jousyn/JOUSYN%208.webp"
-         ],
-         "videos": [
-            "/models/videosmujeres/Jousyn%20video.mp4"
          ]
       },
       {
@@ -1198,39 +1138,6 @@
          ],
          "videos": [
             "/models/videosmujeres/Maria%20Caro%20video.mp4"
-         ]
-      },
-      {
-         "id": "mariajuli",
-         "name": "MARIA JULI",
-         "category": "women",
-         "thumbnailUrl": "/assets/thumbnail%20women/MARIAJULI.webp",
-         "details": {
-            "ESTATURA": "1.74 m",
-            "BUSTO": 81.0,
-            "CINTURA": 61.0,
-            "CADERA": 92.0,
-            "BLUSA": "S",
-            "PANTALON": 6.0,
-            "ZAPATOS": 38.0,
-            "CABELLO": "Rubio",
-            "OJOS": "Verdes",
-            "BRASSIER": "32B",
-            "PANTY": "S"
-         },
-         "portfolioImages": [
-            "/models/mujeres/maria%20juli%20bonilla/MARIA%20JULIANA%20BONILLA%201.webp",
-            "/models/mujeres/maria%20juli%20bonilla/MARIA%20JULIANA%20BONILLA%202.webp",
-            "/models/mujeres/maria%20juli%20bonilla/MARIA%20JULIANA%20BONILLA%203.webp",
-            "/models/mujeres/maria%20juli%20bonilla/MARIA%20JULIANA%20BONILLA%204.webp",
-            "/models/mujeres/maria%20juli%20bonilla/MARIA%20JULIANA%20BONILLA%205.webp",
-            "/models/mujeres/maria%20juli%20bonilla/MARIA%20JULIANA%20BONILLA%206.webp",
-            "/models/mujeres/maria%20juli%20bonilla/MARIA%20JULIANA%20BONILLA%207.webp",
-            "/models/mujeres/maria%20juli%20bonilla/MARIA%20JULIANA%20BONILLA%208.webp",
-            "/models/mujeres/maria%20juli%20bonilla/MARIA%20JULIANA%20BONILLA%209.webp"
-         ],
-         "videos": [
-            "/models/videosmujeres/Maria%20Juliana%20video.mp4"
          ]
       },
       {
@@ -1945,6 +1852,44 @@
          ],
          "videos": [
             "/models/videosmujeres/Valentina%20Mora%20video.mp4"
+         ]
+      },
+      {
+         "id": "valentina-a",
+         "name": "VALENTINA A",
+         "category": "women",
+         "thumbnailUrl": "/assets/thumbnail%20women/VALENTINAA.webp",
+         "details": {
+            "ESTATURA": "1.73 m",
+            "BUSTO": 71.0,
+            "CINTURA": 66.0,
+            "CADERA": 89.0,
+            "BLUSA": "XS",
+            "PANTALON": 6.0,
+            "ZAPATOS": 37.0,
+            "CABELLO": "Castaño",
+            "OJOS": "Café",
+            "BRASSIER": "30B",
+            "PANTY": "S"
+         },
+         "portfolioImages": [
+            "/models/mujeres/valentina%20ayazo/VALENTINA%20AYAZO%200.webp",
+            "/models/mujeres/valentina%20ayazo/VALENTINA%20AYAZO%201.webp",
+            "/models/mujeres/valentina%20ayazo/VALENTINA%20AYAZO%202.webp",
+            "/models/mujeres/valentina%20ayazo/VALENTINA%20AYAZO%203.webp",
+            "/models/mujeres/valentina%20ayazo/VALENTINA%20AYAZO%204.webp",
+            "/models/mujeres/valentina%20ayazo/VALENTINA%20AYAZO%205.webp",
+            "/models/mujeres/valentina%20ayazo/VALENTINA%20AYAZO%206.webp",
+            "/models/mujeres/valentina%20ayazo/VALENTINA%20AYAZO%207.webp",
+            "/models/mujeres/valentina%20ayazo/VALENTINA%20AYAZO%208.webp",
+            "/models/mujeres/valentina%20ayazo/VALENTINA%20AYAZO%209.webp",
+            "/models/mujeres/valentina%20ayazo/VALENTINA%20AYAZO%2010.webp",
+            "/models/mujeres/valentina%20ayazo/VALENTINA%20AYAZO%2011.webp",
+            "/models/mujeres/valentina%20ayazo/VALENTINA%20AYAZO%2012.webp",
+            "/models/mujeres/valentina%20ayazo/VALENTINA%20AYAZO%2013.webp",
+            "/models/mujeres/valentina%20ayazo/VALENTINA%20AYAZO%2014.webp",
+            "/models/mujeres/valentina%20ayazo/VALENTINA%20AYAZO%2015.webp",
+            "/models/mujeres/valentina%20ayazo/VALENTINA%20AYAZO%2016.webp"
          ]
       },
       {
