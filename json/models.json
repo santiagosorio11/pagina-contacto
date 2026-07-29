@@ -1269,42 +1269,6 @@
          ]
       },
       {
-         "id": "maria-salo",
-         "name": "SALOME",
-         "category": "women",
-         "thumbnailUrl": "/assets/thumbnail%20women/MARIA%20SALO.webp",
-         "details": {
-            "ESTATURA": "1.75 m",
-            "BUSTO": 88,
-            "CINTURA": 66,
-            "CADERA": 91,
-            "BLUSA": "S",
-            "PANTALON": 6,
-            "ZAPATOS": 39,
-            "CABELLO": "Castaño",
-            "OJOS": "Negros",
-            "BRASSIER": "32B",
-            "PANTY": "S"
-         },
-         "portfolioImages": [
-            "/models/mujeres/maria%20salo/MARIA%20SALO%201.webp",
-            "/models/mujeres/maria%20salo/MARIA%20SALO%202.webp",
-            "/models/mujeres/maria%20salo/MARIA%20SALO%203.webp",
-            "/models/mujeres/maria%20salo/MARIA%20SALO%204.webp",
-            "/models/mujeres/maria%20salo/MARIA%20SALO%205.webp",
-            "/models/mujeres/maria%20salo/MARIA%20SALO%206.webp",
-            "/models/mujeres/maria%20salo/MARIA%20SALO%207.webp",
-            "/models/mujeres/maria%20salo/MARIA%20SALO%208.webp",
-            "/models/mujeres/maria%20salo/MARIA%20SALO%209.webp",
-            "/models/mujeres/maria%20salo/MARIA%20SALO%2010.webp",
-            "/models/mujeres/maria%20salo/MARIA%20SALO%2011.webp",
-            "/models/mujeres/maria%20salo/MARIA%20SALO%2012.webp",
-            "/models/mujeres/maria%20salo/MARIA%20SALO%2013.webp",
-            "/models/mujeres/maria%20salo/MARIA%20SALO%2014.webp",
-            "/models/mujeres/maria%20salo/MARIA%20SALO%2015.webp"
-         ]
-      },
-      {
          "id": "maria",
          "name": "MARIA",
          "category": "women",
@@ -1715,6 +1679,42 @@
             "/models/mujeres/salome/MARIA%20SALOME%20MEJIA%2015.webp",
             "/models/mujeres/salome/MARIA%20SALOME%20MEJIA%2016.webp",
             "/models/mujeres/salome/MARIA%20SALOME%20MEJIA%2017.webp"
+         ]
+      },
+      {
+         "id": "maria-salo",
+         "name": "SALOME",
+         "category": "women",
+         "thumbnailUrl": "/assets/thumbnail%20women/MARIA%20SALO.webp",
+         "details": {
+            "ESTATURA": "1.75 m",
+            "BUSTO": 88,
+            "CINTURA": 66,
+            "CADERA": 91,
+            "BLUSA": "S",
+            "PANTALON": 6,
+            "ZAPATOS": 39,
+            "CABELLO": "Castaño",
+            "OJOS": "Negros",
+            "BRASSIER": "32B",
+            "PANTY": "S"
+         },
+         "portfolioImages": [
+            "/models/mujeres/maria%20salo/MARIA%20SALO%201.webp",
+            "/models/mujeres/maria%20salo/MARIA%20SALO%202.webp",
+            "/models/mujeres/maria%20salo/MARIA%20SALO%203.webp",
+            "/models/mujeres/maria%20salo/MARIA%20SALO%204.webp",
+            "/models/mujeres/maria%20salo/MARIA%20SALO%205.webp",
+            "/models/mujeres/maria%20salo/MARIA%20SALO%206.webp",
+            "/models/mujeres/maria%20salo/MARIA%20SALO%207.webp",
+            "/models/mujeres/maria%20salo/MARIA%20SALO%208.webp",
+            "/models/mujeres/maria%20salo/MARIA%20SALO%209.webp",
+            "/models/mujeres/maria%20salo/MARIA%20SALO%2010.webp",
+            "/models/mujeres/maria%20salo/MARIA%20SALO%2011.webp",
+            "/models/mujeres/maria%20salo/MARIA%20SALO%2012.webp",
+            "/models/mujeres/maria%20salo/MARIA%20SALO%2013.webp",
+            "/models/mujeres/maria%20salo/MARIA%20SALO%2014.webp",
+            "/models/mujeres/maria%20salo/MARIA%20SALO%2015.webp"
          ]
       },
       {
@@ -3692,6 +3692,51 @@
          ],
          "videos": [
             "/models/hombres/MATEO%20SOLARTE/Mateo%20video.mp4"
+         ]
+      },
+      {
+         "id": "matias",
+         "name": "MATIAS",
+         "category": "men",
+         "thumbnailUrl": "/assets/thumbnail%20men/MATIAS.webp",
+         "details": {
+            "ESTATURA": "1.86 m",
+            "CAMISA": "M",
+            "PANTALON": 32,
+            "ZAPATOS": 44,
+            "CABELLO": "Castaño",
+            "OJOS": "Verdes"
+         },
+         "portfolioImages": [
+            "/models/hombres/MATIAS%20PAZ/MATIAS%20PAZ%201.webp",
+            "/models/hombres/MATIAS%20PAZ/MATIAS%20PAZ%2010.webp",
+            "/models/hombres/MATIAS%20PAZ/MATIAS%20PAZ%2011.webp",
+            "/models/hombres/MATIAS%20PAZ/MATIAS%20PAZ%2012.webp",
+            "/models/hombres/MATIAS%20PAZ/MATIAS%20PAZ%2013.webp",
+            "/models/hombres/MATIAS%20PAZ/MATIAS%20PAZ%2014.webp",
+            "/models/hombres/MATIAS%20PAZ/MATIAS%20PAZ%2015.webp",
+            "/models/hombres/MATIAS%20PAZ/MATIAS%20PAZ%2016.webp",
+            "/models/hombres/MATIAS%20PAZ/MATIAS%20PAZ%2017.webp",
+            "/models/hombres/MATIAS%20PAZ/MATIAS%20PAZ%2018.webp",
+            "/models/hombres/MATIAS%20PAZ/MATIAS%20PAZ%2019.webp",
+            "/models/hombres/MATIAS%20PAZ/MATIAS%20PAZ%202.webp",
+            "/models/hombres/MATIAS%20PAZ/MATIAS%20PAZ%2020.webp",
+            "/models/hombres/MATIAS%20PAZ/MATIAS%20PAZ%2021.webp",
+            "/models/hombres/MATIAS%20PAZ/MATIAS%20PAZ%2022.webp",
+            "/models/hombres/MATIAS%20PAZ/MATIAS%20PAZ%2023.webp",
+            "/models/hombres/MATIAS%20PAZ/MATIAS%20PAZ%2024.webp",
+            "/models/hombres/MATIAS%20PAZ/MATIAS%20PAZ%2025.webp",
+            "/models/hombres/MATIAS%20PAZ/MATIAS%20PAZ%2026.webp",
+            "/models/hombres/MATIAS%20PAZ/MATIAS%20PAZ%203.webp",
+            "/models/hombres/MATIAS%20PAZ/MATIAS%20PAZ%204.webp",
+            "/models/hombres/MATIAS%20PAZ/MATIAS%20PAZ%205.webp",
+            "/models/hombres/MATIAS%20PAZ/MATIAS%20PAZ%206.webp",
+            "/models/hombres/MATIAS%20PAZ/MATIAS%20PAZ%207.webp",
+            "/models/hombres/MATIAS%20PAZ/MATIAS%20PAZ%208.webp",
+            "/models/hombres/MATIAS%20PAZ/MATIAS%20PAZ%209.webp"
+         ],
+         "videos": [
+            "/models/hombres/MATIAS%20PAZ/Matias%20video.mp4"
          ]
       },
       {
