@@ -468,7 +468,19 @@
          "name": "ESTEFANIA",
          "category": "women",
          "thumbnailUrl": "/assets/thumbnail%20women/ESTEFANIA.webp",
-         "details": {},
+         "details": {
+            "ESTATURA": "1.68 m",
+            "BUSTO": 83,
+            "CINTURA": 64,
+            "CADERA": 95,
+            "BLUSA": "S",
+            "PANTALON": 6,
+            "ZAPATOS": 39,
+            "CABELLO": "Rubio",
+            "OJOS": "Verdes",
+            "BRASSIER": "32",
+            "PANTY": "S"
+         },
          "portfolioImages": [
             "/assets/thumbnail%20women/ESTEFANIA.webp",
             "/models/mujeres/estefania%20duque/ESTEFANIA%20DUQUE%201.webp",
@@ -603,7 +615,19 @@
          "name": "GERALDINE",
          "category": "women",
          "thumbnailUrl": "/assets/thumbnail%20women/GERALDINE.webp",
-         "details": {},
+         "details": {
+            "ESTATURA": "1.73 m",
+            "BUSTO": 86,
+            "CINTURA": 65,
+            "CADERA": 91,
+            "BLUSA": "S",
+            "PANTALON": 6,
+            "ZAPATOS": 38,
+            "CABELLO": "Castaño",
+            "OJOS": "Miel",
+            "BRASSIER": "32A",
+            "PANTY": "S"
+         },
          "portfolioImages": [
             "/assets/thumbnail%20women/GERALDINE.webp",
             "/models/mujeres/geraldine%20burger/GERALDINE%20BURGUER%201.webp",
@@ -936,6 +960,54 @@
          ]
       },
       {
+         "id": "kathy",
+         "name": "KATHY",
+         "category": "women",
+         "thumbnailUrl": "/assets/thumbnail%20women/KATHY.webp",
+         "details": {
+            "ESTATURA": "1.78 m",
+            "BUSTO": 86,
+            "CINTURA": 62,
+            "CADERA": 94,
+            "BLUSA": "S",
+            "PANTALON": 6,
+            "ZAPATOS": 39,
+            "CABELLO": "Rubio",
+            "OJOS": "Café",
+            "BRASSIER": "34",
+            "PANTY": "S"
+         },
+         "portfolioImages": [
+            "/models/mujeres/kathy/KATHY%200.webp",
+            "/models/mujeres/kathy/KATHY%202.webp",
+            "/models/mujeres/kathy/KATHY%203.webp",
+            "/models/mujeres/kathy/KATHY%204.webp",
+            "/models/mujeres/kathy/KATHY%205.webp",
+            "/models/mujeres/kathy/KATHY%206.webp",
+            "/models/mujeres/kathy/KATHY%207.webp",
+            "/models/mujeres/kathy/KATHY%208.webp",
+            "/models/mujeres/kathy/KATHY%209.webp",
+            "/models/mujeres/kathy/KATHY%2010.webp",
+            "/models/mujeres/kathy/KATHY%2011.webp",
+            "/models/mujeres/kathy/KATHY%2012.webp",
+            "/models/mujeres/kathy/KATHY%2013.webp",
+            "/models/mujeres/kathy/KATHY%2014.webp",
+            "/models/mujeres/kathy/KATHY%2015.webp",
+            "/models/mujeres/kathy/KATHY%2016.webp",
+            "/models/mujeres/kathy/KATHY%2017.webp",
+            "/models/mujeres/kathy/KATHY%2018.webp",
+            "/models/mujeres/kathy/KATHY%2019.webp",
+            "/models/mujeres/kathy/KATHY%2020.webp",
+            "/models/mujeres/kathy/KATHY%2021.webp",
+            "/models/mujeres/kathy/KATHY%2022.webp",
+            "/models/mujeres/kathy/KATHY%2023.webp",
+            "/models/mujeres/kathy/KATHY%2024.webp",
+            "/models/mujeres/kathy/KATHY%2025.webp",
+            "/models/mujeres/kathy/KATHY%2026.webp",
+            "/models/mujeres/kathy/KATHY%2027.webp"
+         ]
+      },
+      {
          "id": "lau",
          "name": "LAU",
          "category": "women",
@@ -988,11 +1060,16 @@
          "category": "women",
          "thumbnailUrl": "/assets/thumbnail%20women/LAURA A.webp",
          "details": {
-            "ESTATURA": "1.70 m",
+            "ESTATURA": "1.72 m",
+            "BUSTO": 86,
+            "CINTURA": 64,
+            "CADERA": 90,
             "BLUSA": "S",
-            "PANTALON": 6.0,
+            "PANTALON": 6,
             "CABELLO": "Castaño",
-            "OJOS": "Verdes"
+            "OJOS": "Verdes",
+            "BRASSIER": "32A",
+            "PANTY": "S"
          },
          "portfolioImages": [
             "/assets/thumbnail%20women/LAURA%20A.webp",
@@ -3640,6 +3717,9 @@
          },
          "portfolioImages": [
             "/assets/thumbnail%20men/MARIO.webp",
+            "/models/hombres/MARIO/MARIO%20%281%29.webp",
+            "/models/hombres/MARIO/MARIO%20%282%29.webp",
+            "/models/hombres/MARIO/MARIO%20%283%29.webp",
             "/models/hombres/MARIO/MARIO%20ORDOSGOITIA%201.webp",
             "/models/hombres/MARIO/MARIO%20ORDOSGOITIA%202.webp",
             "/models/hombres/MARIO/MARIO%20ORDOSGOITIA%203.webp",
@@ -3660,6 +3740,39 @@
             "/models/hombres/MARIO/MARIO%20ORDOSGOITIA%2014.webp",
             "/models/hombres/MARIO/MARIO%20ORDOSGOITIA%2015.webp",
             "/models/hombres/MARIO/MARIO%20ORDOSGOITIA%2016.webp"
+         ]
+      },
+      {
+         "id": "manuel",
+         "name": "MANUEL",
+         "category": "men",
+         "thumbnailUrl": "/assets/thumbnail%20men/MANUEL.webp",
+         "details": {
+            "ESTATURA": "1.86 m",
+            "CAMISA": "M",
+            "PANTALON": 31,
+            "ZAPATOS": 41,
+            "CABELLO": "Castaño",
+            "OJOS": "Café"
+         },
+         "portfolioImages": [
+            "/models/hombres/MANUEL/MANUEL%200.webp",
+            "/models/hombres/MANUEL/MANUEL%201.webp",
+            "/models/hombres/MANUEL/MANUEL%202.webp",
+            "/models/hombres/MANUEL/MANUEL%203.webp",
+            "/models/hombres/MANUEL/MANUEL%204.webp",
+            "/models/hombres/MANUEL/MANUEL%205.webp",
+            "/models/hombres/MANUEL/MANUEL%206.webp",
+            "/models/hombres/MANUEL/MANUEL%207.webp",
+            "/models/hombres/MANUEL/MANUEL%208.webp",
+            "/models/hombres/MANUEL/MANUEL%209.webp",
+            "/models/hombres/MANUEL/MANUEL%2010.webp",
+            "/models/hombres/MANUEL/MANUEL%2011.webp",
+            "/models/hombres/MANUEL/MANUEL%2012.webp",
+            "/models/hombres/MANUEL/MANUEL%2013.webp",
+            "/models/hombres/MANUEL/MANUEL%2014.webp",
+            "/models/hombres/MANUEL/MANUEL%2015.webp",
+            "/models/hombres/MANUEL/MANUEL%2016.webp"
          ]
       },
       {
