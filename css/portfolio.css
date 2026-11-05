@@ -4,7 +4,7 @@
 
 /* Portfolio: logo, nombre, pestañas y fotos llenan el viewport; los datos quedan debajo */
 .portfolio-main.portfolio-main--full {
-  padding: 0 2.5rem 2rem !important;
+  padding: 0 2.5rem !important;
 }
 
 .portfolio-stage {
@@ -97,6 +97,36 @@
   flex: 1 1 auto;
   min-height: 0;
   width: 100%;
+}
+
+/* Los datos comparten la pantalla con las fotos, en una sola fila */
+.portfolio-stage .model-details-container {
+  flex: none;
+  margin: 0.75rem 0 0;
+}
+
+.portfolio-stage .modelBookMeasurements {
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  padding: 0.25rem;
+  scrollbar-width: none;
+}
+
+.portfolio-stage .modelBookMeasurements::-webkit-scrollbar {
+  display: none;
+}
+
+.portfolio-stage .measurement-item {
+  flex: none;
+}
+
+/* Centra la fila si cabe; si no, se puede deslizar desde el primer dato */
+.portfolio-stage .measurement-item:first-child {
+  margin-left: auto;
+}
+
+.portfolio-stage .measurement-item:last-child {
+  margin-right: auto;
 }
 
 /* Deja libre el espacio de las flechas para que no tapen las fotos */
@@ -293,11 +323,15 @@
   }
 
   .portfolio-main.portfolio-main--full {
-    padding: 0 0 2rem !important;
+    padding: 0 !important;
   }
 
   .portfolio-stage .site-title-logo {
     height: 30px;
+  }
+
+  .portfolio-stage .model-details-container {
+    margin: 0.75rem 1rem 0;
   }
 
   .model-details-container {
