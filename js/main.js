@@ -190,12 +190,33 @@ async function loadPortfolioPage() {
         if (carouselImagesContainer && model.portfolioImages && model.portfolioImages.length > 0) {
             carouselImagesContainer.innerHTML = '';
 
-            const isImageHorizontal = (imgUrl) => new Promise((resolve) => {
-                const img = new Image();
-                img.onload = () => resolve(img.naturalWidth > img.naturalHeight);
-                img.onerror = () => resolve(false);
-                img.src = imgUrl;
-            });
+            // Con "horizontalImages" (scripts/update_image_orientation.py) no hace falta
+            // descargar las fotos; sin ese campo hay que bajarlas para medirlas.
+            const isImageHorizontal = (imgUrl) => {
+                if (model.horizontalImages) return Promise.resolve(model.horizontalImages.includes(imgUrl));
+                return new Promise((resolve) => {
+                    const img = new Image();
+                    img.onload = () => resolve(img.naturalWidth > img.naturalHeight);
+                    img.onerror = () => resolve(false);
+                    img.src = imgUrl;
+                });
+            };
+
+            // Escritorio: cada foto se descarga cuando su slide está activo o es vecino.
+            const createDeferredImage = (imgData) => {
+                const img = document.createElement('img');
+                img.dataset.src = imgData.url;
+                img.alt = `${model.name} ${imgData.index + 1}`;
+                return img;
+            };
+
+            const loadSlideImages = (slide) => {
+                if (!slide) return;
+                slide.querySelectorAll('img[data-src]').forEach((img) => {
+                    img.src = img.dataset.src;
+                    img.removeAttribute('data-src');
+                });
+            };
 
             const isMobile = () => window.innerWidth <= 768;
 
@@ -227,9 +248,9 @@ async function loadPortfolioPage() {
                         slideContainer.appendChild(loadingSpinner);
 
                         const img = document.createElement('img');
+                        img.loading = 'lazy';
                         img.src = imgData.url;
                         img.alt = `${model.name} ${index + 1}`;
-                        img.loading = 'lazy';
 
                         // Manejar la carga de la imagen
                         img.onload = () => {
@@ -297,25 +318,16 @@ async function loadPortfolioPage() {
                         
                         if (i === 0) {
                             // First image alone
-                            const img = document.createElement('img');
-                            img.src = regularImages[i].url;
-                            img.alt = `${model.name} ${regularImages[i].index + 1}`;
-                            slideContainer.appendChild(img);
+                            slideContainer.appendChild(createDeferredImage(regularImages[i]));
                         } else {
                             // Create pairs for remaining images
                             slideContainer.classList.add('pair');
                             
-                            const img1 = document.createElement('img');
-                            img1.src = regularImages[i].url;
-                            img1.alt = `${model.name} ${regularImages[i].index + 1}`;
-                            slideContainer.appendChild(img1);
+                            slideContainer.appendChild(createDeferredImage(regularImages[i]));
                             
                             // Check if there's a second image for this pair
                             if (i + 1 < regularImages.length) {
-                                const img2 = document.createElement('img');
-                                img2.src = regularImages[i + 1].url;
-                                img2.alt = `${model.name} ${regularImages[i + 1].index + 1}`;
-                                slideContainer.appendChild(img2);
+                                slideContainer.appendChild(createDeferredImage(regularImages[i + 1]));
                                 i++; // Skip next image as it's already processed
                             }
                         }
@@ -329,16 +341,17 @@ async function loadPortfolioPage() {
                         const slideContainer = document.createElement('div');
                         slideContainer.classList.add('carousel-slide');
                         
-                        const img = document.createElement('img');
-                        img.src = imgData.url;
-                        img.alt = `${model.name} ${imgData.index + 1}`;
-                        slideContainer.appendChild(img);
+                        slideContainer.appendChild(createDeferredImage(imgData));
                         
                         carouselImagesContainer.appendChild(slideContainer);
                         slideElements.push(slideContainer);
                     });
 
                     const showSlide = (index) => {
+                        loadSlideImages(slideElements[index]);
+                        loadSlideImages(slideElements[index + 1] || slideElements[0]);
+                        loadSlideImages(slideElements[index - 1]);
+
                         // Position all slides
                         slideElements.forEach((slide, i) => {
                             slide.classList.remove('active', 'prev', 'next');

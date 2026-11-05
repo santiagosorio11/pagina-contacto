@@ -11,7 +11,7 @@ Sitio estático para la agencia de modelaje Contacto Básico.
 
 ### Cabeceras de caché
 
-`vercel.json` incluye reglas para cachear activos en `assets/` y `fonts/` por 7 días, y archivos en `css/` y `js/` por 1 día. Ajusta los tiempos si introduces *hashing* en los nombres de archivo.
+`vercel.json` incluye reglas para cachear activos en `assets/` y `fonts/` por 7 días, y archivos en `css/`, `js/` y `models/` por 1 día. Ajusta los tiempos si introduces *hashing* en los nombres de archivo.
 
 ## Google Analytics (GA4)
 

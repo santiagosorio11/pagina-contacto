@@ -12,7 +12,7 @@
       ]
     },
     {
-      "source": "/(css|js)/(.*)",
+      "source": "/(css|js|models)/(.*)",
       "headers": [
         {
           "key": "Cache-Control",
