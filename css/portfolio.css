@@ -2,6 +2,46 @@
   padding-top: 3.5rem !important;
 }
 
+/* Portfolio: logo, nombre, pestañas y fotos llenan el viewport; los datos quedan debajo */
+.portfolio-main.portfolio-main--full {
+  padding: 0 2.5rem 2rem !important;
+}
+
+.portfolio-stage {
+  --header-height: 44px;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  height: 100svh;
+  min-height: 480px;
+  padding: calc(var(--header-height) + 0.75rem) 0 0.75rem;
+}
+
+/* Misma separación fija entre logo, nombre y pestañas, en cualquier pantalla */
+.portfolio-stage > .site-title-logo,
+.portfolio-main .portfolio-stage > .modelNameBook,
+.portfolio-stage > .portfolio-tabs {
+  flex: none;
+  margin: 0 auto 0.75rem;
+}
+
+.portfolio-stage .site-title-logo {
+  width: auto;
+  height: 40px;
+  max-width: 100%;
+}
+
+.portfolio-main .portfolio-stage .modelNameBook {
+  width: 100%;
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+.portfolio-stage .portfolio-tabs {
+  width: 100%;
+  line-height: 1;
+}
+
 .portfolio-main .modelNameBook {
   font-family: 'Louis George Cafe Bold', sans-serif;
   text-align: center;
@@ -54,20 +94,15 @@
 
 .carousel-container {
   position: relative;
+  flex: 1 1 auto;
+  min-height: 0;
   width: 100%;
-  max-width: 100%;
-  margin: -15px auto 0.5rem;
-  aspect-ratio: 2/3;
-  overflow: visible;
-  max-height: 500px;
-  padding: 0 15px;
-  box-sizing: content-box;
 }
 
+/* Deja libre el espacio de las flechas para que no tapen las fotos */
 .carousel-images {
-  position: relative;
-  width: 100%;
-  height: 100%;
+  position: absolute;
+  inset: 0 60px;
   overflow: hidden;
 }
 
@@ -86,10 +121,6 @@
   
 }
 
-.carousel-slide:first-child {
-  left: -14px;
-}
-
 .carousel-slide.active {
   opacity: 1;
   transform: translateX(0);
@@ -104,10 +135,13 @@
   transform: translateX(100%);
 }
 
+/* La altura manda; el ancho sale de la proporción de cada foto, sin recortes */
 .carousel-slide img, .carousel-slide video {
-  height: 420px;
-  max-width: none;
-  max-height: none;
+  flex: 0 1 auto;
+  min-width: 0;
+  width: auto;
+  height: 100%;
+  max-width: 100%;
   object-fit: contain;
   display: block;
 }
@@ -258,15 +292,27 @@
     font-size: 1.5rem;
   }
 
+  .portfolio-main.portfolio-main--full {
+    padding: 0 0 2rem !important;
+  }
+
+  .portfolio-stage .site-title-logo {
+    height: 30px;
+  }
+
+  .model-details-container {
+    margin: 0.25rem 1rem;
+  }
+
   .carousel-container {
-    max-width: 100%;
-    padding: 0;
     overflow: hidden;
-    margin-top: 10px;
   }
 
   .carousel-images {
+    inset: 0;
     display: flex;
+    gap: 3vw;
+    padding: 0 4vw;
     transition: none;
     overflow-x: auto;
     scroll-behavior: smooth;
@@ -283,29 +329,16 @@
 
   .carousel-slide {
     position: static;
-    flex: 0 0 85vw;
+    flex: 0 0 92vw;
     opacity: 1;
     transform: none;
     z-index: 1;
-    margin-right: 15px;
     scroll-snap-align: center;
   }
 
   .carousel-slide img {
-    max-width: 100%;
-    object-fit: contain;
+    width: 100%;
     transition: opacity 0.3s ease-in-out;
-  }
-
-  .carousel-slide:not(.horizontal) img {
-    height: 70vh;
-    object-fit: contain;
-  }
-
-  /* Horizontal images keep original aspect ratio */
-  .carousel-slide.horizontal img {
-    height: auto;
-    max-height: 70vh;
   }
 
   .carousel-button {
