@@ -4,7 +4,7 @@
          "id": "ade",
          "name": "ADE",
          "category": "women",
-         "thumbnailUrl": "/models/mujeres/ade/ADE%200.webp",
+         "thumbnailUrl": "/assets/thumbnail%20women/ade-thumb.webp",
          "details": {
             "ESTATURA": "1.76 m",
             "BUSTO": 86,
@@ -46,7 +46,7 @@
          "id": "adriana",
          "name": "ADRIANA",
          "category": "women",
-         "thumbnailUrl": "/models/mujeres/adriana/ADRIANA%200.webp",
+         "thumbnailUrl": "/assets/thumbnail%20women/adriana-thumb.webp",
          "details": {
             "ESTATURA": "1.75 m",
             "BUSTO": 88,
@@ -77,7 +77,7 @@
          "id": "alejandra",
          "name": "ALEJANDRA",
          "category": "women",
-         "thumbnailUrl": "/models/mujeres/alejandra%20rivas/ALEJANDRA%200.webp",
+         "thumbnailUrl": "/assets/thumbnail%20women/alejandra-thumb.webp",
          "details": {
             "ESTATURA": "1.77 m",
             "BUSTO": 78.0,
@@ -187,7 +187,7 @@
          "id": "anastasiia",
          "name": "ANASTASIIA",
          "category": "women",
-         "thumbnailUrl": "/models/mujeres/anastasiia/ANASTASIIA%200.webp",
+         "thumbnailUrl": "/assets/thumbnail%20women/anastasiia-thumb.webp",
          "details": {
             "ESTATURA": "1.78 m",
             "BUSTO": 83.0,
@@ -303,7 +303,7 @@
          "id": "brigh",
          "name": "BRIGH",
          "category": "women",
-         "thumbnailUrl": "/models/mujeres/brigh/BRIGH%200.webp",
+         "thumbnailUrl": "/assets/thumbnail%20women/brigh-thumb.webp",
          "details": {
             "ESTATURA": "1.75 m",
             "BUSTO": "84",
@@ -830,7 +830,7 @@
          "id": "hada",
          "name": "HADA",
          "category": "women",
-         "thumbnailUrl": "/models/mujeres/hada/HADA%200.webp",
+         "thumbnailUrl": "/assets/thumbnail%20women/hada-thumb.webp",
          "details": {
             "ESTATURA": "1.80 m",
             "BUSTO": 87,
@@ -1073,7 +1073,7 @@
          "id": "jazmin",
          "name": "JAZMIN",
          "category": "women",
-         "thumbnailUrl": "/assets/thumbnail%20women/JAZMIN.webp",
+         "thumbnailUrl": "/assets/thumbnail%20women/jazmin-thumb.webp",
          "details": {
             "ESTATURA": "1.72 m",
             "BUSTO": 90.0,
@@ -1258,7 +1258,7 @@
          "id": "laural",
          "name": "LAURA L",
          "category": "women",
-         "thumbnailUrl": "/models/mujeres/laura%20lamus/LAURA%20L%200.webp",
+         "thumbnailUrl": "/assets/thumbnail%20women/laural-thumb.webp",
          "details": {
             "ESTATURA": "1.74 m",
             "BUSTO": 87.0,
@@ -1316,7 +1316,7 @@
          "id": "leiny",
          "name": "LEINY",
          "category": "women",
-         "thumbnailUrl": "/models/mujeres/leiny%20torres/LEINY%20TORRES%200.webp",
+         "thumbnailUrl": "/assets/thumbnail%20women/leiny-thumb.webp",
          "details": {
             "ESTATURA": "1.77 m",
             "BUSTO": 80.0,
@@ -1430,7 +1430,7 @@
          "id": "maria-jose",
          "name": "MARIA JOSE",
          "category": "women",
-         "thumbnailUrl": "/models/mujeres/maria%20jose/MARIA%20JOSE%200.webp",
+         "thumbnailUrl": "/assets/thumbnail%20women/maria-jose-thumb.webp",
          "details": {
             "ESTATURA": "1.75 m",
             "BUSTO": 81,
@@ -1481,7 +1481,7 @@
          "id": "maria-nelly",
          "name": "MARIA NELLY",
          "category": "women",
-         "thumbnailUrl": "/models/mujeres/maria%20nelly/MARIA%20NELLY%200.webp",
+         "thumbnailUrl": "/assets/thumbnail%20women/maria-nelly-thumb.webp",
          "details": {
             "ESTATURA": "1.75 m",
             "BUSTO": 82.0,
@@ -1570,7 +1570,7 @@
          "id": "maria",
          "name": "MARIA",
          "category": "women",
-         "thumbnailUrl": "/models/mujeres/maria%20castillo/MARIA%200.webp",
+         "thumbnailUrl": "/assets/thumbnail%20women/maria-thumb.webp",
          "details": {
             "ESTATURA": "1.75 m",
             "BUSTO": 80,
@@ -1674,7 +1674,7 @@
          "id": "mariangela",
          "name": "MARIANGELA",
          "category": "women",
-         "thumbnailUrl": "/models/mujeres/mariangela/MARIANGELA%200.webp",
+         "thumbnailUrl": "/assets/thumbnail%20women/mariangela-thumb.webp",
          "details": {
             "ESTATURA": "1.80 m",
             "BUSTO": 88,
@@ -1727,7 +1727,7 @@
          "id": "meylen",
          "name": "MEYLEN",
          "category": "women",
-         "thumbnailUrl": "/assets/thumbnail%20women/MEYLEN.webp",
+         "thumbnailUrl": "/assets/thumbnail%20women/meylen-thumb.webp",
          "details": {
             "ESTATURA": "1.80 m",
             "BUSTO": 94,
@@ -2067,7 +2067,7 @@
          "id": "maria-salo",
          "name": "SALOME",
          "category": "women",
-         "thumbnailUrl": "/models/mujeres/maria%20salo/MARIA%20SALO%2019.webp",
+         "thumbnailUrl": "/assets/thumbnail%20women/maria-salo-thumb.webp",
          "details": {
             "ESTATURA": "1.75 m",
             "BUSTO": 88,
@@ -2205,7 +2205,7 @@
          "id": "sophia",
          "name": "SOPHIA",
          "category": "women",
-         "thumbnailUrl": "/assets/thumbnail%20women/SOPHIA.webp",
+         "thumbnailUrl": "/assets/thumbnail%20women/sophia-thumb.webp",
          "details": {
             "ESTATURA": "1.74 m",
             "BUSTO": 79.0,
@@ -2377,7 +2377,7 @@
          "id": "valentina-a",
          "name": "VALENTINA A",
          "category": "women",
-         "thumbnailUrl": "/models/mujeres/valentina%20ayazo/VALENTINA%20A%200.webp",
+         "thumbnailUrl": "/assets/thumbnail%20women/valentina-a-thumb.webp",
          "details": {
             "ESTATURA": "1.73 m",
             "BUSTO": 71.0,
@@ -2850,7 +2850,7 @@
          "id": "carlos-q",
          "name": "CARLOS Q",
          "category": "men",
-         "thumbnailUrl": "/assets/thumbnail%20men/CARLOS%20Q.webp",
+         "thumbnailUrl": "/assets/thumbnail%20men/carlos-q-thumb.webp",
          "details": {
             "ESTATURA": "1.84 m",
             "CAMISA": "M",
@@ -3024,7 +3024,7 @@
          "id": "david-a",
          "name": "DAVID A",
          "category": "men",
-         "thumbnailUrl": "/models/hombres/DAVID%20ACUNA/DAVID%20A%200.webp",
+         "thumbnailUrl": "/assets/thumbnail%20men/david-a-thumb.webp",
          "details": {
             "ESTATURA": "1.84 m",
             "CAMISA": "M",
@@ -3070,7 +3070,7 @@
          "id": "david-c",
          "name": "DAVID C",
          "category": "men",
-         "thumbnailUrl": "/models/hombres/DAVID%20C/DAVID%20C%200.webp",
+         "thumbnailUrl": "/assets/thumbnail%20men/david-c-thumb.webp",
          "details": {
             "ESTATURA": "1.85 m",
             "CAMISA": "M",
@@ -3212,7 +3212,7 @@
          "id": "diego-2",
          "name": "DIEGO",
          "category": "men",
-         "thumbnailUrl": "/models/hombres/DIEGO/DIEGO%200.webp",
+         "thumbnailUrl": "/assets/thumbnail%20men/diego-2-thumb.webp",
          "details": {
             "ESTATURA": "1.75 m",
             "CAMISA": "M",
@@ -3809,7 +3809,7 @@
          "id": "jose",
          "name": "JOSE",
          "category": "men",
-         "thumbnailUrl": "/models/hombres/JOSE/JOSE%200.webp",
+         "thumbnailUrl": "/assets/thumbnail%20men/jose-thumb.webp",
          "details": {
             "ESTATURA": "1.87 m",
             "CAMISA": "M",
@@ -4205,7 +4205,7 @@
          "id": "mario",
          "name": "MARIO",
          "category": "men",
-         "thumbnailUrl": "/models/hombres/MARIO/MARIO%200.webp",
+         "thumbnailUrl": "/assets/thumbnail%20men/mario-thumb.webp",
          "details": {
             "ESTATURA": "1.85 m",
             "CAMISA": "M",
@@ -4255,7 +4255,7 @@
          "id": "manuel",
          "name": "MANUEL",
          "category": "men",
-         "thumbnailUrl": "/models/hombres/MANUEL/MANUEL%200.webp",
+         "thumbnailUrl": "/assets/thumbnail%20men/manuel-thumb.webp",
          "details": {
             "ESTATURA": "1.86 m",
             "CAMISA": "M",
@@ -4465,7 +4465,7 @@
          "id": "raul",
          "name": "RAUL",
          "category": "men",
-         "thumbnailUrl": "/assets/thumbnail%20men/RAUL.webp",
+         "thumbnailUrl": "/assets/thumbnail%20men/raul-thumb.webp",
          "details": {
             "ESTATURA": "1.86 m",
             "CAMISA": "M",
@@ -4548,7 +4548,7 @@
          "id": "santi",
          "name": "SANTI",
          "category": "men",
-         "thumbnailUrl": "/models/hombres/SANTI%20REYES/SANTI%200.webp",
+         "thumbnailUrl": "/assets/thumbnail%20men/santi-thumb.webp",
          "details": {
             "ESTATURA": "1.85 m",
             "CAMISA": "M",
@@ -4643,7 +4643,7 @@
          "id": "sebastian",
          "name": "SEBASTIAN",
          "category": "men",
-         "thumbnailUrl": "/models/hombres/SEBASTIAN/SEBASTIAN%200.webp",
+         "thumbnailUrl": "/assets/thumbnail%20men/sebastian-thumb.webp",
          "details": {
             "ESTATURA": "1.85 m",
             "CAMISA": "M",
@@ -4762,7 +4762,7 @@
          "id": "stanley",
          "name": "STANLEY",
          "category": "men",
-         "thumbnailUrl": "/models/hombres/STANLEY/STANLEY%200.webp",
+         "thumbnailUrl": "/assets/thumbnail%20men/stanley-thumb.webp",
          "details": {
             "ESTATURA": "1.85 m",
             "CAMISA": "M",
